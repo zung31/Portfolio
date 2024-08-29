@@ -1,0 +1,154 @@
+.partner-area {
+  padding-top: 75px;
+}
+.partner-content {
+    padding-right: 20px;
+    margin-bottom: 25px;
+
+    h4 {
+        line-height: 1.3;
+        font: {
+            size: 30px;
+            weight: 700;
+        };
+    }
+}
+.partner-item {
+    margin-bottom: 25px;
+
+    img {
+        transition: var(--transition);
+        opacity: 1;
+    }
+    &:hover {
+        img {
+            opacity: .40;
+        }
+    }
+}
+.d-none {
+    &.d-block {
+        display: block !important;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+
+    .partner-content {
+        padding-right: 0;
+        text-align: center;
+    
+        h4 {
+            font-size: 22px;
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width : 576px) and (max-width : 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width : 768px) and (max-width : 991px) {
+
+    .partner-content {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    
+        h4 {
+            font-size: 26px;
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+
+    .partner-content {
+        padding-right: 0;
+    
+        h4 {
+            font-size: 23px;
+        }
+    }
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+
+    .partner-content {
+        padding-right: 0;
+    
+        h4 {
+            font-size: 28px;
+        }
+    }
+
+}
+
+/* Min width 1600px */
+@media only screen and (min-width: 1600px) {}
+
+/* Masquer le ticker par défaut */
+.scroll {
+    display: none;
+  }
+  
+  /* Afficher le ticker uniquement sur les écrans de téléphone */
+  @media (max-width: 767px) {
+    .scroll {
+      display: block;
+    }
+  }
+  
+  
+
+  .scroll {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+  }
+  
+  .m-scroll {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll 30s linear infinite; /* Réduire la durée à 30s pour augmenter la vitesse */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .icon-badge {
+    max-width: 85px; /* Taille agrandie pour les images sur mobile */
+    height: auto;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 992px) {
+    .icon-badge {
+      max-width: 100px; /* Taille normale pour les images sur desktop et tablette */
+    }
+  }
+  
+  .partner-item img {
+    max-width: 100px; /* Taille par défaut pour les images sur desktop et tablette */
+    height: auto;
+    cursor: pointer;
+  }
+  
+  
+  
+  

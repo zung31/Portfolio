@@ -1,0 +1,18 @@
+.contact-map {
+    iframe {
+        margin-bottom: -8px;
+        height: 600px;
+        width: 100%;
+        border: 0;
+    }
+}
+
+/* Max width 767px */
+@media only screen and (max-width : 767px) {
+    .contact-map {
+        iframe {
+            height: 500px;
+        }
+    }
+
+}
