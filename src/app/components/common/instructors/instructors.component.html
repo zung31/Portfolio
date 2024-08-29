@@ -1,0 +1,37 @@
+<div class="instructors-area pt-100 pb-75 bg-f7f7f7">
+    <div class="container">
+        <div class="section-title text-center" *ngFor="let content of sectionTitle;">
+            <span class="sub-title d-block fw-medium text-uppercase">{{content.subTitle}}</span>
+            <h2 class="mb-0">{{content.title}}</h2>
+            <span>{{content.paragraph}}</span>
+            <br><br>
+            <a href="assets/public/organigramme.pdf" target="_blank" class="default-btn">Découvrir notre organigramme</a>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-4 col-lg-4 col-sm-6 d-flex justify-content-center" *ngFor="let content of instructorBox;">
+                <div class="single-instructor-box">
+                    <img [src]="content.image" alt="instructor-image" class="instructor-image">
+                    <div class="content">
+                        <h3>
+                            <a routerLink="{{content.link}}">
+                                {{content.name}}
+                            </a>
+                        </h3>
+                        <span class="d-block">{{content.designation}}</span>
+                        <div class="icon">
+                            <i class='bx bxs-share-alt'></i>
+                        </div>
+                    </div>
+                    <!-- TODO -->
+                    <!-- <ul class="social-links ps-0 mb-0 list-unstyled">
+                        <li *ngFor="let item of content.socials;">
+                            <a href="{{item.link}}" target="_blank" class="position-relative d-block rounded-circle text-center">
+                                <i class="{{item.icon}}"></i>
+                            </a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

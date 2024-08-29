@@ -1,0 +1,294 @@
+<div class="navbar-area" [ngClass]="{'sticky': isSticky}">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg" [class.active]="classApplied">
+            <a class="navbar-brand" routerLink="/">
+                <img src="assets/images/logo-white.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" (click)="toggleClass()">
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" [class.show]="!isNavbarCollapsed" id="navbarNav">
+                <ul class="navbar-nav">
+                    <!-- <li class="nav-item">
+                        <a routerLink="/index-3" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Home
+                        </a>
+                    </li> -->
+
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" (click)="collapseNavbar()" class="dropdown-toggle nav-link">
+                            Resume
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="assets/public/CV_DangHoang.pdf" (click)="collapseNavbar()" class="nav-link" target="_blank" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    CV
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Éducation
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="assets/public/2324-SESSION-COMBERRY.pdf" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Licence 2 Informatique
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/SESSION-JOUISON-2024.pdf" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Licence 1 Mathématique
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/cours-soirs-Marseille-2023-2024.pdf" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Lycée d'excellence Hanoi-Amsterdam
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a routerLink="/course-details" class="dropdown-toggle nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    À propos de moi
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="assets/public/reflets-nice-2024.pdf" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Infos
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/cours-soirs-TOULON-2023.2024-1.pdf" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Compétences
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Projets
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Web et Application 
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="assets/public/VIS.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Java
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/PROGRAMME-VIS-1.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Python
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/VIS-15.02.2024.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Lang Web
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/inscription-vis" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            C, C++
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="dropdown-toggle nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                    Analyse Data
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="assets/public/Formation-Adulte-LSF-A1-version-12.01.2023.pdf" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            LINDO
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/LSF-seconde-langue-version-01.09.2023.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Database SQL
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/inscription-etranger" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                            Matlab
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Orientation
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a href="https://www.demarches-simplifiees.fr/commencer/acoumpagna-recrutement-aesh-13" (click)="collapseNavbar()" class="nav-link" target="_blank">
+                                    Études
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.urapeda-sud.org/" (click)="collapseNavbar()" class="nav-link" target="_blank">
+                                    Métiers
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!--Responsive version nav bar-->
+                <ul class="navbar-nav for-responsive">
+                    <li class="nav-item">
+                        <a routerLink="/" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Resume
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a routerLink="assets/public/CV_DangHoang.pdf" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    CV
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Éducation
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="assets/public/2324-SESSION-COMBERRY.pdf" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Licence 2 Informatique
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/SESSION-JOUISON-2024.pdf" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Licence 1 Mathématique
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/cours-soirs-Marseille-2023-2024.pdf" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Lycée d'excellence Hanoi-Amsterdam
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    À propos de moi
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="assets/public/reflets-nice-2024.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Infos
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/cours-soirs-TOULON-2023.2024-1.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Compétences
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link">
+                            Projets
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Web et Application 
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="assets/public/VIS.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Java 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/PROGRAMME-VIS-1.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Python
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/VIS-15.02.2024.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Lang Web
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/inscription-vis" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()" >
+                                            C, C++
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="javascript:void(0)" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                    Analyse Data
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item">
+                                        <a href="assets/public/Formation-Collective-Adulte-de-LSF-Langue-Premiere-Langue-des-Signes-Francaise-Langue-Etrangere-A1-version-12.01.2023-.pdf" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            LINDO 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="assets/public/Fiche-technique-LSF-seconde-langue-version-01.09.2023.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Database SQL
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a routerLink="/inscription-etranger" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                            Matlab
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="javascript:void(0)" class="dropdown-toggle nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                            Orientation
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="nav-item">
+                                <a href="https://www.demarches-simplifiees.fr/commencer/acoumpagna-recrutement-aesh-13" (click)="collapseNavbar()" class="nav-link" target="_blank" (click)="toggleClass()">
+                                    Études
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.urapeda-sud.org/" (click)="collapseNavbar()" class="nav-link" target="_blank" (click)="toggleClass()">
+                                    Métiers
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--End Responsive version nav bar-->
+                
+                <div class="others-option d-flex align-items-center">
+                    <div class="option-item">
+                        <a href="https://www.helloasso.com/associations/langue-des-signes-francaise-mediterraneen/formulaires/1/widget" target="_blank" class="default-btn two">Contactez moi</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
