@@ -7,7 +7,7 @@ import { HomeDemoThreeComponent } from './components/pages/home-demo-three/home-
 import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
 import { AboutPageComponent } from './components/pages/about-page/about-page.component';
 import { FaqPageComponent } from './components/pages/faq-page/faq-page.component';
-import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';
+import { Licence2PageComponent } from './components/pages/licence-2-page/licence-2-page.component';
 import { TermsConditionsPageComponent } from './components/pages/terms-conditions-page/terms-conditions-page.component';
 import { ProfileAuthenticationPageComponent } from './components/pages/profile-authentication-page/profile-authentication-page.component';
 import { TestimonialsPageComponent } from './components/pages/testimonials-page/testimonials-page.component';
@@ -55,16 +55,16 @@ const routes: Routes = [
     // {path: 'courses-grid', component: CoursesGridPageComponent},
     // {path: 'courses-list', component: CoursesListPageComponent},
     // {path: 'course-details', component: CourseDetailsPageComponent},
-    // {path: 'events', component: EventsPageComponent},
+    {path: 'events', component: EventsPageComponent},
     // {path: 'event-details', component: EventDetailsPageComponent},
     // {path: 'testimonials', component: TestimonialsPageComponent},
-    {path: 'cgu', component: PrivacyPolicyPageComponent},
+    {path: 'licence-2', component: Licence2PageComponent},
     {path: 'mentions-legales', component: TermsConditionsPageComponent},
     // {path: 'profile-authentication', component: ProfileAuthenticationPageComponent},
     // {path: 'forgot-password', component: ForgotPasswordPageComponent},
     // {path: 'blog-grid', component: BlogGridPageComponent},
     // {path: 'blog-right-sidebar', component: BlogRightSidebarPageComponent},
-    // {path: 'blog-details', component: BlogDetailsPageComponent},
+    {path: 'blog-details', component: BlogDetailsPageComponent},
     // {path: 'contact', component: ContactPageComponent},
     {path: 'accessbilite', component: AccessbilitePageComponent},
     {path: 'nos-sites-intervention', component: NosSitesInterventionPageComponent},

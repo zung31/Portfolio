@@ -38,7 +38,7 @@ import { HomethreeBannerComponent } from './components/pages/home-demo-three/hom
 import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
 import { AboutPageComponent } from './components/pages/about-page/about-page.component';
 import { FaqPageComponent } from './components/pages/faq-page/faq-page.component';
-import { PrivacyPolicyPageComponent } from './components/pages/privacy-policy-page/privacy-policy-page.component';
+import { Licence2PageComponent } from './components/pages/licence-2-page/licence-2-page.component';
 import { TermsConditionsPageComponent } from './components/pages/terms-conditions-page/terms-conditions-page.component';
 import { ProfileAuthenticationPageComponent } from './components/pages/profile-authentication-page/profile-authentication-page.component';
 import { TestimonialsPageComponent } from './components/pages/testimonials-page/testimonials-page.component';
@@ -72,6 +72,7 @@ import { ContactMapComponent } from './components/common/contact-map/contact-map
 import { Router, RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FeaturedBoxes2Component } from './components/common/featured-boxes-2/featured-boxes-2.component';
 
 @NgModule({
     declarations: [
@@ -105,7 +106,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
         ContactPageComponent,
         AboutPageComponent,
         FaqPageComponent,
-        PrivacyPolicyPageComponent,
+        Licence2PageComponent,
         TermsConditionsPageComponent,
         ProfileAuthenticationPageComponent,
         TestimonialsPageComponent,
@@ -133,8 +134,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
         CartComponent,
         OrdersListComponent,
         EditProfileComponent,    
-        ContactMapComponent
-
+        ContactMapComponent,
+        FeaturedBoxes2Component
     ],
     imports: [
         BrowserModule,
