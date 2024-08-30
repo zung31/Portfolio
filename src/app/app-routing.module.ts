@@ -41,6 +41,7 @@ import { InscriptionPageVisComponent } from './components/pages/inscription-page
 import { InscriptionPageEtrangerComponent } from './components/pages/inscription-page-etranger/inscription-page-etranger.component';
 import { NosSitesInterventionPageComponent } from './components/pages/nos-sites-intervention/nos-sites-intervention.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { Licence1PageComponent } from './components/pages/licence-1-page/licence-1-page.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoThreeComponent},
@@ -58,6 +59,7 @@ const routes: Routes = [
     {path: 'events', component: EventsPageComponent},
     // {path: 'event-details', component: EventDetailsPageComponent},
     // {path: 'testimonials', component: TestimonialsPageComponent},
+    {path: 'licence-1', component: Licence1PageComponent},
     {path: 'licence-2', component: Licence2PageComponent},
     {path: 'mentions-legales', component: TermsConditionsPageComponent},
     // {path: 'profile-authentication', component: ProfileAuthenticationPageComponent},

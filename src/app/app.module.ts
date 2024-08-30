@@ -73,6 +73,8 @@ import { Router, RouterModule } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FeaturedBoxes2Component } from './components/common/featured-boxes-2/featured-boxes-2.component';
+import { FeaturedBoxes3Component } from './components/common/featured-boxes-3/featured-boxes-3.component';
+import { Licence1PageComponent } from './components/pages/licence-1-page/licence-1-page.component';
 
 @NgModule({
     declarations: [
@@ -106,6 +108,7 @@ import { FeaturedBoxes2Component } from './components/common/featured-boxes-2/fe
         ContactPageComponent,
         AboutPageComponent,
         FaqPageComponent,
+        Licence1PageComponent,
         Licence2PageComponent,
         TermsConditionsPageComponent,
         ProfileAuthenticationPageComponent,
@@ -135,7 +138,8 @@ import { FeaturedBoxes2Component } from './components/common/featured-boxes-2/fe
         OrdersListComponent,
         EditProfileComponent,    
         ContactMapComponent,
-        FeaturedBoxes2Component
+        FeaturedBoxes2Component,
+        FeaturedBoxes3Component
     ],
     imports: [
         BrowserModule,
