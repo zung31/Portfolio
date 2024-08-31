@@ -75,6 +75,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FeaturedBoxes2Component } from './components/common/featured-boxes-2/featured-boxes-2.component';
 import { FeaturedBoxes3Component } from './components/common/featured-boxes-3/featured-boxes-3.component';
 import { Licence1PageComponent } from './components/pages/licence-1-page/licence-1-page.component';
+import { LyceePageComponent } from './components/pages/lycee-page/lycee-page.component';
 
 @NgModule({
     declarations: [
@@ -110,6 +111,7 @@ import { Licence1PageComponent } from './components/pages/licence-1-page/licence
         FaqPageComponent,
         Licence1PageComponent,
         Licence2PageComponent,
+        LyceePageComponent,
         TermsConditionsPageComponent,
         ProfileAuthenticationPageComponent,
         TestimonialsPageComponent,

@@ -42,12 +42,13 @@ import { InscriptionPageEtrangerComponent } from './components/pages/inscription
 import { NosSitesInterventionPageComponent } from './components/pages/nos-sites-intervention/nos-sites-intervention.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { Licence1PageComponent } from './components/pages/licence-1-page/licence-1-page.component';
+import { LyceePageComponent } from './components/pages/lycee-page/lycee-page.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoThreeComponent},
     // {path: 'index-2', component: HomeDemoTwoComponent},
     // {path: 'index-3', component: HomeDemoThreeComponent},
-    {path: 'about', component: AboutPageComponent},
+    {path: 'info', component: AboutPageComponent},
     // {path: 'instructors', component: InstructorsPageComponent},
     // {path: 'instructor-profile', component: InstructorProfilePageComponent},
     // {path: 'success-stories', component: SuccessStoriesPageComponent},
@@ -61,6 +62,7 @@ const routes: Routes = [
     // {path: 'testimonials', component: TestimonialsPageComponent},
     {path: 'licence-1', component: Licence1PageComponent},
     {path: 'licence-2', component: Licence2PageComponent},
+    {path: 'lycee', component: LyceePageComponent},
     {path: 'mentions-legales', component: TermsConditionsPageComponent},
     // {path: 'profile-authentication', component: ProfileAuthenticationPageComponent},
     // {path: 'forgot-password', component: ForgotPasswordPageComponent},
