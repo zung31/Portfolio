@@ -1,4 +1,12 @@
 import { Component } from '@angular/core';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { faTableTennis,
+    faBook,
+    faMusic,
+    faSwimmer,
+    faPalette,
+    faGamepad
+ } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
     selector: 'app-instructors',
@@ -9,137 +17,34 @@ export class InstructorsComponent {
 
     sectionTitle = [
         {
-            subTitle: `Équipe`,
-            title: `Course Instructors`,
-            paragraph: `Nous sommes heureux et fiers de vous annoncer que notre association est officiellement reconnue d’INTÉRÊT GÉNÉRAL ! 
+            title: `Mes intérêts`,
+            paragraph: `En plus de coder et d’étudier à l’école, j’ai aussi des passe-temps.
 
-            Une belle reconnaissance des actions que nous menons depuis 40 ans en faveur de la diffusion de la LSF et de l’intégration des Sourds au sein de notre société ! 
-
-            Ce nouveaux statut implique également que les personnes qui souhaitent nous faire des dons peuvent bénéficier d’une réduction d’impôts !`
+            Grâce à ces éléments, je peux réduire le stress, me concentrer davantage et obtenir de meilleures performances au travail.`
         }
     ]
-    instructorBox = [
-        {
-            image: `assets/images/instructors/Laure.jpeg`,
-            name: `Laure ARNAL`,
-            designation: `Directrice`,
-            link: `/instructor-profile`,
-            socials: [
-                {
-                    icon: `bx bxl-facebook`,
-                    link: `https://www.facebook.com/`
-                },
-                {
-                    icon: `bx bxl-linkedin`,
-                    link: `https://linkedin.com/`
-                },
-                {
-                    icon: `bx bxl-twitter`,
-                    link: `https://twitter.com/`
-                },
-                {
-                    icon: `bx bxl-instagram`,
-                    link: `https://www.instagram.com/`
-                }
-            ]
+    
+    customOptions: any = {
+        loop: true,
+        margin: 10,
+        mouseDrag: false,
+        touchDrag: true,
+        pullDrag: false,
+        dots: true,
+        navSpeed: 600,
+        navText: [],
+        responsive: {
+          0: {
+            items: 1
+          }
         },
-        {
-            image: `assets/images/instructors/Florence.jpeg`,
-            name: `Florence GUEGUEN`,
-            designation: `Formatrice LSF qualifiée Responsable pédagogique`,
-            link: `/instructor-profile`,
-            socials: [
-                {
-                    icon: `bx bxl-facebook`,
-                    link: `https://www.facebook.com/`
-                },
-                {
-                    icon: `bx bxl-linkedin`,
-                    link: `https://linkedin.com/`
-                },
-                {
-                    icon: `bx bxl-twitter`,
-                    link: `https://twitter.com/`
-                },
-                {
-                    icon: `bx bxl-instagram`,
-                    link: `https://www.instagram.com/`
-                }
-            ]
-        },
-        {
-            image: `assets/images/instructors/Anthony.jpeg`,
-            name: `Anthony BERARD`,
-            designation: `Formateur LSF qualifié Référent handicap`,
-            link: `/instructor-profile`,
-            socials: [
-                {
-                    icon: `bx bxl-facebook`,
-                    link: `https://www.facebook.com/`
-                },
-                {
-                    icon: `bx bxl-linkedin`,
-                    link: `https://linkedin.com/`
-                },
-                {
-                    icon: `bx bxl-twitter`,
-                    link: `https://twitter.com/`
-                },
-                {
-                    icon: `bx bxl-instagram`,
-                    link: `https://www.instagram.com/`
-                }
-            ]
-        },
-        {
-            image: `assets/images/instructors/Anne-Marie.jpg`,
-            name: `Anne-Marie DEROZIER`,
-            designation: `Formatrice LSF qualifiée`,
-            link: `/instructor-profile`,
-            socials: [
-                {
-                    icon: `bx bxl-facebook`,
-                    link: `https://www.facebook.com/`
-                },
-                {
-                    icon: `bx bxl-linkedin`,
-                    link: `https://linkedin.com/`
-                },
-                {
-                    icon: `bx bxl-twitter`,
-                    link: `https://twitter.com/`
-                },
-                {
-                    icon: `bx bxl-instagram`,
-                    link: `https://www.instagram.com/`
-                }
-            ]
-        },
-        {
-            image: `assets/images/instructors/Amal.jpeg`,
-            name: `Amal MOHAMED`,
-            designation: `Secrétaire
-Organisation et communication`,
-            link: `/instructor-profile`,
-            socials: [
-                {
-                    icon: `bx bxl-facebook`,
-                    link: `https://www.facebook.com/`
-                },
-                {
-                    icon: `bx bxl-linkedin`,
-                    link: `https://linkedin.com/`
-                },
-                {
-                    icon: `bx bxl-twitter`,
-                    link: `https://twitter.com/`
-                },
-                {
-                    icon: `bx bxl-instagram`,
-                    link: `https://www.instagram.com/`
-                }
-            ]
-        },
-    ]
+        nav: false
+    };
 
+    faBadminton = faTableTennis;
+    faBook = faBook;
+    faMusic = faMusic;
+    faSwimmer = faSwimmer;
+    faPalette = faPalette;
+    faGamepad = faGamepad;
 }

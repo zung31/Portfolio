@@ -31,7 +31,6 @@
             opacity: .87;
             position: absolute;
             border-radius: 0 20px;
-            background: var(--secondaryColor);
         }
         .video-btn {
             left: 0;
@@ -85,7 +84,7 @@
     }
     .quote {
         padding: 25px 25px 25px 130px;
-        background-color: #f6fafb;
+        background-color: #2bc9d76f;
         border-radius: 5px;
         margin: {
             top: 25px;
@@ -342,6 +341,21 @@
                 color: var(--whiteColor);
             }
         }
+    }
+}
+
+.cv-link {
+    display: inline-block;
+    text-align: center;
+
+    @media (max-width: 767px) {
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        display: block;
+        margin: 0 auto;
     }
 }
 

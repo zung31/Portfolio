@@ -15,19 +15,19 @@ export class FeaturedComponent {
     featuredBox = [
         {
             icon: `assets/images/featured/icon1.gif`,
-            title: `Favoriser la connaissance et l'utilisation de la LSF`
+            title: `Un collaborateur digne de confiance soumet toujours le code avant la date limite`
         },
         {
             icon: `assets/images/featured/icon2.gif`,
-            title: `Promouvoir la culture sourde`
+            title: `Un étudiant assidu et progressiste`
         },
         {
             icon: `assets/images/featured/icon3.gif`,
-            title: `Lutter contre les discriminations dont sont victimes les personnes sourdes et malentendantes`
+            title: `Persévérer à corriger les bugs jusqu'à ce que le programme fonctionne`
         },
         {
             icon: `assets/images/featured/icon4.gif`,
-            title: `Soutenir l'inclusion des personnes sourdes dans la société`
+            title: `Résoudre des problèmes maths est aussi un plaisir`
         }
     ]
 

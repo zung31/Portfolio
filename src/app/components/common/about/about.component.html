@@ -17,12 +17,6 @@
                             <div class="image">
                                 <img src="assets/images/about/about2.jpg" alt="about-image">
                                 <div class="video-image position-relative">
-                                    <button type="button" class="video-btn bg-transparent p-0 border-0" (click)="openPopup()">
-                                        <div class="icon">
-                                            <i class='bx bx-play' ></i>
-                                        </div>
-                                        Play Video
-                                    </button>
                                     <img src="assets/images/about/about3.jpg" alt="about-image">
                                 </div>
                             </div>
@@ -32,30 +26,23 @@
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
-                    <h2>Learn Something New Grow Your Skills From Anywhere In World</h2>
-                    <p>It is a long established fact that a reader will be distracted by the readable contenwhen looking at its layout. The point of using lorem ipsum is that it has a more.</p>
+                    <h2>Qui suis-je?</h2>
+                    <p> Je m'appelle Dang Hoang Dung, vous pouvez m'appeler Hoang. 
+                        <br>J'ai 20 ans et je suis étudiant en Licence 3 informatique à l'Université Polytechnique Hauts-de France. Je suis passionné par la programmation et les mathématiques. 
+                        <br>J'ai une bonne connaissance de Java, Python, HTML, CSS, JavaScript, Python, Angular, React, SQL,... 
+                        <br>Et si nécessaire, je suis toujours prêt à apprendre une nouvelle langue :D</p>
                     <div class="quote position-relative">
                         <img src="assets/images/users/user1.jpg" class="rounded-circle" alt="user-image">
-                        <p>“It is a long established fact that a reader will be distracted by readable content of a page when looking at its layout.”</p>
-                        <h6 class="mb-0">Darnell Harrison</h6>
+                        <p>“Hoang est un étudiant responsable et opiniâtre. Nous passons souvent du temps à discuter (ou disputer) des connaissances.”</p>
+                        <h6 class="mb-0">Mon professeur principal au lycée</h6>
                     </div>
-                    <a routerLink="/success-stories" class="default-btn">View All Stories</a>
+                    <a routerLink="assets/public/CV_DangHoang.pdf" target="blank" class="default-btn cv-link">Voir mon CV</a>
                 </div>
             </div>
         </div>
     </div>
     <div class="shape1">
         <img src="assets/images/shapes/shape1.png" alt="shape1">
-    </div>
-</div>
-
-<!-- Video Popup -->
-<div class="video-popup" *ngIf="isOpen">
-    <div class="popup-inner">
-        <iframe src="https://www.youtube.com/embed/XNQk1qt__Vw" title="Setup and Local Installation - React Nextjs Online Yoga Coaching &amp; Training Courses System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <button (click)="closePopup()" type="button" class="close-btn">
-            <i class='bx bx-x'></i>
-        </button>
     </div>
 </div>
 
