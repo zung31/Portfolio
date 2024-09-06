@@ -1,0 +1,41 @@
+<div class="featured-boxes-area pt-100 pb-75"
+[ngClass]="{'d-none': router.url === '/index-3'}">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="container mt-5">
+                <div class="row no-gutters">
+                    <div class="col-3">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link" [ngClass]="{'active': selectedTab === 'IDE'}" (click)="selectTab('IDE')" id="v-pills-ide-tab" role="tab" aria-controls="v-pills-ide" aria-selected="true">IDE</a>
+                                <a class="nav-link" [ngClass]="{'active': selectedTab === 'API'}" (click)="selectTab('API')" id="v-pills-api-tab" role="tab" aria-controls="v-pills-api" aria-selected="false">API</a>
+                                <a class="nav-link" [ngClass]="{'active': selectedTab === 'SQL'}" (click)="selectTab('SQL')" id="v-pills-sql-tab" role="tab" aria-controls="v-pills-sql" aria-selected="false">SQL</a>
+                                <a class="nav-link" [ngClass]="{'active': selectedTab === 'Autres'}" (click)="selectTab('Autres')" id="v-pills-autres-tab" role="tab" aria-controls="v-pills-autres" aria-selected="false">Langues</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'IDE'}" id="v-pills-ide" role="tabpanel" aria-labelledby="v-pills-ide-tab">
+                                <h2>IDE Content</h2>
+                                <p>Nội dung về IDE...</p>
+                            </div>
+                            <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'API'}" id="v-pills-api" role="tabpanel" aria-labelledby="v-pills-api-tab">
+                                <h2>API Content</h2>
+                                <p>Nội dung về API...</p>
+                            </div>
+                            <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'SQL'}" id="v-pills-sql" role="tabpanel" aria-labelledby="v-pills-sql-tab">
+                                <h2>SQL Content</h2>
+                                <p>Nội dung về SQL...</p>
+                            </div>
+                            <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'Autres'}" id="v-pills-autres" role="tabpanel" aria-labelledby="v-pills-autres-tab">
+                                <h2>Langues</h2>
+                                <p>Nội dung khác...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

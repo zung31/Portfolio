@@ -35,7 +35,7 @@ import { CompletedCoursesComponent } from './components/dashboard/completed-cour
 import { CartComponent } from './components/dashboard/cart/cart.component';
 import { EditProfileComponent } from './components/dashboard/edit-profile/edit-profile.component';
 import { AccessbilitePageComponent } from './components/pages/accessbilite-page/accessbilite-page.component';
-import { CgvPageComponent } from './components/pages/cgv-page/cgv-page.component';
+import { CompetencesPageComponent } from './components/pages/competences-page/competences-page.component';
 import { InscriptionPageComponent } from './components/pages/inscription-page/inscription-page.component';
 import { InscriptionPageVisComponent } from './components/pages/inscription-page-vis/inscription-page-vis.component';
 import { InscriptionPageEtrangerComponent } from './components/pages/inscription-page-etranger/inscription-page-etranger.component';
@@ -72,7 +72,7 @@ const routes: Routes = [
     // {path: 'contact', component: ContactPageComponent},
     {path: 'accessbilite', component: AccessbilitePageComponent},
     {path: 'nos-sites-intervention', component: NosSitesInterventionPageComponent},
-    {path: 'cgv', component: CgvPageComponent},
+    {path: 'competences', component: CompetencesPageComponent},
     {path: 'inscription', component: InscriptionPageComponent},
     {path: 'inscription-vis', component: InscriptionPageVisComponent},
     {path: 'inscription-etranger', component: InscriptionPageEtrangerComponent},

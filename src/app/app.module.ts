@@ -76,6 +76,9 @@ import { FeaturedBoxes2Component } from './components/common/featured-boxes-2/fe
 import { FeaturedBoxes3Component } from './components/common/featured-boxes-3/featured-boxes-3.component';
 import { Licence1PageComponent } from './components/pages/licence-1-page/licence-1-page.component';
 import { LyceePageComponent } from './components/pages/lycee-page/lycee-page.component';
+import { CompetencesPageComponent } from './components/pages/competences-page/competences-page.component';
+import { LangueComponent } from './components/common/langues/langues.component';
+import { InformatiqueComponent } from './components/common/informatique/informatique.component';
 
 @NgModule({
     declarations: [
@@ -140,8 +143,12 @@ import { LyceePageComponent } from './components/pages/lycee-page/lycee-page.com
         OrdersListComponent,
         EditProfileComponent,    
         ContactMapComponent,
+        FeaturedBoxesComponent,
         FeaturedBoxes2Component,
-        FeaturedBoxes3Component
+        FeaturedBoxes3Component,
+        CompetencesPageComponent,
+        LangueComponent,
+        InformatiqueComponent
     ],
     imports: [
         BrowserModule,
@@ -155,7 +162,7 @@ import { LyceePageComponent } from './components/pages/lycee-page/lycee-page.com
         NgxScrollTopModule,
         InscriptionPageEtrangerComponent,
         CarouselModule,
-        FontAwesomeModule
+        FontAwesomeModule,
     ],
     providers: [
     provideAnimationsAsync()

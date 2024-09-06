@@ -1,0 +1,50 @@
+<!-- Page Banner -->
+<div
+    class="page-banner-area ptb-100"
+    style="background-image: url(assets/images/shapes/page-banner-bg4.jpg);"
+>
+    <div class="container">
+        <div class="page-banner-content text-center">
+            <h1 style="color: #ffffff;">Compétences</h1>
+            <ul class="ps-0 mb-0 list-unstyled">
+                <li class="d-inline-block position-relative"><a routerLink="/">Accueil</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">Compétences</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Conditions générales de vente -->
+<div class="terms-conditions-area ptb-100">
+    <div class="container">
+        <div class="button-group text-center">
+            <button class="btn btn-primary m-2" (click)="showContent('relationnelle')" 
+                    [ngClass]="{'active': activeContent === 'relationnelle'}">
+                Relationnelle
+            </button>
+            <button class="btn btn-primary m-2" (click)="showContent('linguistique')"
+                    [ngClass]="{'active': activeContent === 'linguistique'}">
+                Linguistique
+            </button>
+            <button class="btn btn-primary m-2" (click)="showContent('informatique')"
+                    [ngClass]="{'active': activeContent === 'informatique'}">
+                Informatique
+            </button>
+        </div>
+
+        <div [hidden]="activeContent !== 'relationnelle'">
+            <h2 class="content-title">Capacité relationnelle</h2>
+            <app-featured-boxes></app-featured-boxes>
+        </div>
+
+        <div [hidden]="activeContent !== 'linguistique'">
+            <h2 class="content-title">Capacité linguistique</h2>
+            <app-langues></app-langues>
+        </div>
+
+        <div [hidden]="activeContent !== 'informatique'">
+            <h2 class="content-title">Capacité informatique</h2>
+            <app-informatique></app-informatique>
+        </div>
+    </div>
+</div>

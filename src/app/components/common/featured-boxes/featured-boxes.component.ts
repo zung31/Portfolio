@@ -14,21 +14,21 @@ export class FeaturedBoxesComponent {
 
     featuredBox = [
         {
-            icon: `assets/images/featured/icon1.gif`,
-            title: `Démocratiser la Langue des Signes Française`
+            icon: `assets/images/featured/icon6.gif`,
+            title: `Patience et Optimisme`
+        },
+        {
+            icon: `assets/images/featured/icon7.gif`,
+            title: `Capacité d’adaptation`
         },
         {
             icon: `assets/images/featured/icon2.gif`,
-            title: `Lutter contre les discriminations`
+            title: `Capacité d’organisation`
         },
         {
-            icon: `assets/images/featured/icon3.gif`,
-            title: `Promouvoir largement la culture sourde`
+            icon: `assets/images/featured/icon5.png`,
+            title: `Super travail en équipe`
         },
-        {
-            icon: `assets/images/featured/icon4.gif`,
-            title: `Favoriser l'inclusion des sourds dans la société`
-        }
     ]
 
 }
