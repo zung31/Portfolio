@@ -43,6 +43,7 @@ import { NosSitesInterventionPageComponent } from './components/pages/nos-sites-
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { Licence1PageComponent } from './components/pages/licence-1-page/licence-1-page.component';
 import { LyceePageComponent } from './components/pages/lycee-page/lycee-page.component';
+import { JavaPageComponent } from './components/pages/java-page/java-page.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoThreeComponent},
@@ -58,7 +59,7 @@ const routes: Routes = [
     // {path: 'courses-list', component: CoursesListPageComponent},
     // {path: 'course-details', component: CourseDetailsPageComponent},
     {path: 'events', component: EventsPageComponent},
-    // {path: 'event-details', component: EventDetailsPageComponent},
+    {path: 'event-details', component: EventDetailsPageComponent},
     // {path: 'testimonials', component: TestimonialsPageComponent},
     {path: 'licence-1', component: Licence1PageComponent},
     {path: 'licence-2', component: Licence2PageComponent},
@@ -66,7 +67,7 @@ const routes: Routes = [
     {path: 'mentions-legales', component: TermsConditionsPageComponent},
     // {path: 'profile-authentication', component: ProfileAuthenticationPageComponent},
     // {path: 'forgot-password', component: ForgotPasswordPageComponent},
-    // {path: 'blog-grid', component: BlogGridPageComponent},
+    {path: 'blog-grid', component: BlogGridPageComponent},
     // {path: 'blog-right-sidebar', component: BlogRightSidebarPageComponent},
     {path: 'blog-details', component: BlogDetailsPageComponent},
     // {path: 'contact', component: ContactPageComponent},
@@ -76,7 +77,7 @@ const routes: Routes = [
     {path: 'inscription', component: InscriptionPageComponent},
     {path: 'inscription-vis', component: InscriptionPageVisComponent},
     {path: 'inscription-etranger', component: InscriptionPageEtrangerComponent},
-
+    {path: 'java-projects', component: JavaPageComponent},
 
     // {
     //     path: 'dashboard',

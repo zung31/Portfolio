@@ -79,6 +79,7 @@ import { LyceePageComponent } from './components/pages/lycee-page/lycee-page.com
 import { CompetencesPageComponent } from './components/pages/competences-page/competences-page.component';
 import { LangueComponent } from './components/common/langues/langues.component';
 import { InformatiqueComponent } from './components/common/informatique/informatique.component';
+import { JavaPageComponent } from './components/pages/java-page/java-page.component';
 
 @NgModule({
     declarations: [
@@ -148,7 +149,8 @@ import { InformatiqueComponent } from './components/common/informatique/informat
         FeaturedBoxes3Component,
         CompetencesPageComponent,
         LangueComponent,
-        InformatiqueComponent
+        InformatiqueComponent,
+        JavaPageComponent
     ],
     imports: [
         BrowserModule,
