@@ -21,19 +21,6 @@ import { EventDetailsPageComponent } from './components/pages/event-details-page
 import { BlogGridPageComponent } from './components/pages/blog-grid-page/blog-grid-page.component';
 import { BlogRightSidebarPageComponent } from './components/pages/blog-right-sidebar-page/blog-right-sidebar-page.component';
 import { BlogDetailsPageComponent } from './components/pages/blog-details-page/blog-details-page.component';
-import { CourseDetailsPageComponent } from './components/pages/course-details-page/course-details-page.component';
-import { CoursesGridPageComponent } from './components/pages/courses-grid-page/courses-grid-page.component';
-import { CoursesListPageComponent } from './components/pages/courses-list-page/courses-list-page.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { EnrolledCoursesComponent } from './components/dashboard/enrolled-courses/enrolled-courses.component';
-import { WishlistComponent } from './components/dashboard/wishlist/wishlist.component';
-import { MyProfileComponent } from './components/dashboard/my-profile/my-profile.component';
-import { ActiveCoursesComponent } from './components/dashboard/active-courses/active-courses.component';
-import { OrdersListComponent } from './components/dashboard/orders-list/orders-list.component';
-import { ReviewsComponent } from './components/dashboard/reviews/reviews.component';
-import { CompletedCoursesComponent } from './components/dashboard/completed-courses/completed-courses.component';
-import { CartComponent } from './components/dashboard/cart/cart.component';
-import { EditProfileComponent } from './components/dashboard/edit-profile/edit-profile.component';
 import { AccessbilitePageComponent } from './components/pages/accessbilite-page/accessbilite-page.component';
 import { CompetencesPageComponent } from './components/pages/competences-page/competences-page.component';
 import { InscriptionPageComponent } from './components/pages/inscription-page/inscription-page.component';
@@ -44,6 +31,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { Licence1PageComponent } from './components/pages/licence-1-page/licence-1-page.component';
 import { LyceePageComponent } from './components/pages/lycee-page/lycee-page.component';
 import { JavaPageComponent } from './components/pages/java-page/java-page.component';
+import { JavaProjet2Component } from './components/pages/java-projet2/java-projet2.component';
+import { JavaProjet3Component } from './components/pages/java-projet3/java-projet3.component';
+import { JavaProjet4Component } from './components/pages/java-projet4/java-projet4.component';
+import { JavaProjet5Component } from './components/pages/java-projet5/java-projet5.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoThreeComponent},
@@ -69,7 +60,7 @@ const routes: Routes = [
     // {path: 'forgot-password', component: ForgotPasswordPageComponent},
     {path: 'blog-grid', component: BlogGridPageComponent},
     // {path: 'blog-right-sidebar', component: BlogRightSidebarPageComponent},
-    {path: 'blog-details', component: BlogDetailsPageComponent},
+    {path: 'java-projet-1', component: BlogDetailsPageComponent},
     // {path: 'contact', component: ContactPageComponent},
     {path: 'accessbilite', component: AccessbilitePageComponent},
     {path: 'nos-sites-intervention', component: NosSitesInterventionPageComponent},
@@ -77,25 +68,12 @@ const routes: Routes = [
     {path: 'inscription', component: InscriptionPageComponent},
     {path: 'inscription-vis', component: InscriptionPageVisComponent},
     {path: 'inscription-etranger', component: InscriptionPageEtrangerComponent},
-    {path: 'java-projects', component: JavaPageComponent},
-
-    // {
-    //     path: 'dashboard',
-    //     component: DashboardComponent,
-    //     children: [
-    //         { path: 'enrolled-courses', component: EnrolledCoursesComponent },
-    //         { path: 'wishlist', component: WishlistComponent },
-    //         { path: 'my-profile', component: MyProfileComponent },
-    //         { path: 'edit-profile', component: EditProfileComponent },
-    //         { path: 'active-courses', component: ActiveCoursesComponent },
-    //         { path: 'orders-list', component: OrdersListComponent },
-    //         { path: 'reviews', component: ReviewsComponent },
-    //         { path: 'completed-courses', component: CompletedCoursesComponent },
-    //         { path: 'cart', component: CartComponent }
-    //     ]
-    // },
-    // Here add new pages component
-
+    {path: 'java-projets', component: JavaPageComponent},
+    {path: 'java-projet-2', component: JavaProjet2Component},
+    {path: 'java-projet-3', component: JavaProjet3Component},
+    {path: 'java-projet-4', component: JavaProjet4Component},
+    {path: 'java-projet-5', component: JavaProjet5Component},
+    
     {path: '**', component: NotFoundComponent} // This line will remain down from the whole pages component list
 ];
 

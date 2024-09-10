@@ -7,6 +7,14 @@
     background: var(--secondaryColor) !important; /*active and on hover color*/
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
 .page-banner-area{
     position: relative;
     overflow: hidden;
@@ -218,193 +226,6 @@
         }
     }
 }
-blockquote, .blockquote {
-    padding: 40px !important;
-    background-color: #f9f9f9;
-    border-left: 3px solid var(--primaryColor);
-    margin: {
-        bottom: 30px;
-        top: 25px;
-    };
-    p {
-        line-height: 1.7;
-        margin-bottom: 0;
-        color: var(--blackColor);
-        font: {
-            weight: 600;
-            style: italic;
-            size: 20px !important;
-        };
-    }
-    cite {
-        display: block;
-        margin-top: 18px;
-        font-weight: 500;
-        color: var(--secondaryColor);
-    }
-}
-.comments-area {
-    margin-top: 30px;
-    padding-top: 30px;
-    border-top: 1px solid var(--borderColor);
-
-    .comments-title {
-        font-size: 22px;
-        margin-bottom: 25px;
-        line-height: initial;
-    }
-    ol, ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
-    .comment-list {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
-    .children {
-        margin-left: 20px;
-    }
-    .comment-body {
-        border-bottom: 1px dashed var(--borderColor);
-        color: var(--blackColor);
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-        padding-left: 98px;
-        position: relative;
-
-        .reply {
-            margin-top: 12px;
-
-            a {
-                border: 1px dashed var(--borderColor);
-                color: var(--blackColor);
-                display: inline-block;
-                border-radius: 30px;
-                padding: 3px 15px;
-                font: {
-                    size: 14px;
-                    weight: 500;
-                };
-                &:hover {
-                    color: var(--whiteColor);
-                    border-color: var(--primaryColor);
-                    background-color: var(--primaryColor);
-                }
-            }
-        }
-    }
-    .comment-author {
-        z-index: 2;
-        font-size: 17px;
-        margin-bottom: 8px;
-        position: relative;
-        
-        .avatar {
-            top: 4px;
-            width: 80px;
-            left: -98px;
-            position: absolute;
-        }
-        .says {
-            display: none;
-        }
-        .fn {
-            font-weight: 600;
-        }
-    }
-    .comment-metadata {
-        font-size: 15px;
-        margin-bottom: .6em;
-        color: var(--bodyColor);
-    }
-    .comment-respond {
-        margin-top: 30px;
-
-        .comment-reply-title {
-            margin-bottom: 0;
-            font-size: 22px;
-
-            #cancel-comment-reply-link {
-                display: inline-block;
-            }
-        }
-        .comment-notes {
-            font-style: italic;
-            margin: {
-                bottom: 20px;
-                top: 10px;
-            };
-            .required {
-                color: red;
-            }
-        }
-        .form-group {
-            margin-bottom: 25px;
-    
-            .form-control {
-                background-color: #f9f9f9;
-                font-size: var(--fontSize);
-                color: var(--blackColor);
-                box-shadow: unset;
-                border-radius: 0;
-                height: 50px;
-                width: 100%;
-                border: 0;
-                padding: {
-                    left: 18px;
-                    right: 18px;
-                };
-                &::placeholder {
-                    color: var(--bodyColor);
-                    transition: var(--transition);
-                }
-                &:focus {
-                    &::placeholder {
-                        color: transparent;
-                    }
-                }
-            }
-            textarea.form-control {
-                height: auto !important;
-                padding-top: 18px;
-            }
-        }
-        .form-check {
-            color: var(--bodyColor);
-            margin: {
-                top: 5px;
-                bottom: 20px;
-            };
-            a {
-                color: var(--primaryColor);
-    
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-            .form-check-input {
-                margin-top: 0.12em;
-                box-shadow: unset !important;
-    
-                &[type=checkbox] {
-                    border-radius: 0;
-                }
-                &:checked {
-                    background-color: var(--primaryColor);
-                    border-color: var(--primaryColor);
-                }
-                &:focus {
-                    border-color: var(--primaryColor);
-                }
-            }
-        }
-        .default-btn {
-            margin-top: 5px;
-        }
-    }
-}
 
 /* Max width 767px */
 @media only screen and (max-width : 767px) {
@@ -462,85 +283,6 @@ blockquote, .blockquote {
             }
         }
     }
-    blockquote, .blockquote {
-        padding: 20px !important;
-        border-left-width: 2px;
-        margin: {
-            bottom: 25px;
-            top: 20px;
-        };
-        p {
-            font-size: 15px !important;
-        }
-        cite {
-            margin-top: 15px;
-        }
-    }
-    .comments-area {
-        margin-top: 25px;
-        padding-top: 25px;
-    
-        .comments-title {
-            font-size: 18px;
-            margin-bottom: 18px;
-        }
-        .children {
-            margin-left: 15px;
-        }
-        .comment-body {
-            margin-bottom: 18px;
-            padding: {
-                left: 0;
-                bottom: 18px;
-            };
-        }
-        .comment-author {
-            font-size: 15px;
-            margin-bottom: 7px;
-            
-            .avatar {
-                top: 0;
-                left: 0;
-                display: block;
-                position: relative;
-                margin-bottom: 12px;
-            }
-        }
-        .comment-metadata {
-            font-size: 14px;
-        }
-        .comment-respond {
-            margin-top: 25px;
-    
-            .comment-reply-title {
-                font-size: 18px;
-            }
-            .comment-notes {
-                margin: {
-                    bottom: 20px;
-                    top: 8px;
-                };
-            }
-            .form-group {
-                margin-bottom: 15px;
-        
-                .form-control {
-                    font-size: 14px;
-                    padding: {
-                        left: 12px;
-                        right: 12px;
-                    };
-                }
-                textarea.form-control {
-                    padding-top: 12px;
-                }
-            }
-            .default-btn {
-                margin-top: 0;
-            }
-        }
-    }
-
 }
 
 /* Min width 576px to Max width 767px */
@@ -564,46 +306,10 @@ blockquote, .blockquote {
 }
 
 /* Min width 768px to Max width 991px */
-@media only screen and (min-width : 768px) and (max-width : 991px) {
-
-    blockquote, .blockquote {
-        padding: 30px !important;
-    }
-    .comments-area {
-        .comments-title {
-            font-size: 20px;
-        }
-        .comment-respond {
-            margin-top: 30px;
-    
-            .comment-reply-title {
-                font-size: 20px;
-            }
-            .form-group {
-                .form-control {
-                    font-size: 15px;
-                    padding: {
-                        left: 15px;
-                        right: 15px;
-                    };
-                }
-                textarea.form-control {
-                    padding-top: 15px;
-                }
-            }
-        }
-    }
-
-}
+@media only screen and (min-width : 768px) and (max-width : 991px) {}
 
 /* Min width 992px to Max width 1199px */
-@media only screen and (min-width : 992px) and (max-width : 1199px) {
-
-    blockquote, .blockquote {
-        padding: 30px !important;
-    }
-
-}
+@media only screen and (min-width : 992px) and (max-width : 1199px) {}
 
 /* Min width 1200px to Max width 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {}

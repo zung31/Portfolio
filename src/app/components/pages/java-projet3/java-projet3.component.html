@@ -1,0 +1,106 @@
+<!-- Page Banner -->
+<div
+    class="page-banner-area ptb-100"
+    style="background-image: url(assets/images/shapes/page-banner-bg5.jpg);"
+>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-banner-content text-center">
+            <h1 style="color: #ffffff;">Serpent Game</h1>
+            <ul class="ps-0 mb-0 list-unstyled">
+                <li class="d-inline-block position-relative"><a routerLink="/java-projets">Java Projets</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">Serpent Game</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Details -->
+<div class="blog-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="blog-details-desc">
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/blog3.jpg" alt="blog-details" style="height: 400px;">
+                    </div>
+                    <h3>Serpent Game</h3>
+                    <div class="post-meta">
+                        <ul class="ps-0 list-unstyled mb-0">
+                            <li class="d-inline-block position-relative">
+                                <i class='bx bx-calendar'></i>
+                                2024
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        C'est l'un de mes projets Java. Cela m'a aidé à me familiariser avec des bibliothèques comme JFrame, Jpanel, me permettant d'afficher un simple écran de jeu de pomme mangeuse de serpent.
+                    </p>
+                    <h4>Comment contrôler le serpent?</h4>
+                    <p>
+                        Dans le programme, j'ai programmé un serpent coloré, d'une longueur par défaut de 6, dont la taille augmentera de 1 unité après avoir mangé une pomme. La pomme apparaîtra à un endroit aléatoire, après avoir été mangée, elle disparaîtra et apparaîtra à un autre endroit.
+                        <br>
+                        Au-dessus de l'écran se trouve Score pour mettre à jour le score actuel du joueur. Le jeu se terminera lorsque la tête du serpent entrera en collision avec le mur ou le corps du serpent.
+                        <br>
+                        En parallèle, j'ai également programmé le Key Adapter pour limiter les pas du joueur (par exemple, lorsque le serpent se déplace vers la droite, il ne peut pas aller vers la gauche).
+                        <br>
+                        Si vous voyez le serpent bouger trop vite, on peut ajuster la constante DELAY pour changer sa vitesse.
+                    </p>
+                    <h4>Avantages du projet</h4>
+                    <ul>
+                        <li>Le programme est également assez complet car il prend en compte tous les scénarios possibles</li>
+                        <li>On peut personnaliser le serpent à son intérêt</li>
+                    </ul>
+                    <h4>Conclusion</h4>
+                    <p>
+                        Pourtant, le programme est même que la version de base qui était crée depuis longtemps. J'espère pouvoir améliorer l'interface et rendre le programme plus intéressant à l'avenir.
+                    </p>
+                    <h4>Quelques images de ce projet</h4>
+                    
+                    <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-19.png" class="img-fluid rounded" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-19.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-20.png" class="img-fluid rounded" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-20.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-21.png" class="img-fluid rounded" alt="Image 3" (click)="openModal('assets/images/blogs/Screenshot-21.png')">
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
+
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img id="modalImage" src="" class="img-fluid" alt="Modal Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-footer d-flex align-items-center flex-wrap">
+                        <div class="article-share text-md-end">
+                            <ul class="social ps-0 mb-0 mt-0 list-unstyled">
+                                <li class="d-inline-block mb-0"><span class="fw-medium position-relative d-inline-block">Source code:</span></li>
+                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31?tab=repositories" class="github d-block rounded-circle text-center" target="_blank">
+                                    <i class='bx bxl-github'></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

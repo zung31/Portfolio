@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 declare var bootstrap: any;
 
 @Component({
-  selector: 'app-blog-details-page',
-  templateUrl: './blog-details-page.component.html',
-  styleUrls: ['./blog-details-page.component.scss']
+  selector: 'app-javaProjet5-page',
+  templateUrl: './java-projet5.component.html',
+  styleUrls: ['./java-projet5.component.scss']
 })
-export class BlogDetailsPageComponent {
+export class JavaProjet5Component {
   openModal(imageSrc: string) {
     const modalImage = document.getElementById('modalImage') as HTMLImageElement;
     modalImage.src = imageSrc;

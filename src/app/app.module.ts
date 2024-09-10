@@ -56,16 +56,6 @@ import { BlogWidgetComponent } from './components/common/blog-widget/blog-widget
 import { CoursesGridPageComponent } from './components/pages/courses-grid-page/courses-grid-page.component';
 import { CoursesListPageComponent } from './components/pages/courses-list-page/courses-list-page.component';
 import { CourseDetailsPageComponent } from './components/pages/course-details-page/course-details-page.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { EnrolledCoursesComponent } from './components/dashboard/enrolled-courses/enrolled-courses.component';
-import { WishlistComponent } from './components/dashboard/wishlist/wishlist.component';
-import { MyProfileComponent } from './components/dashboard/my-profile/my-profile.component';
-import { ActiveCoursesComponent } from './components/dashboard/active-courses/active-courses.component';
-import { ReviewsComponent } from './components/dashboard/reviews/reviews.component';
-import { CompletedCoursesComponent } from './components/dashboard/completed-courses/completed-courses.component';
-import { CartComponent } from './components/dashboard/cart/cart.component';
-import { OrdersListComponent } from './components/dashboard/orders-list/orders-list.component';
-import { EditProfileComponent } from './components/dashboard/edit-profile/edit-profile.component';
 import { InscriptionPageEtrangerComponent } from './components/pages/inscription-page-etranger/inscription-page-etranger.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ContactMapComponent } from './components/common/contact-map/contact-map.component';
@@ -80,6 +70,10 @@ import { CompetencesPageComponent } from './components/pages/competences-page/co
 import { LangueComponent } from './components/common/langues/langues.component';
 import { InformatiqueComponent } from './components/common/informatique/informatique.component';
 import { JavaPageComponent } from './components/pages/java-page/java-page.component';
+import { JavaProjet2Component } from './components/pages/java-projet2/java-projet2.component';
+import { JavaProjet3Component } from './components/pages/java-projet3/java-projet3.component';
+import { JavaProjet4Component } from './components/pages/java-projet4/java-projet4.component';
+import { JavaProjet5Component } from './components/pages/java-projet5/java-projet5.component';
 
 @NgModule({
     declarations: [
@@ -132,17 +126,7 @@ import { JavaPageComponent } from './components/pages/java-page/java-page.compon
         BlogWidgetComponent,
         CoursesGridPageComponent,
         CoursesListPageComponent,
-        CourseDetailsPageComponent,
-        DashboardComponent,
-        EnrolledCoursesComponent,
-        WishlistComponent,
-        MyProfileComponent,
-        ActiveCoursesComponent,
-        ReviewsComponent,
-        CompletedCoursesComponent,
-        CartComponent,
-        OrdersListComponent,
-        EditProfileComponent,    
+        CourseDetailsPageComponent,  
         ContactMapComponent,
         FeaturedBoxesComponent,
         FeaturedBoxes2Component,
@@ -150,7 +134,11 @@ import { JavaPageComponent } from './components/pages/java-page/java-page.compon
         CompetencesPageComponent,
         LangueComponent,
         InformatiqueComponent,
-        JavaPageComponent
+        JavaPageComponent,
+        JavaProjet2Component,
+        JavaProjet3Component,
+        JavaProjet4Component,
+        JavaProjet5Component
     ],
     imports: [
         BrowserModule,
