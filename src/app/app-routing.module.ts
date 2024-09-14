@@ -35,6 +35,15 @@ import { JavaProjet2Component } from './components/pages/java-projet2/java-proje
 import { JavaProjet3Component } from './components/pages/java-projet3/java-projet3.component';
 import { JavaProjet4Component } from './components/pages/java-projet4/java-projet4.component';
 import { JavaProjet5Component } from './components/pages/java-projet5/java-projet5.component';
+import { PythonPageComponent } from './components/pages/python-page/python-page.component';
+import { PythonProjet1Component } from './components/pages/python-projet1/python-projet1.component';
+import { PythonProjet2Component } from './components/pages/python-projet2/python-projet2.component';
+import { PythonProjet3Component } from './components/pages/python-projet3/python-projet3.component';
+import { LangWebComponent } from './components/pages/lang-web-page/lang-web.component';
+import { CPageComponent } from './components/pages/c-page/c-page.component';
+import { CProjet1Component } from './components/pages/c-projet1/c-projet1.component';
+import { CProjet2Component } from './components/pages/c-projet2/c-projet2.component';
+import { CProjet3Component } from './components/pages/c-projet3/c-projet.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoThreeComponent},
@@ -73,7 +82,16 @@ const routes: Routes = [
     {path: 'java-projet-3', component: JavaProjet3Component},
     {path: 'java-projet-4', component: JavaProjet4Component},
     {path: 'java-projet-5', component: JavaProjet5Component},
-    
+    {path: 'python-projets', component: PythonPageComponent},
+    {path: 'python-projet-1', component: PythonProjet1Component},
+    {path: 'python-projet-2', component: PythonProjet2Component},
+    {path: 'python-projet-3', component: PythonProjet3Component},
+    {path: 'lang-web', component: LangWebComponent},
+    {path: 'c-projets', component: CPageComponent},
+    {path: 'c-projet-1', component: CProjet1Component},
+    {path: 'c-projet-2', component: CProjet2Component},
+    {path: 'c-projet-3', component: CProjet3Component},
+
     {path: '**', component: NotFoundComponent} // This line will remain down from the whole pages component list
 ];
 

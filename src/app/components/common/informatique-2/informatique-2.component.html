@@ -1,0 +1,197 @@
+<div class="featured-boxes-area pt-100 pb-75"
+[ngClass]="{'d-none': router.url === '/index-3'}">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="container mt-5">
+                <div class="row no-gutters">
+                    <div class="col-lg-3 col-md-4 col-12 mb-3">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link" [ngClass]="{'active': selectedTab === 'CakeOrder'}" (click)="selectTab('CakeOrder')" id="v-pills-ide-tab" role="tab" aria-controls="v-pills-ide" aria-selected="true">Cake Order</a>
+                                <a class="nav-link" [ngClass]="{'active': selectedTab === 'ProductOf3'}" (click)="selectTab('ProductOf3')" id="v-pills-api-tab" role="tab" aria-controls="v-pills-api" aria-selected="false">Product Of 3</a>
+                                <a class="nav-link" [ngClass]="{'active': selectedTab === 'ChoosingCubes'}" (click)="selectTab('ChoosingCubes')" id="v-pills-sql-tab" role="tab" aria-controls="v-pills-sql" aria-selected="false">Choosing Cubes</a>
+                                <a class="nav-link" [ngClass]="{'active': selectedTab === 'Clock'}" (click)="selectTab('Clock')" id="v-pills-autres-tab" role="tab" aria-controls="v-pills-autres" aria-selected="false">Clock Conversion</a>
+                                <a class="nav-link" [ngClass]="{'active': selectedTab === 'Palindrome'}" (click)="selectTab('Palindrome')" id="v-pills-palindrome-tab" role="tab" aria-controls="v-pills-palindrome" aria-selected="false">Palindrome</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'CakeOrder'}" id="v-pills-ide" role="tabpanel" aria-labelledby="v-pills-ide-tab">
+                                <h2>Vérifier l'ordre de service gâteaux</h2>
+                                <p><strong>Sujet</strong>:
+                                    <br>
+                                    J'ai deux caisses : une pour les commandes à emporter et l'autre pour les autres clients qui mangent à l'intérieur du café. Toutes les commandes des clients sont regroupées dans une seule liste pour la cuisine, où elles doivent être traitées selon le principe du premier arrivé, premier servi.
+                                    <br>
+                                    Étant donné les trois listes (take_out_orders, dine_in_orders, served_orders), écrivez une fonction pour vérifier que mon service est le premier arrivé, premier servi. Tous les plats doivent être servis dans l'ordre demandé par les clients.
+                                </p>
+                                <p>
+                                    <strong>Solution</strong>:
+                                    <br>
+                                    J'aurai 2 variables pour suivre l'index des plats à emporter et des repas sur place et 2 variables pour la longueur de ces 2 chaînes. Après cela, je vais parcourir chaque élément de served_orders et le comparer avec les deux autres chaînes. Si l'élément est le même que l'élément d'index actuel du côté des plats à emporter, augmentez l'indice de plats à emporter de 1, même travail pour dîner sur place. Si ce n’est pas les deux, cela retournera false. 
+                                    <br>
+                                    De plus, après la boucle, si l'index des deux chaînes take out et dine in n'est toujours pas égal à la longueur de la chaîne, renvoie false car l'ordre est manquant.
+                                
+                                </p>
+                                <pre><code>
+def is_first_come_first_served(take_out_orders, dine_in_orders, served_orders):
+    take_out_orders_index = 0
+    dine_in_orders_index = 0
+    take_out_orders_max_index = len(take_out_orders) - 1
+    dine_in_orders_max_index = len(dine_in_orders) - 1
+
+    for order in served_orders:
+        if take_out_orders_index <= take_out_orders_max_index and order == take_out_orders[take_out_orders_index]:
+            take_out_orders_index += 1
+
+        elif dine_in_orders_index <= dine_in_orders_max_index and order == dine_in_orders[dine_in_orders_index]:
+            dine_in_orders_index += 1
+
+        else:
+            return False
+                                
+    if dine_in_orders_index != len(dine_in_orders) or take_out_orders_index != len(take_out_orders):
+        return False
+
+    return True
+                                
+# main
+TakeOutOrders = [17, 8, 24]
+DineInOrders = [12, 19, 2]
+ServedOrders = [17, 8, 12, 19, 24, 2]
+print(is_first_come_first_served(TakeOutOrders, DineInOrders, ServedOrders))  
+                                </code></pre>
+                            </div>
+                            <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'ProductOf3'}" id="v-pills-api" role="tabpanel" aria-labelledby="v-pills-api-tab">
+                                <h2>Produit le plus élevé de 3 nombres</h2>
+                                <p><strong>Sujet</strong>:
+                                    <br>
+                                    Étant donné une liste d'entiers (négatifs et positifs) (la longueur peut aller jusqu'à 100,..). Trouver la combinaison de 3 nombres dont le produit est le plus grand.
+                                </p>
+                                <p>
+                                    <strong>Solution</strong>:
+                                    <br>
+                                    La chose évidente qui vient à l’esprit en premier est de créer des boucles et de compter tous les cas. Mais bien sûr, le programme a dépassé son temps. Ensuite j'ai essayé de trouver les 3 plus grands nombres de la séquence, mais ce n'était pas satisfaisant car il y avait aussi des entiers négatifs :). 
+                                    <br>
+                                    Menant à l’approche finale, je décortique le problème. Au lieu de simplement trouver le produit le plus grand de 3 nombres, je trouverai le produit le plus grand (petit) de 2 nombres, le plus grand et le plus petit nombre. Je vais l'exécuter en boucle à partir de l'index 2 (les 2 premiers éléments sont utilisés comme valeurs par défaut des variables).
+                                
+                                </p>
+                                <pre><code>
+def highestProductOf3(list):
+if len(list) < 3:
+    raise ValueError('Less than 3 items!')
+highest = max(list[0], list[1]) 
+lowest = min(list[0], list[1]) 
+highestProductOf2 = list[0] * list[1] 
+lowestProductOf2 = list[0] * list[1] 
+highestProductOf3 = list[0] * list[1] * list[2] 
+for i in range(2, len(list)): 
+    current = list[i]
+    highestProductOf3 = max(highestProductOf3, current * highestProductOf2, current * lowestProductOf2)
+    highestProductOf2 = max(highestProductOf2, current * highest, current * lowest)
+    lowestProductOf2 = min(lowestProductOf2, current * highest, current * lowest)
+    highest = max(highest, current)
+    lowest = min(lowest, current)
+print(highestProductOf3)
+
+list = [1,10,-5,1,-100]
+highestProductOf3(list)
+                                </code></pre>
+                            </div>
+                            <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'ChoosingCubes'}" id="v-pills-sql" role="tabpanel" aria-labelledby="v-pills-sql-tab">
+                                <h2>Problème des cubes de Dmitry</h2>
+                                <p><strong>Sujet</strong>:
+                                    <br>
+                                    <a href="https://codeforces.com/contest/1980/problem/B">Choosing Cubes Problem</a>
+                                </p>
+                                <p>
+                                    <strong>Solution</strong>:
+                                    <br>
+                                    C'est un problème assez simple. J'ai juste besoin d'identifier le cube préféré (favCube) depuis le début avant de trier. Après tri, l'index des éléments sera stocké avec favCube dans une liste. Et j'ai juste besoin de parcourir cette liste, en la comparant avec k (les k premiers cubes supprimés) pour obtenir le résultat.
+                                </p>
+                                <pre><code>
+t = int(input())
+for _ in range(t):
+    notRemove = 0
+    remove = 0
+    n, f, k = map(int, input().split())
+    a = list(map(int, input().split()))
+    favCubes = a[f-1]
+    a.sort(reverse=True)
+    indices = [i for i, x in enumerate(a) if x == favCubes] #all index
+    for _ in indices:
+        if _ > k-1:
+            notRemove += 1
+        elif _ <= k-1:
+            remove += 1
+    if(notRemove != 0 and remove != 0):
+        print("MAYBE")
+    elif(notRemove == 0 and remove != 0):
+        print("YES")
+    else:
+        print("NO")
+                                </code></pre>
+                            </div>
+                            <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'Clock'}" id="v-pills-autres" role="tabpanel" aria-labelledby="v-pills-autres-tab">
+                                <h2>Problème de conversion d'horloge</h2>
+                                <p><strong>Sujet</strong>:
+                                    <br>
+                                    <a href="https://codeforces.com/contest/1950/problem/C">Conversion d'horloge</a>
+                                </p>
+                                <p>
+                                    <strong>Solution</strong>:
+                                    <br>
+                                    En plus des choses évidentes dans la conversion, il y a des choses auxquelles il faut faire attention comme la différence entre midi et minuit, sous la forme HH:MM, etc.
+                                </p>
+                                <pre><code>
+t = int(input())
+for _ in range(t):
+    s = input()
+    hour = int(s[0:2])
+    if hour > 12:
+        hour -= 12
+        s = str(hour).zfill(2) + s[2:] + " PM" 
+    elif hour == 12:
+        s += " PM"
+    elif hour == 0:
+        hour += 12
+        s = str(hour).zfill(2) + s[2:] + " AM"
+    else:
+        s += " AM"
+    print(s)
+                                </code></pre>
+                            </div>
+                            <div class="tab-pane fade" [ngClass]="{'show active': selectedTab === 'Palindrome'}" id="v-pills-palindrome" role="tabpanel" aria-labelledby="v-pills-palindrome-tab">
+                                <h2>Vérification Palindrome</h2>
+                                <p><strong>Sujet</strong>:
+                                    <br>
+                                    Écrivez une fonction efficace qui vérifie si une permutation d'une chaîne d'entrée est un palindrome.
+                                </p>
+                                <p>
+                                    <strong>Solution</strong>:
+                                    <br>
+                                    La particularité ici est que la corde est reconnue comme palindrome si sa permutation est un palindrome. Je vais donc vérifier les paires identiques et les supprimer si la longueur restante <=1 alors je retournerai vrai.
+                                </p>
+                                <pre><code>
+def has_palindrome_permutation(the_string): 
+    unpaired_characters = set()
+
+    for char in the_string:
+        if char in unpaired_characters:
+            unpaired_characters.remove(char)
+        else:
+            unpaired_characters.add(char)
+
+    return len(unpaired_characters) <= 1
+
+string = input("Enter a word: ")
+print("Palindrome: ",has_palindrome_permutation(string))
+                                </code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

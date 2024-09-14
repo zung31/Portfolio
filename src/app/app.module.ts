@@ -74,6 +74,16 @@ import { JavaProjet2Component } from './components/pages/java-projet2/java-proje
 import { JavaProjet3Component } from './components/pages/java-projet3/java-projet3.component';
 import { JavaProjet4Component } from './components/pages/java-projet4/java-projet4.component';
 import { JavaProjet5Component } from './components/pages/java-projet5/java-projet5.component';
+import { PythonPageComponent } from './components/pages/python-page/python-page.component';
+import { PythonProjet1Component } from './components/pages/python-projet1/python-projet1.component';
+import { PythonProjet2Component } from './components/pages/python-projet2/python-projet2.component';
+import { PythonProjet3Component } from './components/pages/python-projet3/python-projet3.component';
+import { Informatique2Component } from './components/common/informatique-2/informatique-2.component';
+import { LangWebComponent } from './components/pages/lang-web-page/lang-web.component';
+import { CPageComponent } from './components/pages/c-page/c-page.component';
+import { CProjet1Component } from './components/pages/c-projet1/c-projet1.component';
+import { CProjet2Component } from './components/pages/c-projet2/c-projet2.component';
+import { CProjet3Component } from './components/pages/c-projet3/c-projet.component';
 
 @NgModule({
     declarations: [
@@ -138,7 +148,17 @@ import { JavaProjet5Component } from './components/pages/java-projet5/java-proje
         JavaProjet2Component,
         JavaProjet3Component,
         JavaProjet4Component,
-        JavaProjet5Component
+        JavaProjet5Component,
+        PythonPageComponent,
+        PythonProjet1Component,
+        PythonProjet2Component,
+        PythonProjet3Component,
+        Informatique2Component,
+        LangWebComponent,
+        CPageComponent,
+        CProjet1Component,
+        CProjet2Component,
+        CProjet3Component
     ],
     imports: [
         BrowserModule,

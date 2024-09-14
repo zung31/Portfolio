@@ -1,0 +1,130 @@
+<!-- Page Banner -->
+<div
+    class="page-banner-area ptb-100"
+    style="background-image: url(assets/images/shapes/page-banner-bg8.jpg);"
+>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-banner-content text-center">
+            <h1 style="color: #ffffff;">Contact Management System</h1>
+            <ul class="ps-0 mb-0 list-unstyled">
+                <li class="d-inline-block position-relative"><a routerLink="/c-projets">C Projets</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">Contact Management System</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Details -->
+<div class="blog-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="blog-details-desc">
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/blog10.png" alt="blog-details" style="height: 400px;">
+                    </div>
+                    <h3>Contact Management System</h3>
+                    <div class="post-meta">
+                        <ul class="ps-0 list-unstyled mb-0">
+                            <li class="d-inline-block position-relative">
+                                <i class='bx bx-calendar'></i>
+                                2024
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Ce projet est mon projet C++, travaillant avec des fichiers et créant des menus.
+                        <br>
+                        Mon programme affichera initialement un écran "Bienvenue dans le système de gestion des contacts", puis accédera au menu une fois que l'utilisateur appuie sur une touche.
+                        <br>
+                        Les utilisateurs pourront choisir entre 6 options : ajouter un nouveau contact, lister les contacts, rechercher des contacts, supprimer des contacts, modifier des contacts, quitter le programme. Après avoir terminé la tâche, l'utilisateur peut choisir de continuer à utiliser le programme et d'afficher à nouveau le menu, ou choisir de quitter et l'écran affichera « Merci d'utiliser CMS ».
+                    </p>
+                    <h4>Conclusion</h4>
+                    <p>
+                        Bien que l'interface soit moyenne, le programme fait bien son travail. Le programme m'a également aidé à me familiariser avec la syntaxe du C++.
+                    </p>
+                    <h4>Quelques images de ce projet</h4>
+                    
+                    <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-43.png" class="img-fluid rounded" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-43.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-44.png" class="img-fluid rounded" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-44.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-45.png" class="img-fluid rounded" alt="Image 3" (click)="openModal('assets/images/blogs/Screenshot-45.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-46.png" class="img-fluid rounded" alt="Image 4" (click)="openModal('assets/images/blogs/Screenshot-46.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-47.png" class="img-fluid rounded" alt="Image 5" (click)="openModal('assets/images/blogs/Screenshot-47.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-48.png" class="img-fluid rounded" alt="Image 6" (click)="openModal('assets/images/blogs/Screenshot-48.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-49.png" class="img-fluid rounded" alt="Image 7" (click)="openModal('assets/images/blogs/Screenshot-49.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-50.png" class="img-fluid rounded" alt="Image 8" (click)="openModal('assets/images/blogs/Screenshot-50.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-51.png" class="img-fluid rounded" alt="Image 9" (click)="openModal('assets/images/blogs/Screenshot-51.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-52.png" class="img-fluid rounded" alt="Image 10" (click)="openModal('assets/images/blogs/Screenshot-52.png')">
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
+
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img id="modalImage" src="" class="img-fluid" alt="Modal Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-footer d-flex align-items-center flex-wrap">
+                        <div class="article-share text-md-end">
+                            <ul class="social ps-0 mb-0 mt-0 list-unstyled">
+                                <li class="d-inline-block mb-0"><span class="fw-medium position-relative d-inline-block">Source code:</span></li>
+                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31?tab=repositories" class="github d-block rounded-circle text-center" target="_blank">
+                                    <i class='bx bxl-github'></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

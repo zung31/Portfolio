@@ -1,0 +1,100 @@
+<!-- Page Banner -->
+<div
+    class="page-banner-area ptb-100"
+    style="background-image: url(assets/images/shapes/page-banner-bg6.jpg);"
+>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-banner-content text-center">
+            <h1 style="color: #ffffff;">Turtle Race Illustration</h1>
+            <ul class="ps-0 mb-0 list-unstyled">
+                <li class="d-inline-block position-relative"><a routerLink="/python-projets">Python Projets</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">Turtle Race Illustration</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Details -->
+<div class="blog-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="blog-details-desc">
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/blog7.png" alt="blog-details" style="height: 400px;">
+                    </div>
+                    <h3>Turtle Race Illustration</h3>
+                    <div class="post-meta">
+                        <ul class="ps-0 list-unstyled mb-0">
+                            <li class="d-inline-block position-relative">
+                                <i class='bx bx-calendar'></i>
+                                2024
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        C'est l'un de mes projets pour me familiariser avec la bibliothèque Turtle. J'ai créé une interface simple où l'utilisateur peut choisir le nombre de tortues en course.
+                        <br>
+                        Ensuite, les tortues seront soigneusement disposées et régulièrement espacées en bas de l'écran. Chaque tortue sera déplacée d'un nombre aléatoire de pas. Essayez de deviner quelle couleur atteindra la ligne d'arrivée en premier !
+                        <br>
+                        J'ai appris à tracer des trajectoires de mouvement, à me déplacer dans Turtle et à calculer la position en fonction de la taille de l'écran.
+                    </p>
+                    <h4>Conclusion</h4>
+                    <p>
+                        Grâce à ce programme, j'ai appris à tracer des trajectoires de mouvement, à me déplacer dans Turtle et à calculer la position en fonction de la taille de l'écran.
+                    </p>
+                    <h4>Quelques images de ce projet</h4>
+                    
+                    <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-32.png" class="img-fluid rounded" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-32.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-28.png" class="img-fluid rounded" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-28.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-30.png" class="img-fluid rounded" alt="Image 3" (click)="openModal('assets/images/blogs/Screenshot-30.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-31.png" class="img-fluid rounded" alt="Image 3" (click)="openModal('assets/images/blogs/Screenshot-31.png')">
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
+
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img id="modalImage" src="" class="img-fluid" alt="Modal Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-footer d-flex align-items-center flex-wrap">
+                        <div class="article-share text-md-end">
+                            <ul class="social ps-0 mb-0 mt-0 list-unstyled">
+                                <li class="d-inline-block mb-0"><span class="fw-medium position-relative d-inline-block">Source code:</span></li>
+                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31?tab=repositories" class="github d-block rounded-circle text-center" target="_blank">
+                                    <i class='bx bxl-github'></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

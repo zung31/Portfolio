@@ -7,6 +7,14 @@
     background: var(--secondaryColor) !important; /*active and on hover color*/
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+
 .page-banner-area{
     position: relative;
     overflow: hidden;
