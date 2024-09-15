@@ -1,0 +1,14 @@
+@import '../java-projet5/java-projet5.component.scss';
+pre {
+    background-color: #f5f5f5; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    padding: 16px; 
+    overflow: auto; 
+    text-align: left;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 14px; 
+}

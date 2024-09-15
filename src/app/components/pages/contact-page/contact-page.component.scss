@@ -1,57 +1,26 @@
-.contact-info {
-    .box {
-        padding: 55px 40px 55px 165px;
-        background-color: #f7f7f7;
-        margin-bottom: 25px;
+.page-banner-area{
+    position: relative;
+    overflow: hidden;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1;
+    }
+
+    .container {
         position: relative;
-
-        .icon {
-            top: 50%;
-            left: 40px;
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            text-align: center;
-            border-radius: 5px;
-            transform: translateY(-50%);
-            background-color: var(--whiteColor);
-            box-shadow: 0px 0px 30px rgba(255, 64, 87, 0.06);
-
-            img {
-                left: 0;
-                right: 0;
-                top: 50%;
-                position: absolute;
-                transform: translateY(-50%);
-                margin: {
-                    left: auto;
-                    right: auto;
-                };
-            }
-        }
-        h3 {
-            font-size: 22px;
-            margin-bottom: 12px;
-        }
-        span {
-            margin-bottom: 5px;
-            color: var(--bodyColor);
-
-            a {
-                color: var(--bodyColor);
-
-                &:hover {
-                    color: var(--primaryColor);
-                }
-            }
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
+        z-index: 2; 
     }
 }
+
 .contact-form {
-    background-color: #f7f7f7;
+    //background-color: #f7f7f7;
+    background-color: #fff;
     margin-bottom: 25px;
     border-radius: 5px;
     padding: 45px;
@@ -73,6 +42,7 @@
                 transition: var(--transition);
                 background-color: var(--whiteColor);
                 border: 1px solid rgba(0, 0, 0, 0.08);
+                border-radius: 10px;
 
                 &::placeholder {
                     color: var(--bodyColor);
@@ -96,15 +66,13 @@
                 top: 14px;
                 bottom: 14px;
             };
+            display: inline-block;
+            width: 200px !important;
         }
-    }
-}
-.contact-map {
-    iframe {
-        margin-bottom: -8px;
-        height: 600px;
-        width: 100%;
-        border: 0;
+        button:disabled {
+            background-color: #cccccc;
+            color: #666666;
+        }
     }
 }
 

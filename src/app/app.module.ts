@@ -84,6 +84,15 @@ import { CPageComponent } from './components/pages/c-page/c-page.component';
 import { CProjet1Component } from './components/pages/c-projet1/c-projet1.component';
 import { CProjet2Component } from './components/pages/c-projet2/c-projet2.component';
 import { CProjet3Component } from './components/pages/c-projet3/c-projet.component';
+import { LindoComponent } from './components/pages/lindo/lindo.component';
+import { SqlPageComponent } from './components/pages/sql-page/sql-page.component';
+import { SqlProjet1Component } from './components/pages/sql-projet1/sql-projet1.component';
+import { SqlProjet2Component } from './components/pages/sql-projet2/sql-projet2.component';
+import { MatlabComponent } from './components/pages/matlab-page/matlab.component';
+import { MatlabProjet1Component } from './components/pages/matlab-projet1/matlab-projet1.component';
+import { MatlabProjet2Component } from './components/pages/matlab-projet2/matlab-projet2.component';
+import { EtudesComponent } from './components/pages/etudes-page/etudes.component';
+import { MetiersComponent } from './components/pages/metiers-page/metiers.component';
 
 @NgModule({
     declarations: [
@@ -158,7 +167,16 @@ import { CProjet3Component } from './components/pages/c-projet3/c-projet.compone
         CPageComponent,
         CProjet1Component,
         CProjet2Component,
-        CProjet3Component
+        CProjet3Component,
+        LindoComponent,
+        SqlPageComponent,
+        SqlProjet1Component,
+        SqlProjet2Component,
+        MatlabComponent,
+        MatlabProjet1Component,
+        MatlabProjet2Component,
+        EtudesComponent,
+        MetiersComponent
     ],
     imports: [
         BrowserModule,

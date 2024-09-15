@@ -109,17 +109,17 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="assets/public/Formation-Adulte-LSF-A1-version-12.01.2023.pdf" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        <a routerLink="/lindo" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                                             LINDO
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="assets/public/LSF-seconde-langue-version-01.09.2023.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        <a routerLink="/sql-projets" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                                             Database SQL
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a routerLink="/inscription-etranger" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                        <a routerLink="/matlab-projets" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                                             Matlab
                                         </a>
                                     </li>
@@ -134,12 +134,12 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a href="https://www.demarches-simplifiees.fr/commencer/acoumpagna-recrutement-aesh-13" (click)="collapseNavbar()" class="nav-link" target="_blank">
+                                <a routerLink="/etudes" (click)="collapseNavbar()" class="nav-link">
                                     Études
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://www.urapeda-sud.org/" (click)="collapseNavbar()" class="nav-link" target="_blank">
+                                <a routerLink="/metiers" (click)="collapseNavbar()" class="nav-link">
                                     Métiers
                                 </a>
                             </li>
@@ -244,17 +244,17 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="assets/public/Formation-Collective-Adulte-de-LSF-Langue-Premiere-Langue-des-Signes-Francaise-Langue-Etrangere-A1-version-12.01.2023-.pdf" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        <a routerLink="/lindo" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
                                             LINDO 
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="assets/public/Fiche-technique-LSF-seconde-langue-version-01.09.2023.pdf" (click)="collapseNavbar()" target="_blank" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        <a routerLink="/sql-projets" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
                                             Database SQL
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a routerLink="/inscription-etranger" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                        <a routerLink="/matlab-projets" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
                                             Matlab
                                         </a>
                                     </li>
@@ -269,12 +269,12 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a href="https://www.demarches-simplifiees.fr/commencer/acoumpagna-recrutement-aesh-13" (click)="collapseNavbar()" class="nav-link" target="_blank" (click)="toggleClass()">
+                                <a routerLink="/etudes" (click)="collapseNavbar()" class="nav-link" (click)="toggleClass()">
                                     Études
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="https://www.urapeda-sud.org/" (click)="collapseNavbar()" class="nav-link" target="_blank" (click)="toggleClass()">
+                                <a routerLink="/metiers" (click)="collapseNavbar()" class="nav-link" (click)="toggleClass()">
                                     Métiers
                                 </a>
                             </li>
@@ -285,7 +285,7 @@
                 
                 <div class="others-option d-flex align-items-center">
                     <div class="option-item">
-                        <a href="https://www.helloasso.com/associations/langue-des-signes-francaise-mediterraneen/formulaires/1/widget" target="_blank" class="default-btn two">Contactez moi</a>
+                        <a routerLink="/contact" class="default-btn two">Contactez moi</a>
                     </div>
                 </div>
             </div>

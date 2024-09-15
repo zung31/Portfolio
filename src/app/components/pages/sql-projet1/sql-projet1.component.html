@@ -1,0 +1,142 @@
+<!-- Page Banner -->
+<div
+    class="page-banner-area ptb-100"
+    style="background-image: url(assets/images/shapes/page-banner-bg10.jpg);"
+>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-banner-content text-center">
+            <h1 style="color: #ffffff;">Cookie Database</h1>
+            <ul class="ps-0 mb-0 list-unstyled">
+                <li class="d-inline-block position-relative"><a routerLink="/sql-projets">SQL Projets</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">Cookie Database</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Details -->
+<div class="blog-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="blog-details-desc">
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/blog12.png" alt="blog-details" style="height: 400px;">
+                    </div>
+                    <h3>Cookie Database</h3>
+                    <div class="post-meta">
+                        <ul class="ps-0 list-unstyled mb-0">
+                            <li class="d-inline-block position-relative">
+                                <i class='bx bx-calendar'></i>
+                                2024
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        La base de données des cookies est basée sur le cycle de gestion des commandes, des matières premières et des employés.
+La base de données peut nous indiquer quels articles sont vendus dans le magasin, les ingrédients, le stock et comment les équipes sont réparties.
+Puisqu'il s'agit simplement d'un projet personnel, les valeurs sont relatives et peuvent ne pas être proches du prix réel.
+                    </p>
+                    <h4>Structure de DB</h4>
+                    <p>
+                        Je fais la structure de la DB sur le site QUICKDBD. Ensuite, j'ai exporté le fichier SQL et inséré du code dans MySQL WB pour créer des tables et des relations plus rapidement.
+                    </p>
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/Screenshot-55.jpg" class="img-fluid rounded" style="height: 400px;" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-55.jpg')">
+                    </div>
+                    <p>
+                        Ma base de données compose de 10 tables: order, adress, customer,  items, recipe, ingredient, inventory, rota, shift, staff.
+                        J'ai fait un file .xlsx et exporter en CSV file pour importer directement les données des tables.
+                        Je vais laiser un lien ici si vous voulez voir le contenu des tables: <a href="https://uphffr-my.sharepoint.com/:x:/g/personal/hoangdung_dang_uphf_fr/EaO-VhT7Ta5Dr7SGGcAr4-ABzryLK6BlzJ3YeEA6Du85PQ?e=w9eVNb">cookie table data</a>
+                    </p>
+                    <h4>Requêtes</h4>
+                    <p><u>Lister les FK de Database</u></p>
+                    <pre><code>
+SELECT 
+    TABLE_NAME,
+    COLUMN_NAME,
+    CONSTRAINT_NAME,
+    REFERENCED_TABLE_NAME,
+    REFERENCED_COLUMN_NAME
+FROM
+    INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE
+    REFERENCED_TABLE_SCHEMA = 'cookie' AND
+    REFERENCED_TABLE_NAME IS NOT NULL;
+                    </code></pre>
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/Screenshot-56.jpg" class="img-fluid rounded" style="height: 100px;" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-56.jpg')">
+                    </div>
+                    <p><u>Lister les ingrédients besoin de refill à la fin de journée</u></p>
+                    <p>1. Créer temporaire table ayant les items orders</p>
+                    <pre><code>
+CREATE TEMPORARY TABLE query1 AS
+SELECT 
+    cookie.items.item_id, 
+    SUM(cookie.order.quantity) AS total_quantity
+FROM 
+    cookie.order
+RIGHT JOIN 
+    cookie.items ON cookie.order.item_id = cookie.items.item_id
+WHERE 
+    cookie.order.order_id IS NOT NULL
+GROUP BY 
+    cookie.items.item_id;
+                    </code></pre>
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/Screenshot-57.jpg" class="img-fluid rounded" style="height: 300px;" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-57.jpg')">
+                    </div>
+                    <p>2. Créer temporaire table ayant les ingredients utilisés et les quantités</p>
+                    <pre><code>
+create temporary table query2 as
+select cookie.recipe.ing_id, sum(cookie.recipe.quantity * cookie.query1.total_quantity) as total_consume
+from cookie.recipe
+right join cookie.items right join cookie.query1 on cookie.items.item_id = cookie.query1.item_id on cookie.recipe.recipe_id = cookie.items.sku
+where cookie.query1.item_id is not null
+group by cookie.recipe.ing_id
+order by cookie.recipe.ing_id asc;
+                    </code></pre>
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/Screenshot-58.jpg" class="img-fluid rounded" style="height: 300px;" alt="Image 3" (click)="openModal('assets/images/blogs/Screenshot-58.jpg')">
+                    </div>
+                    <p>3. Update table inventory et Ajouter le colum "Refill" pour afficher l'état</p>
+                    <pre><code>
+UPDATE cookie.inventory JOIN query3 ON 
+cookie.inventory.ing_id = query3.ing_id SET cookie.inventory.quantity = cookie.inventory.quantity - query3.total_consume;
+
+ALTER TABLE cookie.inventory ADD COLUMN refill CHAR(1); 
+UPDATE cookie.inventory SET refill = CASE WHEN quantity <= 50 THEN 'Y' ELSE 'N' END;
+                    </code></pre>
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/Screenshot-59.jpg" class="img-fluid rounded" style="height: 300px;" alt="Image 4" (click)="openModal('assets/images/blogs/Screenshot-59.jpg')">
+                    </div>
+                    <p>4. Prix pour restock</p>
+                    <pre><code>
+UPDATE cookie.inventory JOIN query3 ON 
+cookie.inventory.ing_id = query3.ing_id SET cookie.inventory.quantity = cookie.inventory.quantity - query3.total_consume;
+
+ALTER TABLE cookie.inventory ADD COLUMN refill CHAR(1); 
+UPDATE cookie.inventory SET refill = CASE WHEN quantity <= 50 THEN 'Y' ELSE 'N' END;
+                    </code></pre>
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/Screenshot-60.jpg" class="img-fluid rounded" style="height: 100px;" alt="Image 5" (click)="openModal('assets/images/blogs/Screenshot-60.jpg')">
+                    </div>
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img id="modalImage" src="" class="img-fluid" alt="Modal Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

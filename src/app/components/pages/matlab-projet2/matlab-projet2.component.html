@@ -1,0 +1,92 @@
+<!-- Page Banner -->
+<div
+    class="page-banner-area ptb-100"
+    style="background-image: url(assets/images/shapes/page-banner-bg11.jpg);"
+>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-banner-content text-center">
+            <h1 style="color: #ffffff;">Simulink</h1>
+            <ul class="ps-0 mb-0 list-unstyled">
+                <li class="d-inline-block position-relative"><a routerLink="/matlab-projets">Matlab Projets</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">Simulink</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Details -->
+<div class="blog-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="blog-details-desc">
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/blog14.png" alt="blog-details" style="height: 400px;">
+                    </div>
+                    <h3>Simulink</h3>
+                    <div class="post-meta">
+                        <ul class="ps-0 list-unstyled mb-0">
+                            <li class="d-inline-block position-relative">
+                                <i class='bx bx-calendar'></i>
+                                2024
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        Simulink est un outil puissant intégré à MATLAB, spécialisé pour la simulation, la modélisation et la conception de systèmes dynamiques. Il fournit un environnement graphique qui permet aux utilisateurs de simuler des systèmes complexes en connectant des blocs entre eux au lieu d'écrire du code.
+                        <br>
+                        L'une des applications les plus populaires de Simulink est la conception et le test de contrôleurs. On peut simuler des systèmes de contrôle par rétroaction tels que des contrôleurs PID, un contrôle de modèle prédictif et tester la réponse du système à différentes entrées.
+                    </p>
+                    <h4>Quelques sujets sur lesquels j'ai travaillé</h4>
+                    <ul>
+                        <li><a routerLink="assets/public/TP_Matlab_robot_mobile_L2" target="blank">Animation Robot</a></li>
+                        <li><a routerLink="assets/public/TP_L2_montgolfière" target="blank">Montgolfière</a></li>
+                    </ul>
+                    <h4>Quelques pièces de programmes</h4>
+                    <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-78.png" class="img-fluid rounded" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-78.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-79.png" class="img-fluid rounded" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-79.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-80.png" class="img-fluid rounded" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-80.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-81.png" class="img-fluid rounded" alt="Image 3" (click)="openModal('assets/images/blogs/Screenshot-81.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-82.png" class="img-fluid rounded" alt="Image 4" (click)="openModal('assets/images/blogs/Screenshot-82.png')">
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
+                    
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img id="modalImage" src="" class="img-fluid" alt="Modal Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

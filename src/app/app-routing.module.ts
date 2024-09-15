@@ -44,6 +44,15 @@ import { CPageComponent } from './components/pages/c-page/c-page.component';
 import { CProjet1Component } from './components/pages/c-projet1/c-projet1.component';
 import { CProjet2Component } from './components/pages/c-projet2/c-projet2.component';
 import { CProjet3Component } from './components/pages/c-projet3/c-projet.component';
+import { LindoComponent } from './components/pages/lindo/lindo.component';
+import { SqlPageComponent } from './components/pages/sql-page/sql-page.component';
+import { SqlProjet1Component } from './components/pages/sql-projet1/sql-projet1.component';
+import { SqlProjet2Component } from './components/pages/sql-projet2/sql-projet2.component';
+import { MatlabComponent } from './components/pages/matlab-page/matlab.component';
+import { MatlabProjet1Component } from './components/pages/matlab-projet1/matlab-projet1.component';
+import { MatlabProjet2Component } from './components/pages/matlab-projet2/matlab-projet2.component';
+import { EtudesComponent } from './components/pages/etudes-page/etudes.component';
+import { MetiersComponent } from './components/pages/metiers-page/metiers.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoThreeComponent},
@@ -70,7 +79,7 @@ const routes: Routes = [
     {path: 'blog-grid', component: BlogGridPageComponent},
     // {path: 'blog-right-sidebar', component: BlogRightSidebarPageComponent},
     {path: 'java-projet-1', component: BlogDetailsPageComponent},
-    // {path: 'contact', component: ContactPageComponent},
+    {path: 'contact', component: ContactPageComponent},
     {path: 'accessbilite', component: AccessbilitePageComponent},
     {path: 'nos-sites-intervention', component: NosSitesInterventionPageComponent},
     {path: 'competences', component: CompetencesPageComponent},
@@ -91,7 +100,15 @@ const routes: Routes = [
     {path: 'c-projet-1', component: CProjet1Component},
     {path: 'c-projet-2', component: CProjet2Component},
     {path: 'c-projet-3', component: CProjet3Component},
-
+    {path: 'lindo', component: LindoComponent},
+    {path: 'sql-projets', component: SqlPageComponent},
+    {path: 'sql-projet-1', component: SqlProjet1Component},
+    {path: 'sql-projet-2', component: SqlProjet2Component},
+    {path: 'matlab-projets', component: MatlabComponent},
+    {path: 'mathlab-projet-1', component: MatlabProjet1Component},
+    {path: 'matlab-projet-2', component: MatlabProjet2Component},
+    {path: 'etudes', component: EtudesComponent},
+    {path: 'metiers', component: MetiersComponent},
     {path: '**', component: NotFoundComponent} // This line will remain down from the whole pages component list
 ];
 

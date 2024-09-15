@@ -1,0 +1,79 @@
+<!-- Page Banner -->
+<div
+    class="page-banner-area ptb-100"
+    style="background-image: url(assets/images/shapes/page-banner-bg9.jpg);"
+>
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="page-banner-content text-center">
+            <h1 style="color: #ffffff;">Lindo</h1>
+            <ul class="ps-0 mb-0 list-unstyled">
+                <li class="d-inline-block position-relative"><a routerLink="/">Home</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">Lindo</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Blog Details -->
+<div class="blog-details-area ptb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="blog-details-desc">
+                    <h3>Programmation linéaire</h3>
+                    <div class="post-meta">
+                        <ul class="ps-0 list-unstyled mb-0">
+                            <li class="d-inline-block position-relative">
+                                <i class='bx bx-calendar'></i>
+                                2024
+                            </li>
+                        </ul>
+                    </div>
+                    <p>
+                        J'utiliserai le logiciel Lindo pour trouver le meilleur moyen d'obtenir le plus grand profit en convertissant les exigences en contraintes et en exécutant le programme.
+                        <br>
+                        De l'optimisation des coûts de production à l'optimisation des profits jusqu'à la satisfaction des conditions des employés, avec la bonne programmation, Lindo produira des résultats.
+                        <br>
+                        Je laisse ici un sujet qui représente le problème.
+                    </p>
+                    <h4>Sujet</h4>
+                    <p>
+                        Une usine de vélos souhaite élaborer un plan de production pour la nouvelle année. L'année dernière, l'usine disposait de 2 000 vélos en stock. Il est prévu que l'usine vende le nombre de vélos (unité : mille) chaque mois sur la base des données ci-dessous : Janvier (30), Fevrier(15), Mars(15), Avril(25), Mai(33), Juin(40), Juillet(45), Aout(45), Septembre(26), Octobre(14), Novembre(25), Décembre(30). 
+                        <br>
+                        L'usine peut produire un maximum de 30 000 vélos chaque mois. De plus, le salaire du salarié pour chaque produit fabriqué est de 20e, s'il travaille en complément (le nombre de vélos dépasse 30k) est de 25e. De plus, il existe également une autre option qui est le stock, avec un cours de bourse de 4e/vélo/mois. Calculez le coût minimum par mois pour répondre aux exigences de l'usine.
+                    </p>
+                    <h4>Solution</h4>
+                    <p>
+                        Je crée 12 variables P1...P12 (quantité produite par mois), 12 variables S1...s12 (quantité de stock par mois), 12 variables E1...E12 (quantité produite par mois).
+                        <br>
+                        Le plus gros problème est de savoir s’il faut surproduire pour conserver des stocks pour le mois suivant ou produire des heures supplémentaires pour atteindre l’objectif sans avoir besoin de stocks.
+                    </p>
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/Screenshot-53.png" class="img-fluid rounded" style="height: 400px;" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-53.png')">
+                    </div>
+                    <h4>Résultat</h4>
+                    <p>
+                        Il existe d'autres éléments tels que l'augmentation/diminution autorisée, le double prix, etc. mais je laisserai ici les principaux résultats des variables.
+                    </p>
+                    <div class="post-thumb" style="text-align: center;">
+                        <img src="assets/images/blogs/Screenshot-54.png" class="img-fluid rounded" style="height: 400px;" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-54.png')">
+                    </div>
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img id="modalImage" src="" class="img-fluid" alt="Modal Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
