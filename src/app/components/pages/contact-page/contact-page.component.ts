@@ -2,6 +2,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, Inject, OnInit } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, ValidationErrors, ValidatorFn, Validators } from '@angular/forms';
 import { environment } from 'src/environments/environment';
+import { ToastrService } from 'ngx-toastr';
+import { catchError, finalize, tap } from 'rxjs/operators';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-contact-page',
@@ -12,11 +15,14 @@ export class ContactPageComponent implements OnInit{
   contactForm: FormGroup = new FormGroup({});
   serverErrorMessage: string = '';
   submitted = false;
+  userMessage: string | null = null;
+  messageType: 'success' | 'error' | null = null;
 
   constructor(
       
     private formBuilder: FormBuilder,
-    @Inject(HttpClient) private http: HttpClient
+    @Inject(HttpClient) private http: HttpClient,
+    private toastr: ToastrService 
 ) {
   
   }
@@ -79,16 +85,29 @@ export class ContactPageComponent implements OnInit{
     const headers = new HttpHeaders({
       'Authorization': `Bearer ${environment.authToken}`
     });
-    // Change this URL to the good one (if u have one =)))
-    const linkEtranger = `${environment.apiLink}inscription/etranger`;
-    this.http.post(linkEtranger, obj, { headers: headers }).subscribe({
+    const apiUrl = `${environment.apiLink}contact`;
+    this.http.post(apiUrl, obj, { headers: headers }).subscribe({
       next: (response) => {
-        console.log('Form submitted successfully', response);
+        if (response) {
+          console.log('Form submitted successfully', response);
+          this.showMessage('Message a été envoyé!', 'success');
+        }
       },
       error: (error) => {
         console.error('Error submitting form', error);
+        this.showMessage('Il y a un erreur survenu.', 'error');
+        this.serverErrorMessage = error.message || 'Unknown error';
       }
     });
+  }
+
+  showMessage(message: string, type: 'success' | 'error') {
+    this.userMessage = message;
+    this.messageType = type;
+    setTimeout(() => {
+      this.userMessage = null;
+      this.messageType = null;
+    }, 5000); 
   }
 
 }
