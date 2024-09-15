@@ -33,7 +33,7 @@ export class ContactPageComponent implements OnInit{
       email: ['', {validators: [Validators.required, Validators.email], updateOn: 'blur'}],
       phone: [''],
       sujet: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z0-9]*$')]],
-      message: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(500), Validators.pattern('^[a-zA-Z0-9]*$')]]
+      message: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(500), Validators.pattern('^[a-zA-Z0-9 ]*$')]]
     });
   }
   
@@ -91,14 +91,24 @@ export class ContactPageComponent implements OnInit{
         if (response) {
           console.log('Form submitted successfully', response);
           this.showMessage('Message a été envoyé!', 'success');
+          this.showSuccess('Message a été envoyé!', 'Succès');
         }
       },
       error: (error) => {
         console.error('Error submitting form', error);
         this.showMessage('Il y a un erreur survenu.', 'error');
         this.serverErrorMessage = error.message || 'Unknown error';
+        this.showError('Il y a un erreur survenu.', 'Error');
       }
     });
+  }
+
+  showSuccess(message: string, title: string) {
+    this.toastr.success(message, title);
+  }
+
+  showError(message: string, title: string) {
+    this.toastr.error(message, title);
   }
 
   showMessage(message: string, type: 'success' | 'error') {
