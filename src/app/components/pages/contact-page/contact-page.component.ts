@@ -32,7 +32,7 @@ export class ContactPageComponent implements OnInit{
       firstName: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]],
       email: ['', {validators: [Validators.required, Validators.email], updateOn: 'blur'}],
       phone: [''],
-      sujet: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z0-9]*$')]],
+      sujet: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z0-9 ]*$')]],
       message: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(500), Validators.pattern('^[a-zA-Z0-9 ]*$')]]
     });
   }
