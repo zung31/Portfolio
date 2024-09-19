@@ -25,7 +25,7 @@ export class FunfactsComponent {
         },
         {
             icon: `flaticon-document`,
-            number: `15`,
+            number: `18`,
             title: `Repositories sur Github`
         },
         {

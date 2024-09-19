@@ -29,11 +29,11 @@ export class ContactPageComponent implements OnInit{
 
   ngOnInit(): void {
     this.contactForm = this.formBuilder.group({
-      firstName: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z ]*$')]],
+      firstName: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z é]*$')]],
       email: ['', {validators: [Validators.required, Validators.email], updateOn: 'blur'}],
       phone: [''],
-      sujet: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z0-9 ]*$')]],
-      message: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(500), Validators.pattern('^[a-zA-Z0-9 ]*$')]]
+      sujet: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(50), Validators.pattern('^[a-zA-Z0-9 ,.?;é\']*$')]],
+      message: ['', [Validators.required, this.notBlank(), Validators.required, Validators.maxLength(500), Validators.pattern('^[a-zA-Z0-9 ,.?;é\']*$')]]
     });
   }
   
