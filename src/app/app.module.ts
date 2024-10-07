@@ -67,6 +67,7 @@ import { MatlabProjet1Component } from './components/pages/matlab-projet1/matlab
 import { MatlabProjet2Component } from './components/pages/matlab-projet2/matlab-projet2.component';
 import { EtudesComponent } from './components/pages/etudes-page/etudes.component';
 import { MetiersComponent } from './components/pages/metiers-page/metiers.component';
+import { PreviewProjetsComponent } from './components/common/preview-projets/preview-projets.component';
 import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -126,7 +127,8 @@ import { ToastrModule } from 'ngx-toastr';
         MatlabProjet1Component,
         MatlabProjet2Component,
         EtudesComponent,
-        MetiersComponent
+        MetiersComponent,
+        PreviewProjetsComponent
     ],
     imports: [
         BrowserModule,

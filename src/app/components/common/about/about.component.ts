@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,11 +6,22 @@ import { Router } from '@angular/router';
     templateUrl: './about.component.html',
     styleUrls: ['./about.component.scss']
 })
-export class AboutComponent {
+export class AboutComponent implements OnInit {
 
     constructor(
         public router: Router
     ) { }
+
+    ngOnInit(): void {
+        this.showContent();
+      }
+    
+    showContent() {
+    const content = document.querySelector('.about-image');
+        if (content) {
+            content.classList.add('show');
+        }
+    }
 
     isOpen = false;
 

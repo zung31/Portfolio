@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./competences-page.component.scss']
 })
 export class CompetencesPageComponent {
-  activeContent: string = 'relationnelle';
+  activeContent: string = 'informatique';
 
   showContent(content: string) {
     this.activeContent = content;

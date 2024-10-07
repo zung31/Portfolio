@@ -1,0 +1,53 @@
+.img-fluid{
+    width: 400px;
+    height: 400px;
+}
+.img-fluid{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+.img-fluid.show{
+    animation: slideInLeft 2s ease-out forwards;
+}
+@keyframes slideInLeft{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.img-fluid2{
+    width: 400px;
+    height: 400px;
+    text-align: right;
+}
+.img-fluid2{
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+.img-fluid2.show{
+    animation: slideInRight 2s ease-out forwards;
+}
+@keyframes slideInRight{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.default-button{
+    border: 1px solid var(--secondaryColor);
+    background-color: transparent;
+    color: var(--whiteColor);
+    padding: {
+        top: 12px;
+        bottom: 12px;
+    };
+    &:hover {
+        background-color: var(--secondaryColor);
+        color: var(--whiteColor);
+    }
+}
+.preview-content{
+    text-align: justify;
+}

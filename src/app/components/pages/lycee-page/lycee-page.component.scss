@@ -111,9 +111,11 @@
     box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
     order: 1;
     justify-self: center;
-    animation: zoom_rotate_animate 8s ease-in-out infinite 1s;
+    animation: zoom_rotate_animate 8s ease-in-out infinite 1s, slideInRight 2s ease-out forwards;
     width: 500px;
     height: 500px;
+    opacity: 0;
+    transform: translateX(-100px);
 
     @keyframes zoom_rotate_animate {
         0% {
@@ -136,6 +138,20 @@
             transform: scale(1) rotate(0deg);
             border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
         }
+    }
+}
+.img-fluid {
+    opacity: 0;
+    transform: translateX(400px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+.img-fluid.show {
+    animation: zoom_rotate_animate 8s ease-in-out infinite 1s, slideInRight 2s ease-out forwards;
+}
+@keyframes slideInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
     }
 }
 

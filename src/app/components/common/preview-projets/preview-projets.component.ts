@@ -2,11 +2,11 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-    selector: 'app-funfacts',
-    templateUrl: './funfacts.component.html',
-    styleUrls: ['./funfacts.component.scss']
+    selector: 'app-preview-projets',
+    templateUrl: './preview-projets.component.html',
+    styleUrls: ['./preview-projets.component.scss']
 })
-export class FunfactsComponent implements OnInit {
+export class PreviewProjetsComponent implements OnInit {
 
     constructor(
         public router: Router
@@ -19,7 +19,7 @@ export class FunfactsComponent implements OnInit {
     }
 
     observeCategories() {
-      const categories = document.querySelectorAll('.funfact-item');
+      const categories = document.querySelectorAll('.img-fluid, .img-fluid2');
       const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -36,28 +36,4 @@ export class FunfactsComponent implements OnInit {
         observer.observe(category);
       });
     }
-
-    funfactBox = [
-        {
-            icon: `flaticon-tick`,
-            number: `1er`,
-            title: `Major promotion en L1`
-        },
-        {
-            icon: `flaticon-heart`,
-            number: ` TB`,
-            title: `Classement en L2`
-        },
-        {
-            icon: `flaticon-document`,
-            number: `18`,
-            title: `Repositories sur Github`
-        },
-        {
-            icon: `flaticon-knowledge-1`,
-            number: `20`,
-            title: `Note moyenne Math en L2`
-        }
-    ]
-
 }

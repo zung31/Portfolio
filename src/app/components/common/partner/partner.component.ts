@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,12 +6,37 @@ import { Router } from '@angular/router';
     templateUrl: './partner.component.html',
     styleUrls: ['./partner.component.scss']
 })
-export class PartnerComponent {
+export class PartnerComponent implements OnInit {
 
     @Input() title? : string; // decorate the property with @Input()
     constructor(
         public router: Router
     ) { }
+
+    ngOnInit(): void {}
+
+    ngAfterViewInit(): void {
+      this.observeCategories();
+    }
+
+    observeCategories() {
+      const categories = document.querySelectorAll('.partner-item');
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            console.log('in view');
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); // Stop observing once the animation is triggered
+          }
+        });
+      }, {
+        threshold: 0.1 // Trigger when 10% of the element is in view
+      });
+  
+      categories.forEach(category => {
+        observer.observe(category);
+      });
+    }
 
     partnerContentBottom = [
         {

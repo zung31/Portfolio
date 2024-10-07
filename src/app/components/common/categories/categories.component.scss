@@ -87,7 +87,39 @@
         }
     }
 }
-
+.category-box {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+.category-box.show {
+    animation: fadeInUp 2s ease-out forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Delay animation for each category box */
+.category-box:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.category-box:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.category-box:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.category-box:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.category-box:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.category-box:nth-child(6) {
+    animation-delay: 0.6s;
+}
 // Style Two
 .category-item {
     padding: 15px;
