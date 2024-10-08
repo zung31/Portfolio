@@ -1,0 +1,181 @@
+{
+	"ABOUT": {
+		"BUTTON": "Voir mon CV",
+		"CONTENT1": "En <strong>été 2024</strong>, j'ai effectué un stage de juin à août à l'entreprise <a href=\"https://societe-kali.fr/\"><strong>SAS Kali</strong></a> à Marseille 7e. J'ai travaillé sur plusieurs projets <u>WordPress, Angular,..</u> J'ai utilisé les technologies <u>Angular, JS, PHP, WordPress,..</u><br>J'avais beaucoup appris: de la façon de travailler avec le nouveau framework à la façon de diviser le travail.",
+		"CONTENT2": "- En <strong>été 2024</strong>, j'ai effectué un job partiel Serveur à un restaurant Japonais Sushi Couronne à Aix. J'ai appris à travailler en équipe, à travailler sous pression, à être patient, à être responsable et à être organisé.<br>- En <strong>été 2023</strong>, j'ai effectué un job partiel Serveur à un cafe/restaurant Saint Pearl à Paris 7e. J'ai appris à prendre les commandes, à communiquer avec les clients, à servir les plats, à nettoyer les tables.",
+		"ENG": "Mon professeur principal au lycée",
+		"H2": "Expérience professionnelle",
+		"P1": "Je m'appelle Dang Hoang Dung, vous pouvez m'appeler Hoang. <br>J'ai 20 ans et je suis étudiant en Licence 3 informatique à l'Université Polytechnique Hauts-de France. Je suis passionné par la programmation et les mathématiques. <br>J'ai une bonne connaissance de Java, Python, HTML, CSS, JavaScript, Python, Angular, React, SQL,... <br>Et si nécessaire, je suis toujours prêt à apprendre une nouvelle langue :D",
+		"P2": "“Hoang est un étudiant responsable et opiniâtre. Nous passons souvent du temps à discuter (ou disputer) des connaissances.”",
+		"P3": "Stage fin de 2e année",
+		"P4": "Job d'été Serveur",
+		"SUBTITLE": "Qui suis-je?",
+		"TITLE": "Mes Infos"
+	},
+	"CATEGORIES": {
+		"H2": "Programmation"
+	},
+	"COMPETENCES": {
+		"CAP1": "Capacité relationnelle",
+		"CAP2": "Capacité linguistique",
+		"CAP3": "Capacité informatique",
+		"CAT1": "Relationnelle",
+		"CAT2": "Linguistique",
+		"CAT3": "Informatique",
+		"TITLE": "Mes compétences"
+	},
+	"CONTACT": {
+		"BUTTON": "Envoyer",
+		"CAU1": "Nom obligatoire.",
+		"CAU2": "Veuillez saisir une valeur valide.",
+		"CAU3": "Email obligatoire.",
+		"CAU4": "Veuillez saisir une adresse email valide.",
+		"CAU5": "Sujet obligatoire.",
+		"CAU6": "Message obligatoire.",
+		"ERROR": "Il y a un erreur survenu.",
+		"H3": "Si vous voulez me laisser un message",
+		"MESS": "Message a été envoyé!",
+		"PH1": "Nom *",
+		"PH2": "Sujet *",
+		"PH4": "Écrire un message... *",
+		"TITLE": "Contactez moi"
+	},
+	"ETUDES": {
+		"P1": "Je prévois de poursuivre mes études avec le programme <strong>FISA (Formation Alternance à INSA) en informatique</strong> à l'UPHF pour une durée de 2 à 3 ans, dans le but d'obtenir un diplôme d'ingénieur. C'est une opportunité pour moi d'approfondir mes connaissances et mes compétences en développement d'applications, tout en explorant le domaine de l'intelligence artificielle (IA). Bien que je n'envisage pas d'étudier l'IA de manière approfondie au niveau doctorat, j'espère en acquérir une bonne maîtrise à un niveau applicatif pour pouvoir l'utiliser dans le travail pratique.<br>Actuellement, je suis spécialisé dans le développement front-end pour le web, une activité que j'apprécie énormément, mais j'ai également l'envie de me développer en plus dans le domaine du back-end, que ce soit pour des applications web ou des logiciels. Mon objectif est de devenir <strong>un développeur polyvalent</strong>. Pour atteindre cet objectif, en plus de mes études à l'école, je suis des cours en ligne, notamment sur Udemy, pour renforcer et approfondir les langages de programmation que je maîtrise déjà.<br>Conscient de la rapidité à laquelle évolue le secteur technologique, je souhaite élargir mes compétences sur des frameworks, bibliothèques comme <strong>Spring Boot, React, Angular</strong>, ainsi que sur des langages tels que <strong>JavaScript et PHP</strong>. Je veux également me plonger davantage dans le développement d'applications et continuer à apprendre pour m'améliorer constamment.",
+		"P2": "En résumé, je souhaite non seulement perfectionner mes compétences actuelles, mais aussi m'ouvrir à de nouveaux domaines, en explorant les dernières technologies et tendances, pour non seulement devenir un excellent développeur, mais aussi apporter une contribution significative à l'évolution du secteur technologique.",
+		"T1": "Plan à l'avenir",
+		"T2": "Conclusion",
+		"TITLE": "Études"
+	},
+	"FBOX": {
+		"T1": "Patience et Optimisme",
+		"T2": "Capacité d’adaptation",
+		"T3": "Capacité d’organisation",
+		"T4": "Super travail en équipe"
+	},
+	"FBOX2": {
+		"C1": "Classement en Licence 2",
+		"C2": "Moyennes de Math Info",
+		"C3": "Rapports réalisés en L2",
+		"P1": "TB"
+	},
+	"FBOX3": {
+		"C1": "Major Promotion de L1",
+		"C2": "Note moyenne de L1",
+		"C3": "Moyenne en Info",
+		"C4": "Projets académiques",
+		"P1": "1er"
+	},
+	"FEAT": {
+		"T1": "Un collaborateur digne de confiance soumet toujours le code avant la date limite",
+		"T2": "Un étudiant assidu et progressiste",
+		"T3": "Persévérer à corriger les bugs jusqu'à ce que le programme fonctionne",
+		"T4": "Résoudre des problèmes maths est aussi un plaisir"
+	},
+	"FUNFACTS": {
+		"N1": "1er",
+		"N2": "TB",
+		"T1": "Major promotion en L1",
+		"T2": "Classement en L2",
+		"T3": "Repositories sur Github",
+		"T4": "Note moyenne Math en L2",
+		"TITLE": "Fun fact à l'université"
+	},
+	"HOMETHREE_BANNER": {
+		"CV_BUTTON": "Mon CV",
+		"DESCRIPTION": "Bonjour (ou bonsoir) Madame, Monsieur, je m'appelle Dang Hoang, étudiant de Licence 3 Informatique à Université Polytechnique Hauts-de-France. Je suis un jeune programmeur ambitieux. Si mes compétences ou mes projets vous intéressent, n'hésitez pas à me laisser un message ou me contacter ;)",
+		"SKILLS_BUTTON": "Mes compétences",
+		"SUB_TITLE": "Hoang Portfolio",
+		"TITLE": "Bienvenue à mon Portfolio"
+	},
+	"INFOR": {
+		"CONTENT1": "- <strong>Visual Studio Code</strong>: <strong>C'est l'IDE que j'utilise le plus souvent</strong>, utilisé pour programmer Python, C, HTML, CSS, JS et React JS, Angular. Il possède de nombreuses extensions et fonctionnalités d’interface que j’aime beaucoup, c’est pourquoi je l’ai utilisé tout au long du lycée jusqu’à présent.<br>- <strong>Eclipse</strong> L'IDE que j'utilise pour programmer Java et C++. C'est un endroit idéal avec des commandes disponibles pour créer divers packages, interfaces ou générer des fonctions. <strong>Mon choix n°1 lorsque je travaille avec Java traditionnel.</strong><br>- <strong>IntelliJ IDEA</strong>: <strong>Mon choix n°1 lorsque je travaille avec Java Spring Boot</strong>. Intellij prend en charge un certain nombre de dépendances que Eclipse ou Spring Tool Suite ne prennent pas en charge.<br>- <strong>PHPStorm</strong>: <strong>L'IDE que j'utilise pour programmer PHP.</strong> Il a framework Laravel, Symfony, etc. Et je l'ai utilisé pour faire Dolibarr (fonction et classe).<br>- <strong>Spring Tool Suite, Dev C++, Notepad++</strong>: Les IDE que j'ai utilisés ne sont pas nombreux car à mon avis ils ne sont pas aussi pratiques que les IDE que j'ai listés.",
+		"CONTENT2": "- <strong>Spring Boot</strong>: <strong>C'est là que je travaille le plus avec les API</strong>. J'ai utilisé L'API pour gérer les listes de données (vous pouvez voir dans mes projets Spring Boot pour savoir plus).<br>- <strong>PHP</strong>: J'ai appris à travailler avec l'API PHP pendant mon stage (ou <strong>spécifiquement PHP Dolibarr</strong>). Je dois créer les triggers concernant API pour gérer les commandes, factures et emails (très amusant).<br>- <strong>JavaScript</strong>: J'ai utilisé <strong>Express JS</strong> pour récuperer les données dans formulaire, les reformuler et les envoyer par nodemailer.<br>- <strong>Python</strong>: J'ai utilisé l'API pour obtenir des données de l'API des données (par exemple: API des stations de vélo d'une entreprise dans tous les villes pour traiter les données).",
+		"CONTENT3": "Pour tester API, Middleware Token, j'utilise <strong>PostMan</strong>. (très pratique sans avoir à tester directement sur le programme).",
+		"CONTENT4": "J'ai utilisé SQL dans:<br>- <strong>SQL Workbench</strong>: Ce n'est pas ma première application à utiliser SQL ou à écrire des requêtes, mais Workbench sera <strong>l'application que j'utilise le plus pour SQL</strong>. Je crée souvent des bases de données liées à des projets nécessitant des informations back-end, ou simplement des bases de données pour m'entraîner à écrire des requêtes SQL.<br>- <strong>PHPMyAdmin</strong>: J'ai utilisé PHPMyAdmin lorsque j'ai découvert la liaison de données entre le front et le backend (lorsque j'ai exécuté les programmes avec xamp ou wamp), la base de mon utilisation ultérieure de Workbench.<br>- <strong>Access</strong>: La première fois que je suis entré en contact avec SQL. Même s'il s'agissait de Jet SQL, Access m'a appris à établir des relations entre les tables, à écrire des requêtes et à créer des formulaires.",
+		"CONTENT5": "Pour créer la diagramme de relation des tables, j'utilise <strong>Quick DBD</strong>.",
+		"CONTENT6": "- Langues: Python (Logic Programming), Java (POO et Spring), C (pointeurs et listes chainées), HTML, CSS, JS, PHP, C++<br>- Framework: Angular, Spring Boot<br>- Library: React, Bootstrap, JQuery, Node JS, Express JS, Lombok, JUnit, etc..",
+		"CONTENT7": "Je suis toujours prêt à apprendre de nouvelles langues ou à améliorer les langues que je connais déjà.",
+		"NAVLINK4": "Langues",
+		"SUB1": "IDE que j'ai utilisés",
+		"SUB4": "Langues, Framework, Library"
+	},
+	"INSTRUC": {
+		"P1": "En plus de coder et d’étudier à l’école, j’ai aussi des passe-temps.Grâce à ces éléments, je peux réduire le stress, me concentrer davantage et obtenir de meilleures performances au travail.",
+		"S1": "Badminton",
+		"S2": "Livres",
+		"S3": "Dessin",
+		"S4": "Video Games",
+		"S5": "Natation",
+		"S6": "Musique",
+		"TITLE": "Mes intérêts"
+	},
+	"LANG": {
+		"CONTENT1": "Même si mon niveau n'est pas aussi bon que celui natif, je vais essayer de m'améliorer chaque jour",
+		"CONTENT2": "J'ai deja travaillé dans un environnement anglophone et j'ai obtenu un score de 940/990 dans TOEIC ",
+		"CONTENT3": "C'est ma langue maternelle. Je peux vous apprendre à parler des phrases de base",
+		"T1": "Français",
+		"T2": "Anglais",
+		"T3": "Vietnamien"
+	},
+	"LICENCE1": {
+		"CONTENT1": "Mathématiques: Calcul basique, Algèbre, Analyse<br>Outils Maths: Maths appliquées avec physique<br>Chimie: Chimie générale <br>Informatique: Langage manuscript<br>Physique: Electricité<br>Mécanique: Mécanique du point",
+		"CONTENT2": "Anglais: Anglais<br>Informatique: Langage Python<br>Maths et Informatique: Matrices, Algèbre Linaire, Analyse numérique<br>Analyse 2A et 2B: Calcul intégral et Calcul différentiel<br>Algèbre 2A et 2B: Algèbre linéaire et Algèbre bilinéaire<br>Outils Info Ingénieur: Matlab et Simulink<br>C: Langage C",
+		"SEM1": "MODULES Semestre 1",
+		"SEM2": "MODULES Semester 2",
+		"TITLE": "Licence 1 Mathématiques"
+	},
+	"LICENCE2": {
+		"CONTENT1": "Informatique: C (pointeur et liste chaînée)<br>Langages et Scripting: Java (POO) et Bash (scripting)<br>Base de données: JetSQL (Access)<br>Réseau: Protocoles basics et sécurité (Cisco Packet Tracer, Wireshark)<br>Développement Application: Langages programmation web (HTML, CSS, JS, PHP) et Rédaction du cahier des charges<br>Probabilité et Statistiques: Probabilité et Statistiques",
+		"CONTENT2": "Anglais: Anglais<br>Langages de programmation: Langages programmation web (HTML, CSS, JS, PHP)<br>Maths et Informatique: Matrices, Algèbre Linaire, Analyse numérique<br>Génie logiciel: Diagrams (Edraw Max) et Gestion de projet<br>Programmation linéaire: Calcul profit et Optimisation (LINDO)<br>Outils Info Ingénieur: Matlab et Simulink",
+		"SEM1": "MODULES Semestre 1",
+		"SEM2": "MODULES Semester 2",
+		"TITLE": "Licence 2 Informatique"
+	},
+	"LYCEE": {
+		"CONTENT1": "Classement final: 1er.<br>3ème prix au concours national des étudiants d'excellence.<br>Notes moyennes: 9.5 / 10. (Très bien)",
+		"CONTENT2": "Classement final: 1er.<br>Logistique pour des événements musicaux scolaires.<br>Notes moyennes: 9.4 / 10. (Très bien)",
+		"CONTENT3": "Major de promotion d'entrée.<br>Rejoindre des clubs d'arts martiaux, de lecture.<br>Participer à des activités bénévoles.<br>Notes moyennes: 8.6 / 10. (Très bien)",
+		"SEM1": "Terminal",
+		"SEM2": "Première",
+		"SEM3": "Seconde",
+		"TITLE": "Lycée d'excellence Hanoi-Amsterdam"
+	},
+	"METIER": {
+		"P1": "À l'avenir, j'espère orienter ma carrière vers le développement dans le domaine du développement logiciel avec un accent particulier sur <strong>le développement d'applications Web et mobiles</strong>. Avec une formation en programmation front-end, combinée à une volonté d'élargir mes connaissances en back-end, j'espère devenir <strong>un développeur full-stack</strong> dès les premiers stades de ma carrière. Cela m'a permis non seulement de participer à la construction de l'interface utilisateur, mais également de gérer l'ensemble du processus de développement de l'application, de la base de données à la logique de l'application.<br>À long terme, je souhaite améliorer mes compétences professionnelles et ma compréhension approfondie des nouvelles technologies telles que <strong>l'intelligence artificielle (IA) et le traitement du big data (Big Data)</strong>, dans le but de <strong>devenir tech lead ou architecte logiciel</strong>. Dans ce rôle, je développe non seulement des produits, mais je participe également à l'élaboration et à la décision de solutions technologiques pour des projets importants. De plus, j'ai également l'intention de <strong>devenir chef de projet à l'avenir</strong>, où je pourrai diriger une équipe d'ingénieurs, gérer des projets du début à la fin et garantir que chaque produit est de haute qualité.",
+		"P2": "Je souhaite développer ma carrière dans un environnement hautement créatif où je peux apprendre et contribuer. Mon objectif ultime est de devenir <strong>un expert dans le domaine des technologies de l'information</strong> comme mon grand-frère, capable d'aider les entreprises à résoudre des problèmes complexes grâce à l'application de technologies et de solutions logicielles avancées.",
+		"T1": "Plan à l'avenir",
+		"T2": "Conclusion",
+		"TITLE": "Métiers"
+	},
+	"NAVBAR": {
+		"A1L2": "Éducation",
+		"A1L2U1": "Licence 2 Informatique",
+		"A1L2U2": "Licence 1 Mathématique",
+		"A1L2U3": "Lycée d'excellence Hanoi-Amsterdam",
+		"A1L3": "À propos de moi",
+		"A1L3U1": "Infos",
+		"A1L3U2": "Compétences",
+		"A2": "Projets",
+		"A2L1": "Web et Application",
+		"A2L2": "Analyse Data",
+		"A3L1": "Études",
+		"A3L2": "Métiers",
+		"BUTTON": "Contactez moi"
+	},
+	"PARTNERS": {
+		"TITLE": "Logiciels utilisés"
+	},
+	"PREVIEW_PROJETS": {
+		"BUTTON": "Voir plus",
+		"CONTENT1": "Dans cette section, vous trouverez une sélection de projets réalisés en Java, mettant en œuvre les principes de la Programmation Orientée Objet (POO), Spring Boot. Ces projets explorent diverses facettes du développement Java, de la création d’interfaces utilisateur graphiques avec JFrame et JPanel, à la conception d’applications web robustes avec Spring Boot. Grâce à l'intégration avec React JS, ces projets démontrent également mes compétences en développement d'applications full-stack modernes, offrant des solutions efficaces et innovantes aux problématiques rencontrées.",
+		"CONTENT2": "Cette section présente mes projets réalisés avec Python, explorant divers aspects de la programmation. Utilisant des bibliothèques comme Pygame et Turtle, j'ai créé des animations interactives et des jeux simples, illustrant ma compréhension des bases de la logique algorithmique et de la programmation événementielle. Ces projets démontrent également mes compétences en résolution de problèmes et en conception d'algorithmes en Python, une des langues de programmation les plus polyvalentes et puissantes.",
+		"CONTENT3": "En plus du site Web que vous regardez et des sites Web que j'ai créés au travail, j'ai 2 projets sur les interfaces Web et les pages Web pour garder des notes sur les choses à faire. Cette section présente mes projets web utilisant HTML, CSS, PHP et JavaScript pour créer des interfaces dynamiques et interactives. J'ai conçu et développé des applications web qui intègrent des fonctionnalités côté client et côté serveur, démontrant mes compétences en front-end.",
+		"CONTENT4": "Mes projets en C/C++ couvrent une gamme d'exercices techniques allant de la gestion de listes chaînées à la manipulation avancée de processus avec fork, pipe,etc. en C. Pour C++, j'ai travaillé principalement sur des projets de programmation orientée objet et des exercices basiques, développant ainsi une compréhension solide des principes fondamentaux de ces deux langages puissants.",
+		"P1": "Java Projets",
+		"P2": "Python Projets",
+		"P3": "Web Projets",
+		"P4": "C/C++ Projets",
+		"TITLE": "Projets Académiques et Personnels"
+	}
+}

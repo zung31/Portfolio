@@ -6,3 +6,17 @@ strong {
     font-weight: bold;
     color: inherit !important; 
 }
+.img-fluid {
+    opacity: 0;
+    transform: translateX(-400px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+.img-fluid.show {
+    animation: profile_animate 8s ease-in-out infinite 1s, slideInLeft 2s ease-out forwards;
+}
+@keyframes slideInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

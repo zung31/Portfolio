@@ -25,45 +25,45 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a routerLink="assets/public/CV_DangHoang.pdf" (click)="collapseNavbar()" class="nav-link" target="_blank" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                                <a href="https://drive.google.com/file/d/1JgrGGqm3nq41-1Hm_nx2Se2VmBDB4_80/view?usp=sharing" (click)="collapseNavbar()" class="nav-link" target="_blank" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                                     CV
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                    Éducation
+                                    {{ 'NAVBAR.A1L2' | translate }}
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a routerLink="/licence-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                            Licence 2 Informatique
+                                            {{ 'NAVBAR.A1L2U1' | translate }}
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a routerLink="/licence-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                            Licence 1 Mathématique
+                                            {{ 'NAVBAR.A1L2U2' | translate }}
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a routerLink="/lycee" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                            Lycée d'excellence Hanoi-Amsterdam
+                                            {{ 'NAVBAR.A1L2U3' | translate }}
                                         </a>    
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                    À propos de moi
+                                    {{ 'NAVBAR.A1L3' | translate }}
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a routerLink="/info" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                            Infos
+                                            {{ 'NAVBAR.A1L3U1' | translate }}
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a routerLink="/competences" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                            Compétences
+                                            {{ 'NAVBAR.A1L3U2' | translate }}
                                         </a>
                                     </li>
                                 </ul>
@@ -73,12 +73,12 @@
 
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                            Projets
+                            {{ 'NAVBAR.A2' | translate }}
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                    Web et Application 
+                                    {{ 'NAVBAR.A2L1' | translate }} 
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -93,7 +93,7 @@
                                     </li>
                                     <li class="nav-item">
                                         <a routerLink="/lang-web" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                            Lang Web
+                                            Web
                                         </a>
                                     </li>
                                     <li class="nav-item">
@@ -105,7 +105,7 @@
                             </li>
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="dropdown-toggle nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-                                    Analyse Data
+                                    {{ 'NAVBAR.A2L2' | translate }}
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -135,12 +135,12 @@
                         <ul class="dropdown-menu">
                             <li class="nav-item">
                                 <a routerLink="/etudes" (click)="collapseNavbar()" class="nav-link">
-                                    Études
+                                    {{ 'NAVBAR.A3L1' | translate }}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a routerLink="/metiers" (click)="collapseNavbar()" class="nav-link">
-                                    Métiers
+                                    {{ 'NAVBAR.A3L2' | translate }}
                                 </a>
                             </li>
                         </ul>
@@ -161,45 +161,45 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
-                                <a routerLink="assets/public/CV_DangHoang.pdf" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
+                                <a href="https://drive.google.com/file/d/1JgrGGqm3nq41-1Hm_nx2Se2VmBDB4_80/view?usp=sharing" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
                                     CV
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
-                                    Éducation
+                                    {{ 'NAVBAR.A1L2' | translate }}
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a routerLink="/licence-2" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
-                                            Licence 2 Informatique
+                                            {{ 'NAVBAR.A1L2U1' | translate }}
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a routerLink="/licence-1" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
-                                            Licence 1 Mathématique
+                                            {{ 'NAVBAR.A1L2U2' | translate }}
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a routerLink="/lycee" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
-                                            Lycée d'excellence Hanoi-Amsterdam
+                                            {{ 'NAVBAR.A1L2U3' | translate }}
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
-                                    À propos de moi
+                                    {{ 'NAVBAR.A1L3' | translate }}
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
                                         <a routerLink="/info" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
-                                            Infos
+                                            {{ 'NAVBAR.A1L3U1' | translate }}
                                         </a>
                                     </li>
                                     <li class="nav-item">
                                         <a routerLink="/competences" (click)="collapseNavbar()" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
-                                            Compétences
+                                            {{ 'NAVBAR.A1L3U2' | translate }}
                                         </a>
                                     </li>
                                 </ul>
@@ -208,12 +208,12 @@
                     </li>
                     <li class="nav-item">
                         <a href="javascript:void(0)" class="dropdown-toggle nav-link">
-                            Projets
+                            {{ 'NAVBAR.A2' | translate }}
                         </a>
                         <ul class="dropdown-menu">
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
-                                    Web et Application 
+                                    {{ 'NAVBAR.A2L1' | translate }} 
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -240,7 +240,7 @@
                             </li>
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="toggleClass()">
-                                    Analyse Data
+                                    {{ 'NAVBAR.A2L2' | translate }}
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
@@ -270,12 +270,12 @@
                         <ul class="dropdown-menu">
                             <li class="nav-item">
                                 <a routerLink="/etudes" (click)="collapseNavbar()" class="nav-link" (click)="toggleClass()">
-                                    Études
+                                    {{ 'NAVBAR.A3L1' | translate }}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a routerLink="/metiers" (click)="collapseNavbar()" class="nav-link" (click)="toggleClass()">
-                                    Métiers
+                                    {{ 'NAVBAR.A3L2' | translate }}
                                 </a>
                             </li>
                         </ul>
@@ -285,7 +285,7 @@
                 
                 <div class="others-option d-flex align-items-center">
                     <div class="option-item">
-                        <a routerLink="/contact" (click)="collapseNavbar()" class="default-btn two" (click)="toggleClass()">Contactez moi</a>
+                        <a routerLink="/contact" (click)="collapseNavbar()" class="default-btn two" (click)="toggleClass()">{{ 'NAVBAR.BUTTON' | translate }}</a>
                     </div>
                 </div>
             </div>

@@ -6,10 +6,10 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #fff;">Études</h1>
+            <h1 style="color: #fff;">{{ 'ETUDES.TITLE' | translate }}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
                 <li class="d-inline-block position-relative"><a routerLink="/">Home</a></li>
-                <li class="d-inline-block position-relative" style="color: #fff;">Études</li>
+                <li class="d-inline-block position-relative" style="color: #fff;">{{ 'ETUDES.TITLE' | translate }}</li>
             </ul>
         </div>
     </div>
@@ -21,17 +21,10 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="privacy-policy-content">
-                    <h4>Plan à l'avenir</h4>
-                    <p>
-                        Je prévois de poursuivre mes études avec le programme <strong>FISA (Formation Alternance à INSA) en informatique</strong> à l'UPHF pour une durée de 2 à 3 ans, dans le but d'obtenir un diplôme d'ingénieur. C'est une opportunité pour moi d'approfondir mes connaissances et mes compétences en développement d'applications, tout en explorant le domaine de l'intelligence artificielle (IA). Bien que je n'envisage pas d'étudier l'IA de manière approfondie au niveau doctorat, j'espère en acquérir une bonne maîtrise à un niveau applicatif pour pouvoir l'utiliser dans le travail pratique.
-                        <br>
-                        Actuellement, je suis spécialisé dans le développement front-end pour le web, une activité que j'apprécie énormément, mais j'ai également l'envie de me développer en plus dans le domaine du back-end, que ce soit pour des applications web ou des logiciels. Mon objectif est de devenir <strong>un développeur polyvalent</strong>. Pour atteindre cet objectif, en plus de mes études à l'école, je suis des cours en ligne, notamment sur Udemy, pour renforcer et approfondir les langages de programmation que je maîtrise déjà.
-                        <br>
-                        Conscient de la rapidité à laquelle évolue le secteur technologique, je souhaite élargir mes compétences sur des frameworks, bibliothèques comme <strong>Spring Boot, React, Angular</strong>, ainsi que sur des langages tels que <strong>JavaScript et PHP</strong>. Je veux également me plonger davantage dans le développement d'applications et continuer à apprendre pour m'améliorer constamment.
-                    </p>
-                    <h4>Conclusion</h4>
-                    <p>
-                        En résumé, je souhaite non seulement perfectionner mes compétences actuelles, mais aussi m'ouvrir à de nouveaux domaines, en explorant les dernières technologies et tendances, pour non seulement devenir un excellent développeur, mais aussi apporter une contribution significative à l'évolution du secteur technologique.
+                    <h4> {{ 'ETUDES.T1' | translate }} </h4>
+                    <p [innerHTML]=" 'ETUDES.P1' | translate "></p>
+                    <h4>{{ 'ETUDES.T2' | translate }}</h4>
+                    <p [innerHTML]=" 'ETUDES.P2' | translate ">
                     </p>
                 </div>
             </div>

@@ -6,10 +6,10 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #fff;">Licence 2 Informatique</h1>
+            <h1 style="color: #fff;">{{ 'LICENCE2.TITLE' | translate }}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
                 <li class="d-inline-block position-relative"><a routerLink="/">Home</a></li>
-                <li class="d-inline-block position-relative" style="color: #fff;">Licence 2 Informatique</li>
+                <li class="d-inline-block position-relative" style="color: #fff;">{{ 'LICENCE2.TITLE' | translate }}</li>
             </ul>
         </div>
     </div>
@@ -21,33 +21,10 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="privacy-policy-content">
-                    <h4>MODULES Semestre 1</h4>
-                    <p>
-                        Informatique: C (pointeur et liste chaînée)
-                        <br>
-                        Langages et Scripting: Java (POO) et Bash (scripting)
-                        <br>
-                        Base de données: JetSQL (Access)
-                        <br>
-                        Réseau: Protocoles basics et sécurité (Cisco Packet Tracer, Wireshark) 
-                        <br>
-                        Developpement Application: Langages programmation web (HTML, CSS, JS, PHP) et Rédaction du cahier des charges
-                        <br>
-                        Probabilité et Statistiques: Probabilité et Statistiques
-                    </p>
-                    <h4>MODULES Semestre 2</h4>
-                    <p>Anglais: Anglais
-                        <br>
-                        Langages de programmation: Langages programmation web (HTML, CSS, JS, PHP)
-                        <br>
-                        Maths et Informatique: Matrices, Algèbre Linaire, Analyse numérique
-                        <br>
-                        Génie logiciel: Diagrams (Edraw Max) et Gestion de projet
-                        <br>
-                        Programmation linéaire: Calcul profit et Optimisation (LINDO)
-                        <br>
-                        Outils Info Ingénieur: Matlab et Simulink
-                    </p>
+                    <h4>{{ 'LICENCE2.SEM1' | translate }}</h4>
+                    <p [innerHTML]="'LICENCE2.CONTENT1' | translate"></p>
+                    <h4>{{ 'LICENCE2.SEM2' | translate }}</h4>
+                    <p [innerHTML]="'LICENCE2.CONTENT2' | translate"></p>
                 </div>
             </div>
 

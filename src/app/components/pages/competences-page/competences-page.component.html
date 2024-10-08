@@ -5,10 +5,10 @@
 >
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #ffffff;">Compétences</h1>
+            <h1 style="color: #ffffff;">{{ 'COMPETENCES.TITLE'| translate }}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/">Accueil</a></li>
-                <li class="d-inline-block position-relative" style="color: #ffffff;">Compétences</li>
+                <li class="d-inline-block position-relative"><a routerLink="/">Home</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">{{ 'COMPETENCES.TITLE'| translate }}</li>
             </ul>
         </div>
     </div>
@@ -20,30 +20,30 @@
         <div class="button-group text-center">
             <button class="btn btn-primary m-2" (click)="showContent('relationnelle')" 
                     [ngClass]="{'active': activeContent === 'relationnelle'}">
-                Relationnelle
+                {{ 'COMPETENCES.CAT1'| translate }}
             </button>
             <button class="btn btn-primary m-2" (click)="showContent('linguistique')"
                     [ngClass]="{'active': activeContent === 'linguistique'}">
-                Linguistique
+                {{ 'COMPETENCES.CAT2'| translate }}
             </button>
             <button class="btn btn-primary m-2" (click)="showContent('informatique')"
                     [ngClass]="{'active': activeContent === 'informatique'}">
-                Informatique
+                {{ 'COMPETENCES.CAT3'| translate }}
             </button>
         </div>
 
         <div [hidden]="activeContent !== 'relationnelle'">
-            <h2 class="content-title">Capacité relationnelle</h2>
+            <h2 class="content-title">{{ 'COMPETENCES.CAP1'| translate }}</h2>
             <app-featured-boxes></app-featured-boxes>
         </div>
 
         <div [hidden]="activeContent !== 'linguistique'">
-            <h2 class="content-title">Capacité linguistique</h2>
+            <h2 class="content-title">{{ 'COMPETENCES.CAP2'| translate }}</h2>
             <app-langues></app-langues>
         </div>
 
         <div [hidden]="activeContent !== 'informatique'">
-            <h2 class="content-title">Capacité informatique</h2>
+            <h2 class="content-title">{{ 'COMPETENCES.CAP3'| translate }}</h2>
             <app-informatique></app-informatique>
         </div>
     </div>

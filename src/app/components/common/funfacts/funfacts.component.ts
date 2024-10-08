@@ -1,5 +1,6 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-funfacts',
@@ -7,15 +8,55 @@ import { Router } from '@angular/router';
     styleUrls: ['./funfacts.component.scss']
 })
 export class FunfactsComponent implements OnInit {
-
+  funfactBox = [
+    {
+        icon: `flaticon-tick`,
+        number: '',
+        title: ''
+    },
+    {
+        icon: `flaticon-heart`,
+        number: '',
+        title: ''
+    },
+    {
+        icon: `flaticon-document`,
+        number: '19', 
+        title: ''
+    },
+    {
+        icon: `flaticon-knowledge-1`,
+        number: '20', 
+        title: ''
+    }
+  ];
     constructor(
-        public router: Router
-    ) { }
+        public router: Router, private translate: TranslateService
+    ) {}
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+      // Cập nhật bản dịch ban đầu
+      this.loadTranslations();
+
+      // Đăng ký sự kiện thay đổi ngôn ngữ
+      this.translate.onLangChange.subscribe(() => {
+          this.loadTranslations();
+      });
+    }
 
     ngAfterViewInit(): void {
       this.observeCategories();
+    }
+
+    loadTranslations() {
+      this.translate.get(['FUNFACTS.N1', 'FUNFACTS.T1', 'FUNFACTS.N2', 'FUNFACTS.T2', 'FUNFACTS.T3', 'FUNFACTS.T4']).subscribe(translations => {
+          this.funfactBox[0].number = translations['FUNFACTS.N1'];
+          this.funfactBox[0].title = translations['FUNFACTS.T1'];
+          this.funfactBox[1].number = translations['FUNFACTS.N2'];
+          this.funfactBox[1].title = translations['FUNFACTS.T2'];
+          this.funfactBox[2].title = translations['FUNFACTS.T3'];
+          this.funfactBox[3].title = translations['FUNFACTS.T4'];
+      });
     }
 
     observeCategories() {
@@ -36,28 +77,4 @@ export class FunfactsComponent implements OnInit {
         observer.observe(category);
       });
     }
-
-    funfactBox = [
-        {
-            icon: `flaticon-tick`,
-            number: `1er`,
-            title: `Major promotion en L1`
-        },
-        {
-            icon: `flaticon-heart`,
-            number: ` TB`,
-            title: `Classement en L2`
-        },
-        {
-            icon: `flaticon-document`,
-            number: `18`,
-            title: `Repositories sur Github`
-        },
-        {
-            icon: `flaticon-knowledge-1`,
-            number: `20`,
-            title: `Note moyenne Math en L2`
-        }
-    ]
-
 }

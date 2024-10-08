@@ -6,10 +6,10 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #ffffff;">Licence 1 Mathématiques</h1>
+            <h1 style="color: #ffffff;">{{ 'LICENCE1.TITLE' | translate }}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
                 <li class="d-inline-block position-relative"><a routerLink="/">Home</a></li>
-                <li class="d-inline-block position-relative" style="color: #fff;">Licence 1 Mathématiques</li>
+                <li class="d-inline-block position-relative" style="color: #fff;">{{ 'LICENCE1.TITLE' | translate }}</li>
             </ul>
         </div>
     </div>
@@ -21,35 +21,10 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="privacy-policy-content">
-                    <h4>MODULES Semestre 1</h4>
-                    <p>
-                        Mathématiques: Calcul basique, Algèbre, Analyse
-                        <br>
-                        Outils Maths: Maths appliquées avec physique
-                        <br>
-                        Chimie: Chimie générale 
-                        <br>
-                        Informatique: Langage manuscript
-                        <br>
-                        Physique: Electricité
-                        <br>
-                        Mécanique: Mécanique du point
-                    </p>
-                    <h4>MODULES Semestre 2</h4>
-                    <p>Anglais: Anglais
-                        <br>
-                        Informatique: Langage Python
-                        <br>
-                        Maths et Informatique: Matrices, Algèbre Linaire, Analyse numérique
-                        <br>
-                        Analyse 2A et 2B: Calcul intégral et Calcul différentiel
-                        <br>
-                        Algèbre 2A et 2B: Algèbre linéaire et Algèbre bilinéaire
-                        <br>
-                        Outils Info Ingénieur: Matlab et Simulink
-                        <br>
-                        Lang C: Langage C
-                    </p>
+                    <h4>{{ 'LICENCE1.SEM1' | translate }}</h4>
+                    <p [innerHTML]="'LICENCE1.CONTENT1' | translate"></p>
+                    <h4>{{ 'LICENCE1.SEM2' | translate }}</h4>
+                    <p [innerHTML]="'LICENCE1.CONTENT2' | translate"></p>
                 </div>
             </div>
 

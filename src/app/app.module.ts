@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -69,6 +69,13 @@ import { EtudesComponent } from './components/pages/etudes-page/etudes.component
 import { MetiersComponent } from './components/pages/metiers-page/metiers.component';
 import { PreviewProjetsComponent } from './components/common/preview-projets/preview-projets.component';
 import { ToastrModule } from 'ngx-toastr';
+import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
     declarations: [
@@ -142,10 +149,19 @@ import { ToastrModule } from 'ngx-toastr';
         NgxScrollTopModule,
         CarouselModule,
         FontAwesomeModule,
-        ToastrModule.forRoot()
+        ToastrModule.forRoot(),
+        TranslateModule.forRoot({
+            defaultLanguage: 'fr',
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        })
     ],
     providers: [
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    provideHttpClient(withInterceptorsFromDi())
   ],
     bootstrap: [AppComponent]
 })

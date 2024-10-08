@@ -26,17 +26,14 @@
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
-                    <h2>Qui suis-je?</h2>
-                    <p> Je m'appelle Dang Hoang Dung, vous pouvez m'appeler Hoang. 
-                        <br>J'ai 20 ans et je suis étudiant en Licence 3 informatique à l'Université Polytechnique Hauts-de France. Je suis passionné par la programmation et les mathématiques. 
-                        <br>J'ai une bonne connaissance de Java, Python, HTML, CSS, JavaScript, Python, Angular, React, SQL,... 
-                        <br>Et si nécessaire, je suis toujours prêt à apprendre une nouvelle langue :D</p>
+                    <h2>{{ 'ABOUT.SUBTITLE' | translate }}</h2>
+                    <p [innerHTML]="'ABOUT.P1' | translate"></p>
                     <div class="quote position-relative">
                         <img src="assets/images/users/user1.jpg" class="rounded-circle" alt="user-image">
-                        <p>“Hoang est un étudiant responsable et opiniâtre. Nous passons souvent du temps à discuter (ou disputer) des connaissances.”</p>
-                        <h6 class="mb-0">Mon professeur principal au lycée</h6>
+                        <p [innerHTML]="'ABOUT.P2' | translate"></p>
+                        <h6 class="mb-0">{{ 'ABOUT.ENG' | translate }}</h6>
                     </div>
-                    <a routerLink="assets/public/CV_DangHoang.pdf" target="blank" class="default-btn cv-link">Voir mon CV</a>
+                    <a href="https://drive.google.com/file/d/1JgrGGqm3nq41-1Hm_nx2Se2VmBDB4_80/view?usp=sharing" target="blank" class="default-btn cv-link">Voir mon CV</a>
                 </div>
             </div>
         </div>
@@ -50,24 +47,18 @@
     <br>
     <div class="container">
         <div class="row">
-            <h2 style="text-align: center;">Expérience professionnelle</h2>
+            <h2 style="text-align: center;">{{ 'ABOUT.H2' | translate }}</h2>
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
-                    <h3 id="stage">Stage fin de 2e année</h3>
-                    <p class="job">
-                        En <strong>été 2024</strong>, j'ai effectué un stage de juin à août à l'entreprise <a href="https://societe-kali.fr/"><strong>SAS Kali</strong></a> à Marseille 7e. J'ai travaillé sur plusieurs projets <u>WordPress, Angular,..</u> J'ai utilisé les technologies <u>Angular, JS, PHP, WordPress,..</u>
-                        <br>
-                        J'avais beaucoup appris: de la façon de travailler avec le nouveau framework à la façon de diviser le travail.
+                    <h3 id="stage">{{ 'ABOUT.P3' | translate }}</h3>
+                    <p class="job" [innerHTML]="'ABOUT.CONTENT1' | translate">
                     </p>
                 </div>
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="about-content">
-                    <h3 id="ete">Job d'été Serveur</h3>
-                    <p class="job">
-                        - En <strong>été 2024</strong>, j'ai effectué un job partiel Serveur à un restaurant Japonais Sushi Couronne à Aix. J'ai appris à travailler en équipe, à travailler sous pression, à être patient, à être responsable et à être organisé.
-                        <br>
-                        - En <strong>été 2023</strong>, j'ai effectué un job partiel Serveur à un cafe/restaurant Saint Pearl à Paris 7e. J'ai appris à prendre les commandes, à communiquer avec les clients, à servir les plats, à nettoyer les tables.
+                    <h3 id="ete">{{ 'ABOUT.P4' | translate }}</h3>
+                    <p class="job" [innerHTML]="'ABOUT.CONTENT2' | translate">
                     </p>
                 </div>
             </div>

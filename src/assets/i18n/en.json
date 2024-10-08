@@ -1,0 +1,181 @@
+{
+	"ABOUT": {
+		"BUTTON": "See my CV",
+		"CONTENT1": "In <strong>summer 2024</strong>, I did an internship from June to August at the company <a href=\"https://societe-kali.fr/\"><strong>SAS Kali</strong></a> in Marseille 7th. I worked on several projects <u>WordPress, Angular,..</u> I used the technologies <u>Angular, JS, PHP, WordPress,..</u><br>I had learned a lot: from how to work with the new framework to how to divide the work.",
+		"CONTENT2": "- In <strong>summer 2024</strong>, I did a part-time job as a Server at a Japanese restaurant Sushi Couronne in Aix. I learned to work in a team, to work under pressure, to be patient, to be responsible and to be organized.<br>- In <strong>summer 2023</strong>, I did a part-time job as a Server at a cafe/restaurant Saint Pearl in Paris 7th. I learned to take orders, communicate with customers, serve dishes, clean tables.",
+		"ENG": "My main teacher in high school",
+		"H2": "Professional experience",
+		"P1": "My name is Dang Hoang Dung, you can call me Hoang. <br>I am 20 years old and I am a student in Bachelor 3 computer science at the Polytechnic University Hauts-de France. I am passionate about programming and mathematics. <br>I have a good knowledge of Java, Python, HTML, CSS, JavaScript, Python, Angular, React, SQL,... <br>And if necessary, I am always ready to learn a new language :D",
+		"P2": "“Hoang is a responsible and determined student. We often spend time discussing (or arguing) about knowledge.”",
+		"P3": "End of 2nd year internship",
+		"P4": "Summer job Server",
+		"SUBTITLE": "Who am I?",
+		"TITLE": "My Info"
+	},
+	"CATEGORIES": {
+		"H2": "Programming"
+	},
+	"COMPETENCES": {
+		"CAP1": "Interpersonal skills",
+		"CAP2": "Language ability",
+		"CAP3": "Computer skills",
+		"CAT1": "Relational",
+		"CAT2": "Linguistic",
+		"CAT3": "Computer science",
+		"TITLE": "My Skills"
+	},
+	"CONTACT": {
+		"BUTTON": "Send",
+		"CAU1": "Required name.",
+		"CAU2": "Please enter a valid value.",
+		"CAU3": "Email required.",
+		"CAU4": "Please enter a valid email address.",
+		"CAU5": "Subject required.",
+		"CAU6": "Required message.",
+		"ERROR": "An error has occurred.",
+		"H3": "If you want to leave me a message",
+		"MESS": "Message has been sent!",
+		"PH1": "Name *",
+		"PH2": "Subject *",
+		"PH4": "Write a message... *",
+		"TITLE": "Contact me"
+	},
+	"ETUDES": {
+		"P1": "I plan to continue my studies with the <strong>FISA (Formation Alternance à INSA) Computer Science</strong> program at UPHF for a duration of 2 to 3 years, aiming to obtain an engineering degree. This is an opportunity for me to deepen my knowledge and skills in application development while exploring the field of Artificial Intelligence (AI). Although I don't intend to study AI at a doctoral level, I hope to acquire a strong understanding at an application level to utilize it in practical work.<br>Currently, I specialize in front-end development for the web, a field I thoroughly enjoy, but I am also keen on expanding into back-end development, whether for web applications or software. My goal is to become <strong>a versatile developer</strong>. To achieve this goal, in addition to my studies at school, I am taking online courses, especially on Udemy, to strengthen and delve deeper into the programming languages I already master.<br>Aware of the rapid evolution of the technology sector, I wish to broaden my skills on frameworks, libraries such as <strong>Spring Boot, React, Angular</strong>, as well as on languages like <strong>JavaScript and PHP</strong>. I also want to dive further into application development and continue learning to constantly improve myself.",
+		"P2": "In summary, I not only wish to refine my current skills but also to open myself up to new fields, exploring the latest technologies and trends, with the goal of not only becoming an excellent developer but also making a meaningful contribution to the evolution of the technology sector.",
+		"T1": "Plan for the future",
+		"T2": "Conclusion",
+		"TITLE": "Studies"
+	},
+	"FBOX": {
+		"T1": "Patience and Optimism",
+		"T2": "Adaptability",
+		"T3": "Organizational capacity",
+		"T4": "Great teamwork"
+	},
+	"FBOX2": {
+		"C1": "Ranking in Bachelor 2",
+		"C2": "Math Info Averages",
+		"C3": "Reports produced in 2nd Year",
+		"P1": "A"
+	},
+	"FBOX3": {
+		"C1": "Major Promotion of 1st Year",
+		"C2": "Average grade of 1st Year",
+		"C3": "Average in Info",
+		"C4": "Academic projects",
+		"P1": "1st"
+	},
+	"FEAT": {
+		"T1": "A trustworthy collaborator always submits the code before the deadline",
+		"T2": "A diligent and progressive student",
+		"T3": "Persevere in fixing bugs until the program works",
+		"T4": "Solving math problems is also fun"
+	},
+	"FUNFACTS": {
+		"N1": "1st",
+		"N2": "A",
+		"T1": "Major promotion in 1st Year",
+		"T2": "Ranking in 2nd Year",
+		"T3": "Repositories on Github",
+		"T4": "Average Math grade in 2nd Year",
+		"TITLE": "Fun fact at university"
+	},
+	"HOMETHREE_BANNER": {
+		"CV_BUTTON": "My CV",
+		"DESCRIPTION": "Hello (or good evening) Madam, Sir, my name is Dang Hoang, a third-year Computer Science student at the Polytechnic University of Hauts-de-France. I am an ambitious young programmer. If my skills or projects interest you, feel free to leave me a message or contact me ;)",
+		"SKILLS_BUTTON": "My Skills",
+		"SUB_TITLE": "Hoang Portfolio",
+		"TITLE": "Welcome to my Portfolio"
+	},
+	"INFOR": {
+		"CONTENT1": "- <strong>Visual Studio Code</strong>: <strong>This is my most used IDE</strong>, used to program Python, C, HTML, CSS, JS and React JS, Angular. It has many extensions and interface features that I really like, that's why I've been using it all through high school until now.<br>- <strong>Eclipse</strong> The IDE I use to program Java and C++. It's a great place with commands available to create various packages, interfaces or generate functions. <strong>My #1 choice when working with traditional Java.</strong><br>- <strong>IntelliJ IDEA</strong>: <strong>My #1 choice when working with Java Spring Boot</strong>. Intellij supports a number of dependencies that Eclipse or Spring Tool Suite don't support.<br>- <strong>PHPStorm</strong>: <strong>The IDE I use to program PHP.</strong> It has Laravel framework, Symfony, etc. And I used it to make Dolibarr (function and class).<br>- <strong>Spring Tool Suite, Dev C++, Notepad++</strong>: The IDEs I don't use often because in my opinion they are not as convenient as the IDEs I listed.",
+		"CONTENT2": "- <strong>Spring Boot</strong>: <strong>This is where I work the most with APIs</strong>. I used the API to manage data lists (you can see in my Spring Boot projects to know more).<br>- <strong>PHP</strong>: I learned to work with PHP API during my internship (or <strong>specifically PHP Dolibarr</strong>). I have to create triggers regarding API to manage orders, invoices and emails (very fun).<br>- <strong>JavaScript</strong>: I used <strong>Express JS</strong> to retrieve data in form, reformulate it and send it by nodemailer.<br>- <strong>Python</strong>: I used API to get data from data API (for example: API of bike stations of a company in all cities to process data).",
+		"CONTENT3": "To test API, Middleware Token, I use <strong>PostMan</strong>. (very convenient without having to test directly on the program).",
+		"CONTENT4": "I use SQL in:<br>- <strong>SQL Workbench</strong>: This is not my first application to use SQL or write queries, but Workbench will be <strong>the application I use the most for SQL</strong>. I often create databases related to projects that need back-end information, or just databases to practice writing SQL queries.<br>- <strong>PHPMyAdmin</strong>: I used PHPMyAdmin when I discovered data binding between the front and backend (when I ran the programs with xamp or wamp), the basis for my later use of Workbench.<br>- <strong>Access</strong>: The first time I came into contact with SQL. Even though it was Jet SQL, Access taught me how to establish relationships between tables, write queries and create forms.",
+		"CONTENT5": "To create the table relationship diagram, I use <strong>Quick DBD</strong>.",
+		"CONTENT6": "- Languages: Python (Logic Programming), Java (OOP and Spring), C (pointers and linked lists), HTML, CSS, JS, PHP, C++<br>- Framework: Angular, Spring Boot<br>- Library: React , Bootstrap, JQuery, Node JS, Express JS, Lombok, JUnit, etc.",
+		"CONTENT7": "I am always ready to learn new languages or improve the languages I already know.",
+		"NAVLINK4": "Languages",
+		"SUB1": "IDEs I use",
+		"SUB4": "Languages, Framework, Library"
+	},
+	"INSTRUC": {
+		"P1": "Besides coding and studying at school, I also have hobbies. Thanks to these things, I can reduce stress, focus more and perform better at work.",
+		"S1": "Badminton",
+		"S2": "Books",
+		"S3": "Drawing",
+		"S4": "Video games",
+		"S5": "Swimming",
+		"S6": "Music",
+		"TITLE": "My interests"
+	},
+	"LANG": {
+		"CONTENT1": "Even though my level is not as good as my native one, I will try to improve every day.",
+		"CONTENT2": "I have worked in an English-speaking environment before and got a score of 940/990 in TOEIC",
+		"CONTENT3": "This is my native language. I can teach you how to speak basic phrases",
+		"T1": "French",
+		"T2": "English",
+		"T3": "Vietnamese"
+	},
+	"LICENCE1": {
+		"CONTENT1": "Mathematics: Basic Calculus, Algebra, Analysis<br>Math Tools: Applied Math with Physics<br>Chemistry: General Chemistry<br>Computer Science: Manuscript Language<br>Physics: Electricity<br>Mechanics: Particle Mechanics",
+		"CONTENT2": "English: English<br>Computer Science: Python Language<br>Math and Computer Science: Matrices, Linear Algebra, Numerical Analysis<br>Analysis 2A and 2B: Integral Calculus and Differential Calculus<br>Algebra 2A and 2B: Linear Algebra and Bilinear Algebra<br>Engineering Tools: Matlab and Simulink<br>C: C Language",
+		"SEM1": "MODULES Semester 1",
+		"SEM2": "MODULES Semester 2",
+		"TITLE": "Bachelor's degree 1 Mathematics"
+	},
+	"LICENCE2": {
+		"CONTENT1": "Computer Science: C (pointer and linked list)<br>Languages and Scripting: Java (OOP) and Bash (scripting)<br>Database: JetSQL (Access)<br>Network: Basic protocols and security (Cisco Packet Tracer, Wireshark)<br>Application Development: Web programming languages (HTML, CSS, JS, PHP) and drafting specifications<br>Probability and Statistics: Probability and Statistics",
+		"CONTENT2": "English: English<br>Computer Science: Python Language<br>Math and Computer Science: Matrices, Linear Algebra, Numerical Analysis<br>Analysis 2A and 2B: Integral Calculus and Differential Calculus<br>Algebra 2A and 2B: Linear Algebra and Bilinear Algebra<br>Engineering Tools: Matlab and Simulink",
+		"SEM1": "MODULES Semester 1",
+		"SEM2": "MODULES Semester 2",
+		"TITLE": "Bachelor's degree 2 in Computer Science"
+	},
+	"LYCEE": {
+		"CONTENT1": "Final ranking: 1st.<br>3rd prize in the national competition for students of excellence.<br>Average marks: 9.5 / 10. (Very good)",
+		"CONTENT2": "Final Ranking: 1st.<br>Logistics for School Music Events.<br>Average Rating: 9.4 / 10. (Very Good)",
+		"CONTENT3": "Valedictorian.<br>Join martial arts clubs, reading clubs.<br>Participate in volunteer activities.<br>Average rating: 8.6 / 10. (Very good)",
+		"SEM1": "Senior Year",
+		"SEM2": "Junior Year",
+		"SEM3": "Sophomore Year",
+		"TITLE": "Hanoi-Amsterdam High School of Excellence"
+	},
+	"METIER": {
+		"P1": "In the future, I hope to orient my career towards development in the field of software development with a particular focus on <strong>web and mobile application development</strong>. With a background in front-end programming, combined with a willingness to expand my knowledge in back-end, I hope to become a <strong>full-stack developer</strong> from the early stages of my career. This has allowed me not only to participate in building the user interface, but also to manage the entire application development process, from the database to the application logic. <br>In the long term, I want to improve my professional skills and my in-depth understanding of new technologies such as <strong>artificial intelligence (AI) and big data processing (Big Data)</strong>, with the aim of <strong>becoming a tech lead or software architect</strong>. In this role, I not only develop products, but also participate in the development and decision-making of technological solutions for important projects. Additionally, I also plan to <strong>become a project manager in the future</strong>, where I can lead a team of engineers, manage projects from start to finish, and ensure that each product is of high quality.",
+		"P2": "I wish to develop my career in a highly creative environment where I can both learn and contribute. My ultimate goal is to become <strong>an expert in the field of information technology</strong>, like my older brother, capable of helping companies solve complex problems through the application of advanced technologies and software solutions.",
+		"T1": "Plan for the future",
+		"T2": "Conclusion",
+		"TITLE": "Jobs"
+	},
+	"NAVBAR": {
+		"A1L2": "Education",
+		"A1L2U1": "Bachelor's degree 2 in Computer Science",
+		"A1L2U2": "Bachelor's degree 1 Mathematics",
+		"A1L2U3": "Hanoi-Amsterdam High School of Excellence",
+		"A1L3": "About me",
+		"A1L3U1": "Info",
+		"A1L3U2": "Skills",
+		"A2": "Projects",
+		"A2L1": "Web and Application",
+		"A2L2": "Data analysis",
+		"A3L1": "Studies",
+		"A3L2": "Jobs",
+		"BUTTON": "Contact me"
+	},
+	"PARTNERS": {
+		"TITLE": "Software used"
+	},
+	"PREVIEW_PROJETS": {
+		"BUTTON": "See more",
+		"CONTENT1": "In this section you will find a selection of projects made in Java, implementing the principles of Object Oriented Programming (OOP), Spring Boot. These projects explore various facets of Java development, from creating graphical user interfaces with JFrame and JPanel, to designing robust web applications with Spring Boot. Thanks to the integration with React JS, these projects also demonstrate my skills in developing modern full-stack applications, offering efficient and innovative solutions to the problems encountered.",
+		"CONTENT2": "This section presents my projects made with Python, exploring various aspects of programming. Using libraries like Pygame and Turtle, I created interactive animations and simple games, illustrating my understanding of the basics of algorithmic logic and event-driven programming. These projects also demonstrate my skills in problem solving and algorithm design in Python, one of the most versatile and powerful programming languages.",
+		"CONTENT3": "In addition to the website you are viewing and the websites I have created at work, I have 2 projects on web interfaces and web pages to keep notes on things to do. This section presents my web projects using HTML, CSS, PHP and JavaScript to create dynamic and interactive interfaces. I have designed and developed web applications that integrate client-side and server-side functionality, demonstrating my front-end skills.",
+		"CONTENT4": "My C/C++ projects cover a range of technical exercises from linked list management to advanced process manipulation with fork, pipe, etc. in C. For C++, I worked mainly on object-oriented programming projects and basic exercises, developing a solid understanding of the fundamentals of these two powerful languages.",
+		"P1": "Java Projects",
+		"P2": "Python Projects",
+		"P3": "Web Projects",
+		"P4": "C/C++ Projects",
+		"TITLE": "Academic and Personal Projects"
+	}
+}

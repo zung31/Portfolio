@@ -77,6 +77,20 @@
         }
     }
 }
+.category-box {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+.category-box.show {
+    animation: fadeInUp 2s ease-out forwards;
+}
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 // Style Two
 .category-item {

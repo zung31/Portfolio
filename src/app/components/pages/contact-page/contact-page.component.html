@@ -6,10 +6,10 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #fff;">Contact Us</h1>
+            <h1 style="color: #fff;">{{ 'CONTACT.TITLE' | translate }}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
                 <li class="d-inline-block position-relative"><a routerLink="/">Home</a></li>
-                <li class="d-inline-block position-relative" style="color: #fff;">Contact Us</li>
+                <li class="d-inline-block position-relative" style="color: #fff;">{{ 'CONTACT.TITLE' | translate }}</li>
             </ul>
         </div>
     </div>
@@ -20,21 +20,37 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-xxl-4 col-lg-5">
+                <ul class="contact-info">
+                    <li class="position-relative">
+                        <div class="icon text-center rounded-circle">
+                            <i class='bx bxl-linkedin'></i>
+                        </div>
+                        <a href="https://www.linkedin.com/in/hoang-dung-dang-a50236145/">
+                            LinkedIn Link
+                        </a>
+                    </li>
+                    <li class="position-relative">
+                        <div class="icon text-center rounded-circle">
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <a href="mailto:danghoangdung2004&#64;gmail.com">danghoangdung2004&#64;gmail.com</a>
+                    </li>
+                </ul>
                 <div class="image-container">
                     <img src="assets/images/shapes/shape5.gif" alt="image">
                 </div>
             </div>
             <div class="col-xxl-8 col-lg-7">
                 <div class="contact-form">
-                    <h3>Si vous voulez me laisser un message</h3>
+                    <h3>{{ 'CONTACT.H3' | translate }}</h3>
                     <form method="POST" [formGroup]="contactForm" (ngSubmit)="onSaveUser()">
                         <div class="row">
                             <div class="col-lg-12 col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="fName" placeholder="Nom *" required="" formControlName="firstName">
+                                    <input type="text" class="form-control" id="fName" placeholder="{{ 'CONTACT.PH1' | translate }}" required="" formControlName="firstName">
                                     <div *ngIf="contactForm.get('firstName')?.touched && contactForm.get('firstName')?.invalid" class="text text-danger">
-                                        <div *ngIf="contactForm.get('firstName')?.errors?.['required'] || contactForm.get('firstName')?.errors?.['blank']">Nom obligatoire.</div>
-                                        <div *ngIf="contactForm.get('firstName')?.errors?.['pattern']">Veuillez saisir une valeur valide.</div>
+                                        <div *ngIf="contactForm.get('firstName')?.errors?.['required'] || contactForm.get('firstName')?.errors?.['blank']">{{ 'CONTACT.CAU1' | translate }}</div>
+                                        <div *ngIf="contactForm.get('firstName')?.errors?.['pattern']">{{ 'CONTACT.CAU2' | translate }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -42,8 +58,8 @@
                                 <div class="form-group">
                                     <input type="email" class="form-control" id="email" placeholder="Email *" required="" formControlName="email">
                                     <div *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid" class="text text-danger">
-                                        <div *ngIf="contactForm.get('email')?.errors?.['required']">Email obligatoire.</div>
-                                        <div *ngIf="contactForm.get('email')?.errors?.['email']">Email Invalide.</div>
+                                        <div *ngIf="contactForm.get('email')?.errors?.['required']">{{ 'CONTACT.CAU3' | translate }}</div>
+                                        <div *ngIf="contactForm.get('email')?.errors?.['email']">{{ 'CONTACT.CAU4' | translate }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -54,24 +70,24 @@
                             </div>
                             <div class="col-lg-12 col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="sujet" placeholder="Sujet *" required="" formControlName="sujet">
+                                    <input type="text" class="form-control" id="sujet" placeholder="{{ 'CONTACT.PH2' | translate }}" required="" formControlName="sujet">
                                     <div *ngIf="contactForm.get('sujet')?.touched && contactForm.get('sujet')?.invalid" class="text text-danger">
-                                        <div *ngIf="contactForm.get('sujet')?.errors?.['required'] || contactForm.get('sujet')?.errors?.['blank']">Sujet obligatoire.</div>
-                                        <div *ngIf="contactForm.get('sujet')?.errors?.['pattern']">Veuillez saisir une valeur valide.</div>
+                                        <div *ngIf="contactForm.get('sujet')?.errors?.['required'] || contactForm.get('sujet')?.errors?.['blank']">{{ 'CONTACT.CAU5' | translate }}</div>
+                                        <div *ngIf="contactForm.get('sujet')?.errors?.['pattern']">{{ 'CONTACT.CAU2' | translate }}</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <textarea cols="30" rows="5" class="form-control" id="message" placeholder="Écrire un message... *" formControlName="message"></textarea>
+                                    <textarea cols="30" rows="5" class="form-control" id="message" placeholder="{{ 'CONTACT.PH4' | translate }}" formControlName="message"></textarea>
                                     <div *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid" class="text text-danger">
-                                        <div *ngIf="contactForm.get('message')?.errors?.['required'] || contactForm.get('message')?.errors?.['blank']">Message obligatoire.</div>
-                                        <div *ngIf="contactForm.get('message')?.errors?.['pattern']">Veuillez saisir une valeur valide.</div>
+                                        <div *ngIf="contactForm.get('message')?.errors?.['required'] || contactForm.get('message')?.errors?.['blank']">{{ 'CONTACT.CAU6' | translate }}</div>
+                                        <div *ngIf="contactForm.get('message')?.errors?.['pattern']">{{ 'CONTACT.CAU2' | translate }}</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" [disabled]="!contactForm.valid" class="default-btn d-block text-center">Envoyer</button>
+                                <button type="submit" [disabled]="!contactForm.valid" class="default-btn d-block text-center">{{ 'CONTACT.BUTTON' | translate }}</button>
                             </div>
                             <div class="col-12">
                                 <div *ngIf="serverErrorMessage" class="text text-danger">{{serverErrorMessage}}</div>

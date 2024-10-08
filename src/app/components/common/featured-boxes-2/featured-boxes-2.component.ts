@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-featured-boxes-2',
@@ -9,21 +10,21 @@ import { Router } from '@angular/router';
 export class FeaturedBoxes2Component {
 
     constructor(
-        public router: Router
+        public router: Router, private translate: TranslateService
     ) { }
 
     featuredBox = [
         {
-            icon: `TB`,
-            title: `Classement en Licence 2`
+            icon: this.translate.instant('FBOX2.P1'),
+            title: this.translate.instant('FBOX2.C1')
         },
         {
             icon: `20`,
-            title: `Moyennes de Math Info`
+            title: this.translate.instant('FBOX2.C2')
         },
         {
             icon: `15+`,
-            title: `Rapports réalisés en L2`
+            title: this.translate.instant('FBOX2.C3')
         },
         {
             icon: `940`,

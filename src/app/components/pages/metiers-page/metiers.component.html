@@ -6,10 +6,10 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #fff;">Métiers</h1>
+            <h1 style="color: #fff;">{{ 'METIER.TITLE' | translate }}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
                 <li class="d-inline-block position-relative"><a routerLink="/">Home</a></li>
-                <li class="d-inline-block position-relative" style="color: #fff;">Métiers</li>
+                <li class="d-inline-block position-relative" style="color: #fff;">{{ 'METIER.TITLE' | translate }}</li>
             </ul>
         </div>
     </div>
@@ -25,15 +25,11 @@
 
             <div class="col-md-8">
                 <div class="privacy-policy-content">
-                    <h4>Plan à l'avenir</h4>
-                    <p>
-                        À l'avenir, j'espère orienter ma carrière vers le développement dans le domaine du développement logiciel avec un accent particulier sur <strong>le développement d'applications Web et mobiles</strong>. Avec une formation en programmation front-end, combinée à une volonté d'élargir mes connaissances en back-end, j'espère devenir <strong>un développeur full-stack</strong> dès les premiers stades de ma carrière. Cela m'a permis non seulement de participer à la construction de l'interface utilisateur, mais également de gérer l'ensemble du processus de développement de l'application, de la base de données à la logique de l'application.
-                        <br>
-                        À long terme, je souhaite améliorer mes compétences professionnelles et ma compréhension approfondie des nouvelles technologies telles que <strong>l'intelligence artificielle (IA) et le traitement du big data (Big Data)</strong>, dans le but de <strong>devenir tech lead ou architecte logiciel</strong>. Dans ce rôle, je développe non seulement des produits, mais je participe également à l'élaboration et à la décision de solutions technologiques pour des projets importants. De plus, j'ai également l'intention de <strong>devenir chef de projet à l'avenir</strong>, où je pourrai diriger une équipe d'ingénieurs, gérer des projets du début à la fin et garantir que chaque produit est de haute qualité.
+                    <h4>{{ 'METIER.T1' | translate }}</h4>
+                    <p [innerHTML]="'METIER.P1' | translate">
                     </p>
-                    <h4>Conclusion</h4>
-                    <p>
-                        Je souhaite développer ma carrière dans un environnement hautement créatif où je peux apprendre, contribuer et contribuer. Mon objectif ultime est de devenir <strong>un expert dans le domaine des technologies de l'information</strong>, capable d'aider les entreprises à résoudre des problèmes complexes grâce à l'application de technologies et de solutions logicielles avancées.
+                    <h4>{{ 'METIER.T2' | translate }}</h4>
+                    <p [innerHTML]="'METIER.P2' | translate">
                     </p>
                 </div>
             </div>
