@@ -10,13 +10,13 @@ export class LyceePageComponent implements OnInit{
     constructor() { }
   
     ngOnInit(): void {
-      this.showContent();
+      //this.showContent();
     }
   
-    showContent() {
-      const content = document.querySelector('.img-fluid');
-      if (content) {
-        content.classList.add('show');
-      }
-    }
+    // showContent() {
+    //   const content = document.querySelector('.img-fluid');
+    //   if (content) {
+    //     content.classList.add('show');
+    //   }
+    // }
 }
