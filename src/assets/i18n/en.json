@@ -56,12 +56,12 @@
 	"FBOX2": {
 		"C1": "Ranking in Bachelor 2",
 		"C2": "Math Info Averages",
-		"C3": "Reports produced in 2nd Year",
+		"C3": "Reports in 2nd Year",
 		"P1": "A"
 	},
 	"FBOX3": {
-		"C1": "Major Promotion of 1st Year",
-		"C2": "Average grade of 1st Year",
+		"C1": "Top of 1st Year",
+		"C2": "Average of 1st Year",
 		"C3": "Average in Info",
 		"C4": "Academic projects",
 		"P1": "1st"
