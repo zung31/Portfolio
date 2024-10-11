@@ -8,7 +8,7 @@
         <div class="page-banner-content text-center">
             <h1 style="color: #ffffff;">Streamming Application Database</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/sql-projets">SQL Projets</a></li>
+                <li class="d-inline-block position-relative"><a routerLink="/sql-projets">{{ 'SQL.TITLE' | translate }}</a></li>
                 <li class="d-inline-block position-relative" style="color: #ffffff;">Streamming Application Database</li>
             </ul>
         </div>
@@ -33,14 +33,9 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        Le projet Streaming Application Database sera basée sur les données d'une application de streaming musical, comprenant des informations sur les artistes ainsi que leurs produits. 
-Mon système gérera simultanément les artistes et fournira des versions numériques pour les amateurs de musique. Nous générons des revenus à partir des versions numériques vendues et rémunérons les artistes en fonction de leurs performances dans le domaine de la musique numérique.
-                    </p>
-                    <h4>Des digrammes et relation de DB</h4>
-                    <p>
-                        Ma base de données compose de 11 tables: Group_Chanteur, Membre, Album, Song, Type_Album, Type_Song, Manager, Signer_Contrat, Record_Label, Entertainement_Company, Etat.
-                    </p>
+                    <p [innerHTML]=" 'SQL.PROJ2.P1' | translate "></p>
+                    <h4>{{ 'SQL.PROJ2.H1' | translate }}</h4>
+                    <p [innerHTML]=" 'SQL.PROJ2.P2' | translate "></p>
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>
                             <div class="image-container">
@@ -58,8 +53,8 @@ Mon système gérera simultanément les artistes et fournira des versions numér
                             </div>
                         </ng-template>
                     </owl-carousel-o>
-                    <h4>Requêtes</h4>
-                    <p><u>Lister les groupes venant du company SM Entertainment</u></p>
+                    <h4>{{ 'SQL.PROJ1.H2' }}</h4>
+                    <p [innerHTML]=" 'SQL.PROJ2.P3' | translate "></p>
                     <pre><code>
 SELECT Group_chanteur.code_group, 
     Group_chanteur.nom, 
@@ -76,44 +71,39 @@ WHERE Entertainment_company.nom = "SM Entertainment";
                     <div class="post-thumb" style="text-align: center;">
                         <img src="assets/images/blogs/db-1.jpg" class="img-fluid rounded" style="height: 100px;" alt="Image 1" (click)="openModal('assets/images/blogs/db-1.jpg')">
                     </div>
-                    <p><u>Énumérez les montants que les auteurs-compositeurs reçoivent</u></p>
-                    <p>
-                        Nous payons chaque chanson 2000 euros à l'auteur-compositeur, et nous versons également 5000 euros à l'ensemble du groupe pour chaque tranche de 100 millions de streams que l'album atteint. Les groupes ont convenu que, une fois les primes de streaming reçues, celles-ci seront partagées équitablement, tandis que la prime pour les paroles restera la part individuelle de chaque membre.
-                        <br>
-                        En raison de la complexité du calcul, je vais diviser cette déclaration en plusieurs requêtes. Tout d'abord, je vais calculer les gains des membres pour l'écriture des paroles des chansons. Ensuite, je vais calculer les gains des membres provenant des écoutes en streaming en prenant le montant total reçu par le groupe et en le divisant par le nombre de membres du groupe. Pour ce faire, je devrai trouver le nombre de membres du groupe, calculer le total des écoutes en streaming, puis en déduire le montant total provenant des streams que chaque groupe a reçu.
-                        <br>
-                        1. Remuneration_parole</p>
+                    <p [innerHTML]=" 'SQL.PROJ2.P4' | translate "></p>
+                    <p [innerHTML]=" 'SQL.PROJ2.P5' | translate "></p>
                     <pre><code>
 SELECT Song.parole_credit, COUNT(*) AS num_song, COUNT(*) * 2000 AS remu_credit
 FROM Song INNER JOIN Membre ON Song.parole_credit = Membre.code_membre
 GROUP BY Song.parole_credit;
                     </code></pre>
-                    <p>2. Nombre_Membre</p>
+                    <p [innerHTML]=" 'SQL.PROJ2.P6' | translate "></p>
                     <pre><code>
 SELECT Membre.code_band, COUNT(*) AS num_member
 FROM Membre
 GROUP BY Membre.code_band;
                     </code></pre>
-                    <p>3. Remuneration_stream</p>
+                    <p [innerHTML]=" 'SQL.PROJ2.P7' | translate "></p>
                     <pre><code>
 SELECT Album.streaming, (Album.streaming / 1000000 * 5000) AS remu_stream
 FROM Album
 GROUP BY Album.streaming;
                     </code></pre>
-                    <p>4. Remuneration_stream_total</p>
+                    <p [innerHTML]=" 'SQL.PROJ2.P8' | translate "></p>
                     <pre><code>
 SELECT Album.code_group, SUM(Remuneration_stream.streaming) AS remu_stream_total
 FROM Album INNER JOIN Remuneration_stream ON Album.streaming = Remuneration_stream.streaming
 GROUP BY Album.code_group;
                     </code></pre>
-                    <p>5. Remuneration_stream_personnel</p>
+                    <p [innerHTML]=" 'SQL.PROJ2.P9' | translate "></p>
                     <pre><code>
 SELECT Membre.code_membre, ROUND((Remuneration_stream_total.remu_stream_total / Nombre_membre.num_member),1) AS remu_stream_personnel
 FROM (Membre INNER JOIN Remuneration_stream_total 
     ON Membre.code_band = Remuneration_stream_total.code_group) INNER JOIN Nombre_membre 
     ON Remuneration_stream_total.code_group = Nombre_membre.code_band;
                     </code></pre>
-                    <p>Query final</p>
+                    <p [innerHTML]=" 'SQL.PROJ2.P10' | translate "></p>
                     <pre><code>
 SELECT Membre.code_membre, Membre.nom_scene, 
     (Remuneration_parole.remu_credit + Remuneration_stream_personnel.remu_stream_personnel) AS remuneration

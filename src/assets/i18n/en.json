@@ -12,6 +12,34 @@
 		"SUBTITLE": "Who am I?",
 		"TITLE": "My Info"
 	},
+	"C": {
+		"PRO1": "Contact Management System",
+		"PRO2": "Pointers and Linked Lists",
+		"PRO4": "Pipe and Fork in C",
+		"PROJ1": {
+			"H1": "Conclusion",
+			"IMG": "Some images of this project",
+			"P1": "The Parking Application project allows the user to Search for a parking lot, Enter a parking lot or Exit a parking lot. It can also record the license plate of the customers.<br>The program retrieves the parking data from the csv file provided by the teacher. First, the program will display a menu of options for the user. Then, depending on his choice, the user will enter the additional information needed by the program to provide results.",
+			"P2": "The program has many limitations and some requirements that I have not met, but it is also a program that helps me understand C better, such as being able to separate files and pass them to main using the h."
+		},
+		"PROJ2": {
+			"P1": "This project is my C++ project, working with files and creating menus.<br>My program will initially display a \"Welcome to the Contact Management System\" screen, and then it will go to the menu once the user presses a key.<br>Users will be able to choose between 6 options: add new contact, list contacts, search contacts, delete contacts, edit contacts, exit the program. After completing the task, the user can choose to continue using the program and display the menu again, or choose to exit and the screen will display \"Thank you for using CMS\".",
+			"P2": "Although the interface is average, the program does its job well. The program also helped me get familiar with C++ syntax."
+		},
+		"PROJ3": {
+			"H1": "What does each function do?",
+			"P1": "<strong>Topic</strong>:<br>You need to implement a hash table to store contact information. Specifically, you will implement the definition of the data structure:<br>Cell: Represents an element in a hash table, containing the fields name, firstname, tel, and a pointer to the next element in the linked list. TableH: Represents the hash table, containing the size of the table (size), the number of elements (nb_elem), and the array of pointers to cells.",
+			"P2": "<strong>correct_format</strong>: Check the format of the phone number to ensure that it is 13 characters long and begins with \"+33\".<br><strong>hash</strong>: Calculate the hash value of a string by adding the ASCII values ​​of the characters in the string and taking the remainder when divided by the size of the table.<br><strong>insert</strong>: Insert an element into the hash table.<br><strong>delete</strong>: Delete an element by first and last name from the hash table.<br><strong>search</strong>: Search for phone number by first and last name in the hash table.<br><strong>display</strong>: Display all elements in the hash table.<br><strong>initialize</strong>: Initialize the hash table.<br><strong>increase</strong>: Double the size of the hash table and redistribute the elements into the new table.<br><strong>decrease</strong>: Reduce the size of the hash table by half and redistribute the elements into the new table.<br><strong>insert2</strong>: Insert a new element into the hash table and check the compression ratio. If the compression ratio exceeds the threshold, increase the table size, if it is less than the threshold, decrease the table size.<br><strong>decrease2</strong>: Same as insert2 but for decrease.<br><strong>ratio</strong>: Calculate the compression ratio of the hash table."
+		},
+		"PROJ4": {
+			"P1": "This is an assignment in my class. The problem is that I use pipes to pass information from parent to child (created with fork), as well as from child to parent, in order to be able to print a series of prime numbers from 1 to 1000 on the screen.<br>I have written the questions and how to do them in the report (including source code) and I will leave the link at the end.",
+			"P2": "I can understand the context of transmitting information using pipes, how to perform tasks one after another so that the program is not clogged while ensuring results and execution times."
+		},
+		"SUB1": "Project with C++.",
+		"SUB2": "Programs used C.",
+		"SUB3": "Project with C.",
+		"TITLE": "C/C++ Projects"
+	},
 	"CATEGORIES": {
 		"H2": "Programming"
 	},
@@ -110,6 +138,55 @@
 		"S6": "Music",
 		"TITLE": "My interests"
 	},
+	"JAVA": {
+		"PRO1": "Full Stack Online Quiz",
+		"PRO2": "Student Management System",
+		"PRO3": "Snake Game",
+		"PRO4": "Local Game Quiz",
+		"PRO5": "Management of a bookstore selling notebooks",
+		"PROJ1": {
+			"IMG": "Some images of this project",
+			"P1": "This is my most complicated Spring Boot project so far because there is a connection between the Front End and the Back End and I had to do it in 2 different folders. Project Quiz-Online has 2 modes: Administrator mode to add, edit or delete questions; mode The client will be able to choose the topic, the number of questions he wants and answer the quiz.<br>I used Spring Boot for the Back End (port 9192), React JS (.jsx) combined with Bootstrap for the Front End, MySQL WorkBench (port 3306) for the database. The site starts on Vite + React at http://localhost:5173/ and the Spring Boot application is also started.<br>To allow Front to send requests to the Back endpoint, i use CrossOrigin and the front link address. And additionally, I used Axios to create an axios instance (http://localhost:9192/api/quizzes) to send requests more easily.",
+			"P2": "As for <u>Back</u>, I first create a model for the question, which contains all the fields a question needs (Id, question, subject, type, choice, correct answer). Then, I create repository, service and controller. In Service, there are simple functions such as getQuestionById, updateQuestion, deleteQuestion,... to help admins to be able to directly control questions from the Front. In Controller, more complicated, I will have to split routers and deploy GET PUT DELETE according to the Service functions. Repository is the same as usual, just extend JPA Repository and add the necessary queries.<br>For <u>Front</u> part, I used React and its dependencies (axios, bootstrap, react-router-dom,..). There are AddQuestion.jsx and UpdateQuestion.jsx to retrieve information about questions and update them in the database. There is also a page to display all quizzes, a page to select the number of questions and the topic to answer the quiz, a quiz page that includes logic and scoring,.... All pages return the interface in html format (except service pages).",
+			"P3": "<li>Users can add and edit quizzes and topics through the Front End</li><li>The program is divided into several routers, making navigation easier</li><li>Beautiful interface</li>",
+			"P4": "Since the program only runs locally and intermittently, when I shut down the program, all data will be lost. And there is no authentication section for admins, so anyone can access pages editing questions.",
+			"SUB1": "Project details",
+			"SUB2": "Project Benefits",
+			"SUB3": "Conclusion"
+		},
+		"PROJ2": {
+			"P1": "This is one of my Spring Boot projects. It simulates a simple student list manager where I can add information about students, edit information, or delete students.",
+			"P2": "I am using Spring Suite Tool 4 to develop this project, with dependencies: Spring Web, Spring Data JPA, MySQL Driver, Thymeleaf, Dev Tools. I am using MySQL Workbench application as a link to the project database. In the project, I used Student class (Entity) to define the necessary information fields and ID. I created StudentRepository implementing JPA repository so that I can use useful JPA resources.<br>Then I have StudentService (Service) and StudentController (Controller) classes to handle complex services and data processing logic, handle user requests and navigate through the program, returning the corresponding response.<br>I created 3 additional HTML pages as the interface of my website, using boostrap CSS to style it. A small adjustment in application.properties (connect to database and add hibernate auto ddl) and main section (implements CommandLineRunner) and I was able to start the project website on localhost port 8080.",
+			"P3": "<li>Use the API and establish a link with the Front End</li><li>Beautiful interface</li>",
+			"P4": "But since the program only runs locally and intermittently, when I turn off the program, all the data will be lost."
+		},
+		"PROJ3": {
+			"P1": "This is one of my Java projects. It helped me get familiar with libraries like JFrame and JPanel, allowing me to display a simple screen for a snake-eating-apple game.",
+			"P2": "In the program, I programmed a colored snake, with a default length of 6, which will increase in size by 1 unit after eating an apple. The apple will appear at a random location, after being eaten, it will disappear and appear at another location.<br>Above the screen is Score to update the player's current score. The game will end when the snake's head collides with the wall or the snake's body.<br>At the same time, I also programmed the Key Adapter to limit the player's steps (for example, when the snake moves to the right, it cannot go to the left).<br>If you see the snake moving too fast, you can adjust the DELAY constant to change its speed.",
+			"P3": "<li>The program is also quite comprehensive as it takes into account all possible scenarios</li><li>You can customize the snake to your liking</li>",
+			"P4": "However, the program is even more than the basic version that was created a long time ago. I hope to improve the interface and make the program more interesting in the future.",
+			"SUB1": "How to control the snake?"
+		},
+		"PROJ4": {
+			"P1": "This is one of my Java projects. It helps me to get familiar with libraries like JFrame, JButton, awt with ActionListener, ActionEvent, swing, allowing me to display a simple quiz screen.<br>I learned how to create buttons, labels and text boxes for each answer, and how to count the time.In the program, I create 3 arrays, a one-dimensional array containing the questions, a two-dimensional array containing the answers (I specify 4 answers for each question) and a one-dimensional array containing the correct answers.",
+			"P2": "Players will have 10 seconds to answer each question. After 10 seconds, the program will automatically change the sentence.<br>Once the player chooses the answer (only once, after selecting the buttons will be disabled and will be enabled after changing the question), incorrect answers will automatically turn red and correct answers will turn red-green.<br>At the end of the quiz, players will see their results as well as the correct answer.",
+			"P3": "Since I hardcode the questions into the program, players cannot modify them without access to the code. And I only created about 5 questions, so it was quite limited in terms of content.",
+			"SUB1": "How to play?"
+		},
+		"PROJ5": {
+			"P1": "This is my last Java OOP project for my second year of college. I'm going to leave the topic here.",
+			"P2": "We want to write a program to manage a bookstore selling notebooks. Each notebook has a number of pages. A purchase is made up of several notebooks. The price of a notebook is equal to its number of pages divided by 2. The display of a purchase must indicate one notebook per line with the color of the notebook, its number of pages, its quantity (1 for now), then a line indicating the total price of the purchase. Example: Yellow 20 x 1 Red 40 x 1 price: 30 <br>There is no maximum number of notebooks for a purchase. We will therefore use the HashSet class in a first version and then java.util.ArrayList to store the notebooks.<br>- Write the Notebook and Purchase classes as well as their necessary methods (constructors, getters, setters, display, toString, ...) <br>- Check that the following code works correctly (the result must be true); if not, correct the code: [...]<br>- We sell another item: the notebook; a notebook just has a value from 0 to 9 indicating a quality factor. The price of a notebook is equal to 3 times its quality factor.<br>Write and modify the necessary classes and methods. We want to allow adding several notebooks or several notebooks to our purchase at once by indicating an additional parameter to the add method, indicating the quantity of notebooks or notebooks that we want to put in the purchase.",
+			"P3": "Maybe the program code isn't written correctly, but it meets the outcome requirements.",
+			"SUB1": "Subject: ",
+			"TITLE": "Library Management"
+		},
+		"SUB1": "Project with front-end (React JS) and back-end (Spring Boot).",
+		"SUB2": "Project with Frontend (HTML, Bootstrap) and Backend (Spring Boot).",
+		"SUB3": "Project used JFrame, JPanel.",
+		"SUB4": "Project with JFrame, JButton.",
+		"SUB5": "Java OOP Project.",
+		"TITLE": "Java Projects"
+	},
 	"LANG": {
 		"CONTENT1": "Even though my level is not as good as my native one, I will try to improve every day.",
 		"CONTENT2": "I have worked in an English-speaking environment before and got a score of 940/990 in TOEIC",
@@ -132,6 +209,15 @@
 		"SEM2": "MODULES Semester 2",
 		"TITLE": "Bachelor's degree 2 in Computer Science"
 	},
+	"LINDO": {
+		"P1": "I will use Lindo software to find the best way to get the most profit by converting requirements into constraints and running the program.<br>From optimizing production costs to optimizing profits to satisfying employee conditions, with the right programming, Lindo will produce results.<br>I leave here a topic that represents the problem.",
+		"P2": "A bicycle factory wants to make a production plan for the new year. Last year, the factory had 2,000 bicycles in stock. The factory is expected to sell the number of bicycles (unit: thousand) each month based on the data below: January (30), February (15), March (15), April (25), May (33), June (40), July (45), August (45), September (26), October (14), November (25), December (30). <br>The factory can produce a maximum of 30,000 bicycles each month. In addition, the employee's salary for each product produced is 20e, if he works in addition (the number of bicycles exceeds 30k) is 25e. In addition, there is also another option which is stock, with a stock price of 4e/bicycle/month. Calculate the minimum cost per month to meet the factory's requirements.",
+		"P3": "I create 12 variables P1...P12 (quantity produced per month), 12 variables S1...s12 (quantity of stock per month), 12 variables E1...E12 (quantity produced per month).<br>The biggest problem is whether to overproduce to keep stocks for the next month or produce overtime to reach the objective without needing stocks.",
+		"P4": "There are other elements such as allowed increase/decrease, double pricing, etc. but I will leave the main variable results here.",
+		"RES": "Result",
+		"SUBTITLE": "Linear programming",
+		"SUJ": "Subject"
+	},
 	"LYCEE": {
 		"CONTENT1": "Final ranking: 1st.<br>3rd prize in the national competition for students of excellence.<br>Average marks: 9.5 / 10. (Very good)",
 		"CONTENT2": "Final Ranking: 1st.<br>Logistics for School Music Events.<br>Average Rating: 9.4 / 10. (Very Good)",
@@ -140,6 +226,15 @@
 		"SEM2": "Junior Year",
 		"SEM3": "Sophomore Year",
 		"TITLE": "Hanoi-Amsterdam High School of Excellence"
+	},
+	"MATLAB": {
+		"H1": "Some topics I have worked on",
+		"H2": "Some pieces of codes",
+		"P1": "Robot Animation",
+		"P2": "Hot Air Balloon",
+		"SUB1": "MATLAB is specifically designed to work with matrices and arrays, so it is very effective in problems related to linear algebra, solving systems of equations, and arithmetic calculations. MATLAB provides tools for data collection, analysis, and visualization. I can easily manage large data sets, plot graphs, and create reports.",
+		"SUB2": "Simulink is a powerful tool integrated into MATLAB, specialized for the simulation, modeling and design of dynamic systems. It provides a graphical environment that allows users to simulate complex systems by connecting blocks together instead of writing code.<br>One of the most popular applications of Simulink is the design and testing of controllers. One can simulate feedback control systems such as PID controllers, model predictive control and test the response of the system to different inputs.",
+		"TITLE": "Matlab Projects"
 	},
 	"METIER": {
 		"P1": "In the future, I hope to orient my career towards development in the field of software development with a particular focus on <strong>web and mobile application development</strong>. With a background in front-end programming, combined with a willingness to expand my knowledge in back-end, I hope to become a <strong>full-stack developer</strong> from the early stages of my career. This has allowed me not only to participate in building the user interface, but also to manage the entire application development process, from the database to the application logic. <br>In the long term, I want to improve my professional skills and my in-depth understanding of new technologies such as <strong>artificial intelligence (AI) and big data processing (Big Data)</strong>, with the aim of <strong>becoming a tech lead or software architect</strong>. In this role, I not only develop products, but also participate in the development and decision-making of technological solutions for important projects. Additionally, I also plan to <strong>become a project manager in the future</strong>, where I can lead a team of engineers, manage projects from start to finish, and ensure that each product is of high quality.",
@@ -177,5 +272,87 @@
 		"P3": "Web Projects",
 		"P4": "C/C++ Projects",
 		"TITLE": "Academic and Personal Projects"
+	},
+	"PYTHON": {
+		"PRO2": "Turtle Race Illustration",
+		"PRO3": "Algorithms",
+		"PROJ1": {
+			"IMG": "Some images of this project",
+			"P1": "This is one of my projects to get familiar with the Pygame library. I created a simple interface where 2 users can control the red and yellow spaceship.",
+			"P2": "The left player will move with the WASD key and shoot bullets with Ctrl in the left corner. The right player will move with the UP, DOWN, LEFT, RIGHT keys and shoot bullets with the right Ctrl key. Two players can only move within their own frame and within the set screen size.<br>In addition, I also integrated a sound system, when the spaceship shoots bullets and is hit, and limit the number of bullets the player can spam to 3.<br>Each person will have a Heatlh of 10 and each time they are hit, 1 point will be taken away from them. Whoever brings the Heatlh to 0 first will lose.<br>I also set the game to automatically restart when there is a winner, so that both players can be ready to play a new game. And the player can quit by pressing Close (x icon in the Pygame window).",
+			"P3": "The game has a nice interface and easy to understand gameplay. However, the game is still simple, maybe later I will add some code about random meteors to make it harder for 2 players.",
+			"SUB1": "How to play it?",
+			"SUB2": "Conclusion"
+		},
+		"PROJ2": {
+			"P1": "This is one of my projects to get familiar with the Turtle library. I created a simple interface where the user can choose the number of turtles to race.<br>Then the turtles will be neatly arranged and evenly spaced at the bottom of the screen. Each turtle will be moved a random number of steps. Try to guess which color will reach the finish line first!<br>I learned how to draw movement paths, move around in Turtle, and calculate position based on screen size.",
+			"P2": "With this program I learned how to draw motion paths, move around in Turtle, and calculate position based on screen size."
+		},
+		"PROJ3": {
+			"CONTENT1": "<strong>Topic</strong>:<br>I have two tills: one for takeout orders and one for other customers who eat in the cafe. All customer orders are grouped into a single list for the kitchen, where they should be processed on a first-come, first-served basis.<br>Given the three lists (take_out_orders, dine_in_orders, served_orders), write a function to check that my service is first-come, first-served. All dishes should be served in the order requested by the customers.",
+			"CONTENT2": "<strong>Subject</strong>:<br>Given a list of integers (negative and positive) (length can be up to 100,..). Find the combination of 3 numbers whose product is the largest.",
+			"CONTENT3": "<strong>Subject</strong>:<br><a href=\"https://codeforces.com/contest/1980/problem/B\">Choosing Cubes Problem</a>",
+			"CONTENT4": "<strong>Topic</strong>:<br><a href=\"https://codeforces.com/contest/1950/problem/C\">Clock Conversion</a>",
+			"CONTENT5": "<strong>Topic</strong>:<br>Write an efficient function that checks if a permutation of an input string is a palindrome.",
+			"P1": "Solving real problems with code has always been my passion. Problems require reasoning and careful reading before solving them, which helps me learn to think, find solutions and correct when there are exceptions. Here I can't list all the problems I've worked on, but there will be some examples.",
+			"SOL1": "<strong>Solution</strong>:<br>I will have 2 variables to track the index of takeout and dine in and 2 variables for the length of these 2 strings. After that, I will loop through each element of served_orders and compare it with the other two strings. If the element is the same as the current index element on the takeout side, increase the index of takeout by 1, same work for dine in. If it is not both, it will return false. <br>Also, after the loop, if the index of both the take out and dine in strings is still not equal to the length of the string, return false because the order is missing.",
+			"SOL2": "<strong>Solution</strong>:<br>The obvious thing that comes to mind first is to create loops and count all the cases. But of course, the program ran out of time. Then I tried to find the 3 largest numbers in the sequence, but it was not satisfactory because there were also negative integers :). <br>Leading to the final approach, I break down the problem. Instead of just finding the largest product of 3 numbers, I will find the largest (smallest) product of 2 numbers, the largest and the smallest number. I will run it in a loop starting from index 2 (the first 2 elements are used as default values ​​of the variables).",
+			"SOL3": "<strong>Solution</strong>:<br>This is a pretty simple problem. I just need to identify the favorite cube (favCube) from the beginning before sorting. After sorting, the index of the elements will be stored with favCube in a list. And I just need to traverse this list, comparing it with k (the first k cubes removed) to get the result.",
+			"SOL4": "<strong>Solution</strong>:<br>Besides the obvious things in the conversion, there are things to pay attention to like the difference between noon and midnight, in the form HH:MM, etc.",
+			"SOL5": "<strong>Solution</strong>:<br>The special thing here is that the string is recognized as a palindrome if its permutation is a palindrome. So I will check for identical pairs and remove them if the remaining length <=1 then I will return true.",
+			"SUB1": "Topics and Solutions",
+			"SUJ1": "Check the order of serving cakes",
+			"SUJ2": "Highest product of 3 numbers",
+			"SUJ3": "Dmitry's Cube Problem",
+			"SUJ4": "Clock conversion problem",
+			"SUJ5": "Palindrome Check"
+		},
+		"SUB1": "Project with Pygame.",
+		"SUB2": "Project with Turtle.",
+		"SUB3": "Basic Python programs :)",
+		"TIME": "2022-Present",
+		"TITLE": "Python Projects"
+	},
+	"SQL": {
+		"PROJ1": {
+			"H1": "DB Structure",
+			"H2": "Requests",
+			"P1": "The cookie database is based on the order, raw material and employee management cycle. The database can tell us what items are sold in the store, the ingredients, the stock and how the teams are distributed. Since this is just a personal project, the values ​​are relative and may not be close to the real price.",
+			"P2": "I do the DB structure on the QUICKDBD site. Then I exported the SQL file and inserted some code into MySQL WB to create tables and relationships faster.",
+			"P3": "My database consists of 10 tables: order, address, customer, items, recipe, ingredient, inventory, rota, shift, staff. I made a .xlsx file and exported it to CSV file to directly import the data from the tables. I will leave a link here if you want to see the content of the tables: <a href=\"https://uphffr-my.sharepoint.com/:x:/g/personal/hoangdung_dang_uphf_fr/EaO-VhT7Ta5Dr7SGGcAr4-ABzryLK6BlzJ3YeEA6Du85PQ?e=w9eVNb\">cookie table data</a>",
+			"P4": "<u>List Database FKs</u>",
+			"P5": "<u>List the ingredients that need to be refilled at the end of the day</u>",
+			"P6": "1. Create temporary table having items orders",
+			"P7": "2. Create temporary table with ingredients used and quantities",
+			"P8": "3. Update table inventory and Add the column \"Refill\" to display the status",
+			"P9": "4. Restock Price"
+		},
+		"PROJ2": {
+			"H1": "Diagrams and DB relationship",
+			"P1": "The Streaming Application Database project will be based on data from a music streaming application, including information about artists and their products. My system will simultaneously manage artists and provide digital versions for music lovers. We generate revenue from the digital versions sold and compensate artists based on their performance in the digital music field.",
+			"P2": "My database consists of 11 tables: Group_Singer, Member, Album, Song, Type_Album, Type_Song, Manager, Signer_Contract, Record_Label, Entertainment_Company, State.",
+			"P3": "<u>List groups from SM Entertainment company</u>",
+			"P4": "<u>List the amounts that songwriters receive</u>",
+			"P5": "We pay the songwriter 2000 euros per song, and we also pay the whole group 5000 euros for every 100 million streams the album reaches. The groups have agreed that once the streaming bonuses are received, they will be split equally, while the bonus for lyrics will remain each member's individual share.<br>Due to the complexity of the calculation, I will split this statement into several queries. First, I will calculate the members' earnings for writing the lyrics for the songs. Then, I will calculate the members' earnings from streaming by taking the total amount received by the group and dividing it by the number of members in the group. To do this, I will need to find the number of members in the group, calculate the total streaming, and then deduct the total amount from streams that each group received.<br>1. Remuneration_parole</p>",
+			"P6": "2. Member_Number",
+			"P7": "3. Remuneration_stream",
+			"P8": "4. Remuneration_stream_total",
+			"P9": "5. Remuneration_stream_personnel",
+			"P10": "Final query"
+		},
+		"SUB1": "Project used SQL",
+		"SUB2": "Project used Jet SQL",
+		"TITLE": "SQL Projects"
+	},
+	"WEB": {
+		"CONTENT1": "The Smart Home project is a multifunctional online platform that provides users with the ability to control and monitor devices in their smart home. Using an intuitive and convenient interface, users can access different rooms and devices such as lighting, stores, temperature sensors, mail cameras and many others. The goal of the project is to provide intelligent management of home devices, thus providing convenience and security to users.​<br>I use the programming languages: HTML, CSS, JavaScript, PHP, a little bit of Python for this interface.",
+		"CONTENT2": "The website allows users to view tasks, add tasks, delete or edit tasks. The site has a simple interface, mainly a simple exercise in using JavaScript.<br>I use the programming languages: JavaScript, CSS, HTML for this interface and its functions.",
+		"IMG": "Some images of this project",
+		"P1": "Conclusion",
+		"P2": "This is the first project I'm working on with these languages, so the interface is still limited and doesn't have many features (no backend, just some php files connected to BDD to save data).",
+		"P3": "This is a project I'm working on at university during lab sessions, so the interface is still simple and doesn't have a database (there's only a table to store the todos).",
+		"PRO1": "Smart Home Site Interface",
+		"PRO2": "TO DO Page in JS",
+		"TITLE": "Web languages"
 	}
 }

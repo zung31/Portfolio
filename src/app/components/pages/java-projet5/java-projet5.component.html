@@ -6,10 +6,10 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #ffffff;">Gestion librairie</h1>
+            <h1 style="color: #ffffff;">{{ 'JAVA.PROJ5.TITLE' | translate }}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/java-projets">Java Projets</a></li>
-                <li class="d-inline-block position-relative" style="color: #ffffff;">Gestion librairie</li>
+                <li class="d-inline-block position-relative"><a routerLink="/java-projets">{{ 'JAVA.TITLE' | translate }}</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">{{ 'JAVA.PROJ5.TITLE' | translate }}</li>
             </ul>
         </div>
     </div>
@@ -24,7 +24,7 @@
                     <div class="post-thumb" style="text-align: center;">
                         <img src="assets/images/blogs/blog5.jpg" alt="blog-details" style="height: 400px;">
                     </div>
-                    <h3>Gestion d'une librairie vendant des cahiers</h3>
+                    <h3>{{ 'JAVA.PRO5' | translate }}</h3>
                     <div class="post-meta">
                         <ul class="ps-0 list-unstyled mb-0">
                             <li class="d-inline-block position-relative">
@@ -33,30 +33,12 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        C'est mon dernière projet Java POO à Licence 2. Je vais laisser le sujet ici.
-                    </p>
-                    <h4>Sujet:</h4>
-                    <p>
-                        On veut écrire un programme de gestion d’une librairie vendant des cahiers. Chaque cahier possède un nombre de pages. Un achat est constitué de plusieurs cahiers. Le prix d'un cahier est égal à son nombre de pages divisé par 2. 
-                        L'affichage d'un achat doit indiquer un cahier par ligne avec la couleur du cahier, son nombre de pages, sa quantité (1 pour l'instant), puis une ligne indiquant le prix total de l’achat. 
-                        Exemple : Jaune 20 x 1 Rouge 40 x 1 prix: 30 
-                        <br>
-                        Il n'y a pas de nombre maximal de cahiers pour un achat. 
-                        On utilisera donc la classe HashSet dans une première version et ensuite java.util.ArrayList pour stocker les cahiers.
-                        <br>
-                        - Écrire les classes Cahier et Achat ainsi que leurs méthodes nécessaires (constructeurs, getters, setters, affiche, toString, … ) 
-                        <br>
-                        - Vérifier que le code suivant fonctionne correctement  (le résultat doit être vrai); sinon, corriger le code : [...]
-                        <br>
-                        - On vend un autre article : le carnet ; un carnet possède juste une valeur de 0 à 9 indiquant un facteur de qualité. Le prix d'un carnet est égal à 3 fois son facteur de qualité.
-                        <br>
-                        Écrire et modifier les classes et les méthodes nécessaires.
-                        On veut permettre d'ajouter plusieurs cahiers ou plusieurs carnets à notre achat d'un coup en indiquant un paramètre supplémentaire à la méthode add, indiquant la quantité des cahiers ou des carnets que l'on veut mettre dans l’achat.
-                    </p>
-                    <h4>Conclusion</h4>
-                    <p>Peut-être que le code du programme n'est pas écrit correctement, mais il répond aux exigences de résultats.</p>
-                    <h4>Quelques images de ce projet</h4>
+                    <p [innerHTML]=" 'JAVA.PROJ5.P1' | translate "></p>
+                    <h4>{{ 'JAVA.PROJ5.SUB1' | translate }}</h4>
+                    <p [innerHTML]=" 'JAVA.PROJ5.P2' | translate "></p>
+                    <h4>{{ 'JAVA.PROJ1.SUB3' | translate }}</h4>
+                    <p [innerHTML]=" 'JAVA.PROJ5.P3' | translate "></p>
+                    <h4>{{ 'JAVA.PROJ1.IMG' | translate }}</h4>
                     
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>

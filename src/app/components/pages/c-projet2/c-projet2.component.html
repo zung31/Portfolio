@@ -33,18 +33,11 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        Ce projet est mon projet C++, travaillant avec des fichiers et créant des menus.
-                        <br>
-                        Mon programme affichera initialement un écran "Bienvenue dans le système de gestion des contacts", puis accédera au menu une fois que l'utilisateur appuie sur une touche.
-                        <br>
-                        Les utilisateurs pourront choisir entre 6 options : ajouter un nouveau contact, lister les contacts, rechercher des contacts, supprimer des contacts, modifier des contacts, quitter le programme. Après avoir terminé la tâche, l'utilisateur peut choisir de continuer à utiliser le programme et d'afficher à nouveau le menu, ou choisir de quitter et l'écran affichera « Merci d'utiliser CMS ».
+                    <p [innerHTML]=" 'C.PROJ2.P1' | translate">
                     </p>
                     <h4>Conclusion</h4>
-                    <p>
-                        Bien que l'interface soit moyenne, le programme fait bien son travail. Le programme m'a également aidé à me familiariser avec la syntaxe du C++.
-                    </p>
-                    <h4>Quelques images de ce projet</h4>
+                    <p [innerHTML]=" 'C.PROJ2.P2' | translate"></p>
+                    <h4>{{ 'C.PROJ1.IMG' | translate}}</h4>
                     
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>
@@ -117,7 +110,7 @@
                         <div class="article-share text-md-end">
                             <ul class="social ps-0 mb-0 mt-0 list-unstyled">
                                 <li class="d-inline-block mb-0"><span class="fw-medium position-relative d-inline-block">Source code:</span></li>
-                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31?tab=repositories" class="github d-block rounded-circle text-center" target="_blank">
+                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31/Contact-Management" class="github d-block rounded-circle text-center" target="_blank">
                                     <i class='bx bxl-github'></i>
                                 </a></li>
                             </ul>

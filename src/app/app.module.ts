@@ -57,7 +57,8 @@ import { LangWebComponent } from './components/pages/lang-web-page/lang-web.comp
 import { CPageComponent } from './components/pages/c-page/c-page.component';
 import { CProjet1Component } from './components/pages/c-projet1/c-projet1.component';
 import { CProjet2Component } from './components/pages/c-projet2/c-projet2.component';
-import { CProjet3Component } from './components/pages/c-projet3/c-projet.component';
+import { CProjet3Component } from './components/pages/c-projet3/c-projet3.component';
+import { CProjet4Component } from './components/pages/c-projet4/c-projet4.component';
 import { LindoComponent } from './components/pages/lindo/lindo.component';
 import { SqlPageComponent } from './components/pages/sql-page/sql-page.component';
 import { SqlProjet1Component } from './components/pages/sql-projet1/sql-projet1.component';
@@ -126,6 +127,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         CProjet1Component,
         CProjet2Component,
         CProjet3Component,
+        CProjet4Component,
         LindoComponent,
         SqlPageComponent,
         SqlProjet1Component,

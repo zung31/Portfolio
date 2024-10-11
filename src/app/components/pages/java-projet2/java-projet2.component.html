@@ -6,10 +6,10 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #ffffff;">Étudiant Management Système</h1>
+            <h1 style="color: #ffffff;">{{ 'JAVA.PRO2' | translate }}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/java-projets">Java Projets</a></li>
-                <li class="d-inline-block position-relative" style="color: #ffffff;">Étudiant Management Système</li>
+                <li class="d-inline-block position-relative"><a routerLink="/java-projets">{{ 'JAVA.TITLE' | translate }}</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">{{ 'JAVA.PRO2' | translate }}</li>
             </ul>
         </div>
     </div>
@@ -24,7 +24,7 @@
                     <div class="post-thumb" style="text-align: center;">
                         <img src="assets/images/blogs/blog2.jpg" alt="blog-details" style="height: 400px;">
                     </div>
-                    <h3>Étudiant Management Système</h3>
+                    <h3>{{ 'JAVA.PRO2' | translate }}</h3>
                     <div class="post-meta">
                         <ul class="ps-0 list-unstyled mb-0">
                             <li class="d-inline-block position-relative">
@@ -33,29 +33,17 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        C'est l'un de mes projets Spring Boot. Il simule un simple gestionnaire de liste d'étudiants. Où je peux ajouter des informations sur les étudiants, modifier des informations ou supprimer des étudiants.
+                    <p [innerHTML]=" 'JAVA.PROJ2.P1' | translate ">
                     </p>
-                    <h4>Détail du projet</h4>
-                    <p>
-                        J'utilise Spring Suite Tool 4 pour développer ce projet, avec des dépendances : Spring Web, Spring Data JPA, MySQL Driver, Thymeleaf, Dev Tools. J'utilise l'application MySQL Workbench comme lien vers la base de données du projet.
-                        Dans le projet, j'ai utilisé la classe Student (Entity) pour définir les champs d'information et l'ID nécessaires. J'ai créé StudentRepository implémentant le référentiel JPA afin de pouvoir utiliser des ressources JPA utiles.
-                        <br>
-                        Ensuite, j'ai les classes StudentService (Service) et StudentController (Controller) pour gérer les services complexes et la logique de traitement des données, gérer les demandes des utilisateurs et naviguer dans le programme, en renvoyant la réponse correspondante.
-                        <br>
-                        J'ai créé 3 pages HTML supplémentaires comme interface de mon site Web, en utilisant boostrap CSS pour le styler.
-                        Un petit ajustement dans application.properties (connexion à la base de données et ajout d'hibernate auto ddl) et la section principale (implémente CommandLineRunner) et j'ai pu démarrer le site Web du projet sur le port localhost 8080.
+                    <h4>{{ 'JAVA.PROJ1.SUB1' | translate }}</h4>
+                    <p [innerHTML]=" 'JAVA.PROJ2.P2' | translate ">
                     </p>
-                    <h4>Avantages du projet</h4>
-                    <ul>
-                        <li>Utiliser l'API et établir un lien avec le Front End</li>
-                        <li>Belle interface</li>
+                    <h4>{{ 'JAVA.PROJ1.SUB2' | translate }}</h4>
+                    <ul [innerHTML]=" 'JAVA.PROJ2.P3' | translate ">
                     </ul>
-                    <h4>Conclusion</h4>
-                    <p>
-                        Mais comme le programme ne s'exécute que localement et par intermittence, lorsque j'éteigne le programme, toutes les données seront perdues.
-                    </p>
-                    <h4>Quelques images de ce projet</h4>
+                    <h4>{{ 'JAVA.PROJ1.SUB3' | translate }}</h4>
+                    <p [innerHTML]=" 'JAVA.PROJ2.P4' | translate "></p>
+                    <h4>{{ 'JAVA.PROJ1.IMG' | translate }}</h4>
                     
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>
@@ -96,7 +84,7 @@
                         <div class="article-share text-md-end">
                             <ul class="social ps-0 mb-0 mt-0 list-unstyled">
                                 <li class="d-inline-block mb-0"><span class="fw-medium position-relative d-inline-block">Source code:</span></li>
-                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31?tab=repositories" class="github d-block rounded-circle text-center" target="_blank">
+                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31/Project-Student-Controller" class="github d-block rounded-circle text-center" target="_blank">
                                     <i class='bx bxl-github'></i>
                                 </a></li>
                             </ul>

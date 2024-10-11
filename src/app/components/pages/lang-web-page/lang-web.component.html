@@ -6,22 +6,21 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #ffffff;">Interface Smart Home</h1>
+            <h1 style="color: #ffffff;">{{ 'WEB.TITLE' | translate }}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
                 <li class="d-inline-block position-relative"><a routerLink="/">Home</a></li>
-                <li class="d-inline-block position-relative" style="color: #ffffff;">Project Langages Web</li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">{{ 'WEB.TITLE' | translate }}</li>
             </ul>
         </div>
     </div>
 </div>
 
-<!-- Blog Details -->
 <div class="blog-details-area ptb-100">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">
                 <div class="blog-details-desc">
-                    <h3>Interface d'une site Smart Home</h3>
+                    <h3>{{ 'WEB.PRO1' | translate }}</h3>
                     <div class="post-meta">
                         <ul class="ps-0 list-unstyled mb-0">
                             <li class="d-inline-block position-relative">
@@ -30,26 +29,13 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        Le projet Smart Home est une plateforme en ligne multifonctionnelle qui offre aux utilisateurs la capacité de contrôler et de surveiller les appareils de leur maison intelligente. En utilisant une interface intuitive et pratique, les utilisateurs peuvent accéder aux différentes pièces et appareils tels que l'éclairage, les stores, les capteurs de température, les caméras de sécurité et bien d'autres. L'objectif du projet est de fournir une gestion intelligente des appareils domestiques, offrant ainsi commodité et sécurité aux utilisateurs.​
-                        <br>
-                        J'utilise les langages de programmation: HTML, CSS, JavaScript, PHP, un peu de Python pour cet interface
+                    <p [innerHTML]=" 'WEB.CONTENT1' | translate">
                     </p>
-                    <h4>Conclusion</h4>
-                    <p>C'est le premier projet sur lequel je travaille avec ces langages, donc l'interface est encore limitée et n'a pas beaucoup de fonctionnalités (pas de backend, juste quelques fichiers php connectés à BDD pour sauvegarder les données).</p>
-                    <h4>Quelques images de ce projet</h4>
+                    <h4>{{ 'WEB.P1' | translate }}</h4>
+                    <p>{{ 'WEB.P2' | translate }}</p>
+                    <h4>{{ 'WEB.IMG' | translate }}</h4>
                     
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
-                        <ng-template carouselSlide>
-                            <div class="image-container">
-                                <img src="assets/images/blogs/Screenshot-33.png" class="img-fluid rounded" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-33.png')">
-                            </div>
-                        </ng-template>
-                        <ng-template carouselSlide>
-                            <div class="image-container">
-                                <img src="assets/images/blogs/Screenshot-34.png" class="img-fluid rounded" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-34.png')">
-                            </div>
-                        </ng-template>
                         <ng-template carouselSlide>
                             <div class="image-container">
                                 <img src="assets/images/blogs/Screenshot-35.png" class="img-fluid rounded" alt="Image 3" (click)="openModal('assets/images/blogs/Screenshot-35.png')">
@@ -68,6 +54,16 @@
                         <ng-template carouselSlide>
                             <div class="image-container">
                                 <img src="assets/images/blogs/Screenshot-38.png" class="img-fluid rounded" alt="Image 4" (click)="openModal('assets/images/blogs/Screenshot-38.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-33.png" class="img-fluid rounded" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-33.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-34.png" class="img-fluid rounded" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-34.png')">
                             </div>
                         </ng-template>
                         <ng-template carouselSlide>
@@ -111,6 +107,81 @@
                             <ul class="social ps-0 mb-0 mt-0 list-unstyled">
                                 <li class="d-inline-block mb-0"><span class="fw-medium position-relative d-inline-block">Source code:</span></li>
                                 <li class="d-inline-block mb-0"><a href="https://docs.google.com/document/d/1eQicPCUwckNPiojrPqT5pdFANUFanW8iwEzs7IHtbo8/edit?usp=sharing" class="google-docs d-block rounded-circle text-center" target="_blank">
+                                    <i class="fas fa-file-alt"></i>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <div class="blog-details-desc">
+                    <h3>{{ 'WEB.PRO2' | translate }}</h3>
+                    <div class="post-meta">
+                        <ul class="ps-0 list-unstyled mb-0">
+                            <li class="d-inline-block position-relative">
+                                <i class='bx bx-calendar'></i>
+                                2024
+                            </li>
+                        </ul>
+                    </div>
+                    <p [innerHTML]=" 'WEB.CONTENT2' | translate"></p>
+                    <h4>{{ 'WEB.P1' | translate }}</h4>
+                    <p>{{ 'WEB.P3' | translate }}</p>
+                    <h4>{{ 'WEB.IMG' | translate }}</h4>
+                    
+                    <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-83.png" class="img-fluid rounded" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-33.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-84.png" class="img-fluid rounded" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-34.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-85.png" class="img-fluid rounded" alt="Image 3" (click)="openModal('assets/images/blogs/Screenshot-35.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-86.png" class="img-fluid rounded" alt="Image 4" (click)="openModal('assets/images/blogs/Screenshot-36.png')">
+                            </div>
+                        </ng-template>
+                        <ng-template carouselSlide>
+                            <div class="image-container">
+                                <img src="assets/images/blogs/Screenshot-87.png" class="img-fluid rounded" alt="Image 4" (click)="openModal('assets/images/blogs/Screenshot-37.png')">
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
+
+                    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="imageModalLabel">Image</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img id="modalImage" src="" class="img-fluid" alt="Modal Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-footer d-flex align-items-center flex-wrap">
+                        <div class="article-share text-md-end">
+                            <ul class="social ps-0 mb-0 mt-0 list-unstyled">
+                                <li class="d-inline-block mb-0"><span class="fw-medium position-relative d-inline-block">Source code:</span></li>
+                                <li class="d-inline-block mb-0"><a href="https://docs.google.com/document/d/18Sv-9XIy5mZBXxXpgBglYnL5sGVPuv39Dp12xracDyo/edit?usp=sharing" class="google-docs d-block rounded-circle text-center" target="_blank">
                                     <i class="fas fa-file-alt"></i>
                                 </a></li>
                             </ul>

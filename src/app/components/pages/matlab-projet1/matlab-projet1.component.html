@@ -8,7 +8,7 @@
         <div class="page-banner-content text-center">
             <h1 style="color: #ffffff;">Matlab</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/matlab-projets">Matlab Projets</a></li>
+                <li class="d-inline-block position-relative"><a routerLink="/matlab-projets">{{ 'MATLAB.TITLE' | translate }}</a></li>
                 <li class="d-inline-block position-relative" style="color: #ffffff;">Matlab</li>
             </ul>
         </div>
@@ -34,9 +34,9 @@
                         </ul>
                     </div>
                     <p>
-                        MATLAB est spécialement conçu pour fonctionner avec des matrices et des tableaux, il est donc très efficace dans les problèmes liés à l'algèbre linéaire, à la résolution de systèmes d'équations et aux calculs arithmétiques. MATLAB fournit des outils pour la collecte, l'analyse et la visualisation de données. Je peux facilement gérer de grands ensembles de données, tracer des graphiques et créer des rapports.
+                        {{ 'MATLAB.SUB1' | translate }}
                     </p>
-                    <h4>Quelques sujets sur lesquels j'ai travaillé</h4>
+                    <h4>{{ 'MATLAB.H1' | translate }}</h4>
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>
                             <img src="assets/images/blogs/Screenshot-61.png" class="img-fluid rounded" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-61.png')">
@@ -63,7 +63,7 @@
                             <img src="assets/images/blogs/Screenshot-73.png" class="img-fluid rounded" alt="Image 7" (click)="openModal('assets/images/blogs/Screenshot-73.png')">
                         </ng-template>
                     </owl-carousel-o>
-                    <h4>Quelques pièces de codes</h4>
+                    <h4>{{ 'MATLAB.H2' | translate }}</h4>
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>
                             <img src="assets/images/blogs/Screenshot-66.png" class="img-fluid rounded" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-66.png')">

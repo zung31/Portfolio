@@ -8,7 +8,7 @@
         <div class="page-banner-content text-center">
             <h1 style="color: #ffffff;">Turtle Race Illustration</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/python-projets">Python Projets</a></li>
+                <li class="d-inline-block position-relative"><a routerLink="/python-projets">{{ 'PYTHON.TITLE' | translate }}</a></li>
                 <li class="d-inline-block position-relative" style="color: #ffffff;">Turtle Race Illustration</li>
             </ul>
         </div>
@@ -33,18 +33,10 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        C'est l'un de mes projets pour me familiariser avec la bibliothèque Turtle. J'ai créé une interface simple où l'utilisateur peut choisir le nombre de tortues en course.
-                        <br>
-                        Ensuite, les tortues seront soigneusement disposées et régulièrement espacées en bas de l'écran. Chaque tortue sera déplacée d'un nombre aléatoire de pas. Essayez de deviner quelle couleur atteindra la ligne d'arrivée en premier !
-                        <br>
-                        J'ai appris à tracer des trajectoires de mouvement, à me déplacer dans Turtle et à calculer la position en fonction de la taille de l'écran.
-                    </p>
+                    <p [innerHTML]=" 'PYTHON.PROJ2.P1' | translate "></p>
                     <h4>Conclusion</h4>
-                    <p>
-                        Grâce à ce programme, j'ai appris à tracer des trajectoires de mouvement, à me déplacer dans Turtle et à calculer la position en fonction de la taille de l'écran.
-                    </p>
-                    <h4>Quelques images de ce projet</h4>
+                    <p [innerHTML]=" 'PYTHON.PROJ2.P2' | translate "></p>
+                    <h4>{{ 'PYTHON.PROJ1.IMG' | translate }}</h4>
                     
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>
@@ -87,7 +79,7 @@
                         <div class="article-share text-md-end">
                             <ul class="social ps-0 mb-0 mt-0 list-unstyled">
                                 <li class="d-inline-block mb-0"><span class="fw-medium position-relative d-inline-block">Source code:</span></li>
-                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31?tab=repositories" class="github d-block rounded-circle text-center" target="_blank">
+                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31/Projects_Python" class="github d-block rounded-circle text-center" target="_blank">
                                     <i class='bx bxl-github'></i>
                                 </a></li>
                             </ul>

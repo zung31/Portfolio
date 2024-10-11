@@ -6,10 +6,10 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #ffffff;">Pointeurs et Listes chainées</h1>
+            <h1 style="color: #ffffff;">{{ 'C.PRO2' | translate}}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/c-projets">C Projets</a></li>
-                <li class="d-inline-block position-relative" style="color: #ffffff;">Pointeurs et Listes chainées</li>
+                <li class="d-inline-block position-relative"><a routerLink="/c-projets">{{ 'C.TITLE' | translate}}</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">{{ 'C.PRO2' | translate}}</li>
             </ul>
         </div>
     </div>
@@ -24,7 +24,7 @@
                     <div class="post-thumb" style="text-align: center;">
                         <img src="assets/images/blogs/blog11.png" alt="blog-details" style="height: 400px;">
                     </div>
-                    <h3>Pointeurs et Listes chainées</h3>
+                    <h3>{{ 'C.PRO2' | translate}}</h3>
                     <div class="post-meta">
                         <ul class="ps-0 list-unstyled mb-0">
                             <li class="d-inline-block position-relative">
@@ -33,39 +33,9 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        <strong>Sujet</strong>:
-                        <br>
-                        Vous devez implémenter une table de hachage pour stocker les informations de contact. Plus précisément, vous implémenterez la définition de la structure des données :
-                        <br>
-                        Cellule : Représente un élément dans une table de hachage, contenant les champs nom, prenom, tel et un pointeur pointant vers l'élément suivant de la liste chaînée. TableH : représente la table de hachage, contenant la taille de la table (taille), le nombre d'éléments (nb_elem) et le tableau de pointeurs vers les cellules.    
-                    </p>
-                    <h4>Que fait chaque fonction?</h4>
-                    <p>
-                        <strong>bon_format</strong>: vérifiez le format du numéro de téléphone pour assurer qu'il comporte 13 caractères et commence par "+33".
-                        <br>
-                        <strong>hachage</strong>: calculez la valeur de hachage d'une chaîne en additionnant les valeurs ASCII des caractères de la chaîne et en prenant le reste lorsqu'il est divisé par la taille de la table.
-                        <br>
-                        <strong>insertion</strong>: insérez un élément dans la table de hachage.
-                        <br>
-                        <strong>supprime</strong>: supprimez un élément selon nom et prénom de la table de hachage.
-                        <br>
-                        <strong>recherche</strong>: recherchez numéro téléphone selon nom et prénom dans la table de hachage.
-                        <br>
-                        <strong>affichage</strong>: affichez tous les éléments de la table de hachage.
-                        <br>
-                        <strong>initialisation</strong>: initialisez la table de hachage.
-                        <br>
-                        <strong>augmentation</strong>: doublez la taille de la table de hachage et redistribuez les éléments dans la nouvelle table.
-                        <br>
-                        <strong>diminution</strong>: réduisez la taille de la table de hachage de moitié et redistribuez les éléments dans la nouvelle table.
-                        <br>
-                        <strong>insertion2</strong>: insérez un nouvel élément dans la table de hachage et vérifiez le taux de compression. Si le taux de compression dépasse le seuil, augmentez la taille de la table, s'il est inférieur au seuil, diminuez la taille de la table.
-                        <br>
-                        <strong>diminution2</strong>: même qu'insertion2 mais pour la diminution.
-                        <br>
-                        <strong>ratio</strong>: calculez le taux de compression de la table de hachage 
-                    </p>
+                    <p [innerHTML]=" 'C.PROJ3.P1' | translate"></p>
+                    <h4>{{ 'C.PROJ3.H1' | translate }}</h4>
+                    <p [innerHTML]=" 'C.PROJ3.P2' | translate"></p>
 
                     <div class="post-footer d-flex align-items-center flex-wrap">
                         <div class="article-share text-md-end">

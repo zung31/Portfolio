@@ -8,7 +8,7 @@
         <div class="page-banner-content text-center">
             <h1 style="color: #ffffff;">Cookie Database</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/sql-projets">SQL Projets</a></li>
+                <li class="d-inline-block position-relative"><a routerLink="/sql-projets">{{ 'SQL.TITLE' | translate }}</a></li>
                 <li class="d-inline-block position-relative" style="color: #ffffff;">Cookie Database</li>
             </ul>
         </div>
@@ -33,25 +33,16 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        La base de données des cookies est basée sur le cycle de gestion des commandes, des matières premières et des employés.
-La base de données peut nous indiquer quels articles sont vendus dans le magasin, les ingrédients, le stock et comment les équipes sont réparties.
-Puisqu'il s'agit simplement d'un projet personnel, les valeurs sont relatives et peuvent ne pas être proches du prix réel.
+                    <p [innerHTML]=" 'SQL.PROJ1.P1' | translate ">
                     </p>
-                    <h4>Structure de DB</h4>
-                    <p>
-                        Je fais la structure de la DB sur le site QUICKDBD. Ensuite, j'ai exporté le fichier SQL et inséré du code dans MySQL WB pour créer des tables et des relations plus rapidement.
-                    </p>
+                    <h4>{{ 'SQL.PROJ1.H1' | translate }}</h4>
+                    <p [innerHTML]=" 'SQL.PROJ1.P2' | translate "></p>
                     <div class="post-thumb" style="text-align: center;">
                         <img src="assets/images/blogs/Screenshot-55.jpg" class="img-fluid rounded" style="height: 400px;" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-55.jpg')">
                     </div>
-                    <p>
-                        Ma base de données compose de 10 tables: order, adress, customer,  items, recipe, ingredient, inventory, rota, shift, staff.
-                        J'ai fait un file .xlsx et exporter en CSV file pour importer directement les données des tables.
-                        Je vais laiser un lien ici si vous voulez voir le contenu des tables: <a href="https://uphffr-my.sharepoint.com/:x:/g/personal/hoangdung_dang_uphf_fr/EaO-VhT7Ta5Dr7SGGcAr4-ABzryLK6BlzJ3YeEA6Du85PQ?e=w9eVNb">cookie table data</a>
-                    </p>
-                    <h4>Requêtes</h4>
-                    <p><u>Lister les FK de Database</u></p>
+                    <p [innerHTML]=" 'SQL.PROJ1.P3' | translate "></p>
+                    <h4>{{ 'SQL.PROJ1.H2' | translate }}</h4>
+                    <p [innerHTML]=" 'SQL.PROJ1.P4' | translate "></p>
                     <pre><code>
 SELECT 
     TABLE_NAME,
@@ -68,8 +59,8 @@ WHERE
                     <div class="post-thumb" style="text-align: center;">
                         <img src="assets/images/blogs/Screenshot-56.jpg" class="img-fluid rounded" style="height: 100px;" alt="Image 1" (click)="openModal('assets/images/blogs/Screenshot-56.jpg')">
                     </div>
-                    <p><u>Lister les ingrédients besoin de refill à la fin de journée</u></p>
-                    <p>1. Créer temporaire table ayant les items orders</p>
+                    <p [innerHTML]=" 'SQL.PROJ1.P5' | translate "></p>
+                    <p [innerHTML]=" 'SQL.PROJ1.P6' | translate "></p>
                     <pre><code>
 CREATE TEMPORARY TABLE query1 AS
 SELECT 
@@ -87,7 +78,7 @@ GROUP BY
                     <div class="post-thumb" style="text-align: center;">
                         <img src="assets/images/blogs/Screenshot-57.jpg" class="img-fluid rounded" style="height: 300px;" alt="Image 2" (click)="openModal('assets/images/blogs/Screenshot-57.jpg')">
                     </div>
-                    <p>2. Créer temporaire table ayant les ingredients utilisés et les quantités</p>
+                    <p [innerHTML]=" 'SQL.PROJ1.P7' | translate "></p>
                     <pre><code>
 create temporary table query2 as
 select cookie.recipe.ing_id, sum(cookie.recipe.quantity * cookie.query1.total_quantity) as total_consume
@@ -100,7 +91,7 @@ order by cookie.recipe.ing_id asc;
                     <div class="post-thumb" style="text-align: center;">
                         <img src="assets/images/blogs/Screenshot-58.jpg" class="img-fluid rounded" style="height: 300px;" alt="Image 3" (click)="openModal('assets/images/blogs/Screenshot-58.jpg')">
                     </div>
-                    <p>3. Update table inventory et Ajouter le colum "Refill" pour afficher l'état</p>
+                    <p [innerHTML]=" 'SQL.PROJ1.P8' | translate "></p>
                     <pre><code>
 UPDATE cookie.inventory JOIN query3 ON 
 cookie.inventory.ing_id = query3.ing_id SET cookie.inventory.quantity = cookie.inventory.quantity - query3.total_consume;
@@ -111,7 +102,7 @@ UPDATE cookie.inventory SET refill = CASE WHEN quantity <= 50 THEN 'Y' ELSE 'N' 
                     <div class="post-thumb" style="text-align: center;">
                         <img src="assets/images/blogs/Screenshot-59.jpg" class="img-fluid rounded" style="height: 300px;" alt="Image 4" (click)="openModal('assets/images/blogs/Screenshot-59.jpg')">
                     </div>
-                    <p>4. Prix pour restock</p>
+                    <p [innerHTML]=" 'SQL.PROJ1.P9' | translate "></p>
                     <pre><code>
 UPDATE cookie.inventory JOIN query3 ON 
 cookie.inventory.ing_id = query3.ing_id SET cookie.inventory.quantity = cookie.inventory.quantity - query3.total_consume;

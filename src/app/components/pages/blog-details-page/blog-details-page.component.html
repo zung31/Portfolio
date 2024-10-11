@@ -6,10 +6,10 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #ffffff;">Quiz Online Application</h1>
+            <h1 style="color: #ffffff;">{{ 'JAVA.PRO1' | translate }}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/java-projets">Java Projets</a></li>
-                <li class="d-inline-block position-relative" style="color: #ffffff;">Quiz Online Application</li>
+                <li class="d-inline-block position-relative"><a routerLink="/java-projets">{{ 'JAVA.TITLE' | translate }}</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">{{ 'JAVA.PRO1' | translate }}</li>
             </ul>
         </div>
     </div>
@@ -33,32 +33,17 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        C'est mon projet Spring Boot le plus compliqué à ce jour car il y a une connexion entre le Front End et le Back End et j'ai dû le réaliser dans 2 folders différentes. Project Quiz-Online dispose de 2 modes : le mode Administrateur pour ajouter, modifier ou supprimer des questions ; mode Le client pourra choisir le sujet, le nombre de questions qu'il souhaite et répondre au quiz.
-                        <br>
-                        J'ai utilisé Spring Boot pour le Back End (port 9192), React JS (.jsx) combiné avec Bootstrap pour le Front End, MySQL WorkBench (port 3306) pour la base de données.
-                        Le site démarre sur Vite + React à l'adresse http://localhost:5173/ et l'application Spring Boot est également démarrée.
-                        <br>
-                        Pour permettre Front à envoyer les demandes à endpoint de Back, j'utilise CrossOrigin et l'adresse du lien du front. Et en plus, j'ai utilisé Axios pour créer un instant de axios (http://localhost:9192/api/quizzes) pour envoyer des demandes plus facilement.
+                    <p [innerHTML]=" 'JAVA.PROJ1.P1' | translate ">
                     </p>
-                    <h4>Détail du projet</h4>
+                    <h4>{{ 'JAVA.PROJ1.SUB1' | translate }}</h4>
+                    <p [innerHTML]=" 'JAVA.PROJ1.P2' | translate "></p>
+                    <h4>{{ 'JAVA.PROJ1.SUB2' | translate }}</h4>
+                    <ul [innerHTML]=" 'JAVA.PROJ1.P3' | translate "></ul>
+                    <h4>{{ 'JAVA.PROJ1.SUB3' | translate }}</h4>
                     <p>
-                        Quant à <u>Back</u>, je crée d'abord un modèle pour la question, qui contient tous les champs dont une question a besoin (Id, question, sujet, type, choix, réponse correcte). Ensuite, je crée repository, service et controller. Dans Service, il existe des fonctions simples telles que getQuestionById, updateQuestion, deleteQuestion,... pour aider les admins à pouvoir contrôler directement les questions depuis le Front.
-                        Dans Controller, plus compliqué, je devrai diviser les routeurs et déployer des GET PUT DELETE en fonction des fonctions du Service. Repository est le même que d'habitude, il suffit d'extend JPA Repository et d'ajouter les requêtes nécessaires.
-                        <br>
-                        Pour partie <u>Front</u>, j'ai utilisé React et ses dépendances (axios, bootstrap, react-router-dom,..). Il existe AddQuestion.jsx et UpdateQuestion.jsx pour récupérer les informations sur les questions et les mettre à jour dans base de données. Il y a aussi une page pour afficher tous les quiz, une page pour sélectionner le nombre de questions et le sujet pour répondre au quiz, une page quiz qui inclut la logique et la notation,.... Toutes les pages renvoient l'interface au format html (sauf les pages de service).
+                        {{ 'JAVA.PROJ1.P4' | translate }}
                     </p>
-                    <h4>Avantages du projet</h4>
-                    <ul>
-                        <li>Les utilisateurs peuvent ajouter et modifier les quiz, sujets à travers Front End</li>
-                        <li>Le programme est divisé en plusieurs routeurs, ce qui facilite la navigation</li>
-                        <li>Belle interface</li>
-                    </ul>
-                    <h4>Conclusion</h4>
-                    <p>
-                        Comme le programme ne s'exécute que localement et par intermittence, lorsque j'éteigne le programme, toutes les données seront perdues. Et il n'y a pas de section d'authentification pour admins, donc tout le monde peut accéder à des pages modifiant les questions.
-                    </p>
-                    <h4>Quelques images de ce projet</h4>
+                    <h4>{{ 'JAVA.PROJ1.IMG' | translate }}</h4>
                     
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>
@@ -102,7 +87,10 @@
                         <div class="article-share text-md-end">
                             <ul class="social ps-0 mb-0 mt-0 list-unstyled">
                                 <li class="d-inline-block mb-0"><span class="fw-medium position-relative d-inline-block">Source code:</span></li>
-                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31?tab=repositories" class="github d-block rounded-circle text-center" target="_blank">
+                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31/Quiz-Website-Front-End" class="github d-block rounded-circle text-center" target="_blank">
+                                    <i class='bx bxl-github'></i>
+                                </a></li>
+                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31/Quiz-Website-Back-End" class="github d-block rounded-circle text-center" target="_blank">
                                     <i class='bx bxl-github'></i>
                                 </a></li>
                             </ul>

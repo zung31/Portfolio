@@ -6,10 +6,10 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="page-banner-content text-center">
-            <h1 style="color: #ffffff;">Quiz Local Game</h1>
+            <h1 style="color: #ffffff;">{{ 'JAVA.PRO4' | translate }}</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/java-projets">Java Projets</a></li>
-                <li class="d-inline-block position-relative" style="color: #ffffff;">Quiz Local Game</li>
+                <li class="d-inline-block position-relative"><a routerLink="/java-projets">{{ 'JAVA.TITLE' | translate }}</a></li>
+                <li class="d-inline-block position-relative" style="color: #ffffff;">{{ 'JAVA.PRO4' | translate }}</li>
             </ul>
         </div>
     </div>
@@ -24,7 +24,7 @@
                     <div class="post-thumb" style="text-align: center;">
                         <img src="assets/images/blogs/blog4.jpg" alt="blog-details" style="height: 400px;">
                     </div>
-                    <h3>Quiz Local Game</h3>
+                    <h3>{{ 'JAVA.PRO4' | translate }}</h3>
                     <div class="post-meta">
                         <ul class="ps-0 list-unstyled mb-0">
                             <li class="d-inline-block position-relative">
@@ -33,23 +33,12 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        C'est l'un de mes projets Java. Cela m'aide à me familiariser avec des bibliothèques comme JFrame, JButton, awt avec ActionListener, ActionEvent, swing, me permettant d'afficher un simple écran de quiz.
-                        <br>
-                        J'ai appris à créer des boutons, des étiquettes et des zones de texte pour chaque réponse, et à compter le temps.
-                        Dans le programme, je crée 3 tableaux, un tableau unidimensionnel contenant les questions, un tableau bidimensionnel contenant les réponses (je précise 4 réponses pour chaque question) et un tableau unidimensionnel contenant les bonnes réponses.
-                    </p>
-                    <h4>Comment jouer?</h4>
-                    <p>
-                        Les joueurs auront 10 secondes pour répondre à chaque question. Après 10 secondes, le programme modifiera automatiquement la phrase.
-                        <br>
-                        Une fois que le joueur a choisi la réponse (une seule fois, après avoir sélectionné les boutons seront désactivés et seront activés après avoir modifié la question), les réponses incorrectes deviendront automatiquement rouges et les réponses correctes deviendront rouge-vert.
-                        <br>
-                        À la fin du quiz, les joueurs verront leurs résultats ainsi que la bonne réponse.
-                    </p>
-                    <h4>Conclusion</h4>
-                    <p>Comme je hardcode les questions dans la programme, les joueurs ne peuvent pas les modifier sans accès au code. Et je n'ai créé qu'environ 5 questions donc c'était assez limité en terme de contenu.</p>
-                    <h4>Quelques images de ce projet</h4>
+                    <p [innerHTML]=" 'JAVA.PROJ4.P1' | translate "></p>
+                    <h4>{{ 'JAVA.PROJ4.SUB1' | translate }}</h4>
+                    <p [innerHTML]=" 'JAVA.PROJ3.P2' | translate "></p>
+                    <h4>{{ 'JAVA.PROJ1.SUB3' | translate }}</h4>
+                    <p [innerHTML]=" 'JAVA.PROJ3.P3' | translate "></p>
+                    <h4>{{ 'JAVA.PROJ1.IMG' | translate }}</h4>
                     
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>
@@ -87,7 +76,7 @@
                         <div class="article-share text-md-end">
                             <ul class="social ps-0 mb-0 mt-0 list-unstyled">
                                 <li class="d-inline-block mb-0"><span class="fw-medium position-relative d-inline-block">Source code:</span></li>
-                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31?tab=repositories" class="github d-block rounded-circle text-center" target="_blank">
+                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31/Projects_Quiz" class="github d-block rounded-circle text-center" target="_blank">
                                     <i class='bx bxl-github'></i>
                                 </a></li>
                             </ul>

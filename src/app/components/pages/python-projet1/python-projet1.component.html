@@ -8,7 +8,7 @@
         <div class="page-banner-content text-center">
             <h1 style="color: #ffffff;">SpaceShip Battle Game</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/python-projets">Python Projets</a></li>
+                <li class="d-inline-block position-relative"><a routerLink="/python-projets">{{ 'PYTHON.TITLE' | translate }}</a></li>
                 <li class="d-inline-block position-relative" style="color: #ffffff;">SpaceShip Battle Game</li>
             </ul>
         </div>
@@ -33,24 +33,12 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        C'est l'un de mes projets pour me familiariser avec la bibliothèque Pygame. J'ai créé une interface simple où 2 utilisateurs peuvent contrôler le vaisseau spatial rouge et jaune.
-                    </p>
-                    <h4>Comment le jouer?</h4>
-                    <p>
-                        Le joueur de gauche se déplacera avec la touche WASD et tirera des balles avec Ctrl dans le coin gauche. Le joueur de droite se déplacera avec les touches HAUT, BAS, GAUCHE, DROITE et tirera des balles avec la touche Ctrl droite. Deux joueurs ne peuvent se déplacer que dans leur propre cadre et dans la taille d'écran définie.
-                        <br>
-                        De plus, j'ai également intégré un système sonore, lorsque le vaisseau spatial tire des balles et est touché, et limite le nombre de balles que le joueur peut spammer à 3.
-                        <br>
-                        Chaque personne aura un Heatlh de 10 et chaque fois qu'elle sera touchée, 1 point lui sera retiré. Celui qui amènera la Heatlh à 0 en premier perdra.
-                        <br>
-                        J'ai également configuré le jeu pour qu'il redémarre automatiquement lorsqu'il y a un gagnant, afin que les deux joueurs puissent être prêts à jouer à une nouvelle partie. Et le joueur peut quitter en appuyant sur Fermer (icône x de la fenêtre Pygame).
-                    </p>
+                    <p [innerHTML]=" 'PYTHON.PROJ1.P1' | translate "></p>
+                    <h4>{{ 'PYTHON.PROJ1.SUB1' | translate }}</h4>
+                    <p [innerHTML]=" 'PYTHON.PROJ1.P2' | translate "></p>
                     <h4>Conclusion</h4>
-                    <p>
-                        Le jeu a une belle interface et un gameplay facile à comprendre. Cependant, le jeu est toujours simple, peut-être que plus tard j'ajouterai du code sur les météores aléatoires pour le rendre plus difficile à 2 joueurs.
-                    </p>
-                    <h4>Quelques images de ce projet</h4>
+                    <p [innerHTML]=" 'PYTHON.PROJ1.P3' | translate "></p>
+                    <h4>{{ 'PYTHON.PROJ1.IMG' | translate }}</h4>
                     
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>
@@ -88,7 +76,7 @@
                         <div class="article-share text-md-end">
                             <ul class="social ps-0 mb-0 mt-0 list-unstyled">
                                 <li class="d-inline-block mb-0"><span class="fw-medium position-relative d-inline-block">Source code:</span></li>
-                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31?tab=repositories" class="github d-block rounded-circle text-center" target="_blank">
+                                <li class="d-inline-block mb-0"><a href="https://github.com/zung31/Projects_Python" class="github d-block rounded-circle text-center" target="_blank">
                                     <i class='bx bxl-github'></i>
                                 </a></li>
                             </ul>

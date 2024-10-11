@@ -8,7 +8,7 @@
         <div class="page-banner-content text-center">
             <h1 style="color: #ffffff;">Simulink</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/matlab-projets">Matlab Projets</a></li>
+                <li class="d-inline-block position-relative"><a routerLink="/matlab-projets">{{ 'MATLAB.TITLE' | translate }}</a></li>
                 <li class="d-inline-block position-relative" style="color: #ffffff;">Simulink</li>
             </ul>
         </div>
@@ -33,17 +33,13 @@
                             </li>
                         </ul>
                     </div>
-                    <p>
-                        Simulink est un outil puissant intégré à MATLAB, spécialisé pour la simulation, la modélisation et la conception de systèmes dynamiques. Il fournit un environnement graphique qui permet aux utilisateurs de simuler des systèmes complexes en connectant des blocs entre eux au lieu d'écrire du code.
-                        <br>
-                        L'une des applications les plus populaires de Simulink est la conception et le test de contrôleurs. On peut simuler des systèmes de contrôle par rétroaction tels que des contrôleurs PID, un contrôle de modèle prédictif et tester la réponse du système à différentes entrées.
-                    </p>
-                    <h4>Quelques sujets sur lesquels j'ai travaillé</h4>
+                    <p [innerHTML]=" 'MATLAB.SUB2' | translate "></p>
+                    <h4>{{ 'MATLAB.H1' | translate }}</h4>
                     <ul>
-                        <li><a routerLink="assets/public/TP_Matlab_robot_mobile_L2" target="blank">Animation Robot</a></li>
-                        <li><a routerLink="assets/public/TP_L2_montgolfière" target="blank">Montgolfière</a></li>
+                        <li><a routerLink="assets/public/TP_Matlab_robot_mobile_L2" target="blank">{{ 'MATLAB.P1' | translate }}</a></li>
+                        <li><a routerLink="assets/public/TP_L2_montgolfière" target="blank">{{ 'MATLAB.P2' | translate }}</a></li>
                     </ul>
-                    <h4>Quelques pièces de programmes</h4>
+                    <h4>{{ 'MATLAB.H2' | translate }}</h4>
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>
                             <div class="image-container">

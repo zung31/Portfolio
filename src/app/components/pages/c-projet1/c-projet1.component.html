@@ -8,7 +8,7 @@
         <div class="page-banner-content text-center">
             <h1 style="color: #ffffff;">Parking Apllication</h1>
             <ul class="ps-0 mb-0 list-unstyled">
-                <li class="d-inline-block position-relative"><a routerLink="/c-projets">C Projets</a></li>
+                <li class="d-inline-block position-relative"><a routerLink="/c-projets">{{ 'C.TITLE' | translate}}</a></li>
                 <li class="d-inline-block position-relative" style="color: #ffffff;">Parking Application</li>
             </ul>
         </div>
@@ -33,16 +33,12 @@
                             </li>
                         </ul>
                     </div>
+                    <p [innerHTML]=" 'C.PROJ1.P1' | translate"></p>
+                    <h4>{{ 'C.PROJ1.H1' | translate}}</h4>
                     <p>
-                        Le projet Parking Application permet à l'utilisateur de Chercher un parking, Entrer dans un parking ou Sortir un parking. Il peut également enregistrer la plaque d'immatriculation des clients.
-                        <br>
-                        Le programme récupère les données de stationnement à partir du fichier csv fourni par l'enseignant. Tout d'abord, le programme affichera un menu d'options pour l'utilisateur. Ensuite, selon son choix, l'utilisateur saisira les informations supplémentaires nécessaires au programme pour fournir des résultats.
+                        {{ 'C.PROJ1.P2' | translate}}    
                     </p>
-                    <h4>Conclusion</h4>
-                    <p>
-                        Le programme présente de nombreuses limitations et certaines exigences que je n'ai pas remplies, mais c'est aussi un programme qui m'aide à mieux comprendre le C, comme pouvoir séparer les fichiers et les transmettre à main en utilisant le h.
-                    </p>
-                    <h4>Quelques images de ce projet</h4>
+                    <h4>{{ 'C.PROJ1.IMG' | translate}}</h4>
                     
                     <owl-carousel-o [options]="{items: 3, dots: true, nav: false, margin: 10}">
                         <ng-template carouselSlide>
