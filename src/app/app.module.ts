@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
 import { HttpClientModule, HttpClient, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -163,7 +163,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     ],
     providers: [
     provideAnimationsAsync(),
-    provideHttpClient(withInterceptorsFromDi())
+    provideHttpClient(withInterceptorsFromDi()),
+    provideClientHydration()
   ],
     bootstrap: [AppComponent]
 })

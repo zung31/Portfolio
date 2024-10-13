@@ -12,7 +12,19 @@ export class PreviewProjetsComponent implements OnInit {
         public router: Router
     ) { }
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+      if (typeof document !== 'undefined') {
+        // only run in client-side
+        this.showContent();
+      }
+    }
+
+    showContent() {
+      const elements = document.querySelectorAll('.img-fluid, .img-fluid2');
+      elements.forEach(element => {
+        (element as HTMLElement).style.display = 'block';
+      });
+    }
 
     ngAfterViewInit(): void {
       this.observeCategories();

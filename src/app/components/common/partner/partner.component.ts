@@ -13,7 +13,19 @@ export class PartnerComponent implements OnInit {
         public router: Router
     ) { }
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        if (typeof document !== 'undefined') {
+            // only run in client-side
+            this.showContent();
+        }
+    }
+
+    showContent() {
+        const elements = document.querySelectorAll('.partner-item');
+        elements.forEach(element => {
+          (element as HTMLElement).style.display = 'block';
+        });
+    }
 
     ngAfterViewInit(): void {
       this.observeCategories();

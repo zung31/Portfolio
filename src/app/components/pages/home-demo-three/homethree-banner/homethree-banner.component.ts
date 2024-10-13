@@ -10,10 +10,18 @@ export class HomethreeBannerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.showContent();
+    if (typeof document !== 'undefined') {
+      // only run in client-side
+      this.showContent();
+    }
   }
 
   showContent() {
+    const element = document.getElementById('someElement');
+    if (element) {
+      element.style.display = 'block';
+    }
+
     const content = document.querySelector('.hero-content');
     if (content) {
       content.classList.add('show');

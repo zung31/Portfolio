@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "toledo": {
+    "zung": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/toledo",
+            "outputPath": "dist/zung/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -81,10 +81,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "toledo:build:production"
+              "buildTarget": "zung:build:production"
             },
             "development": {
-              "buildTarget": "toledo:build:development"
+              "buildTarget": "zung:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -92,7 +92,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "toledo:build"
+            "buildTarget": "zung:build"
           }
         },
         "test": {
@@ -117,6 +117,67 @@
             ],
             "scripts": []
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/zung/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json",
+            "inlineStyleLanguage": "scss"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ],
+              "optimization": false,
+              "sourceMap": true,
+              "extractLicenses": false,
+              "vendorChunk": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@angular-devkit/build-angular:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "zung:build:development",
+              "serverTarget": "zung:server:development"
+            },
+            "production": {
+              "browserTarget": "zung:build:production",
+              "serverTarget": "zung:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "zung:build:production",
+              "serverTarget": "zung:server:production"
+            },
+            "development": {
+              "browserTarget": "zung:build:development",
+              "serverTarget": "zung:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

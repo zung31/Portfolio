@@ -35,6 +35,11 @@ export class FunfactsComponent implements OnInit {
     ) {}
 
     ngOnInit(): void {
+      if (typeof document !== 'undefined') {
+        // only run in client-side
+        this.showContent();
+      }
+
       // Cập nhật bản dịch ban đầu
       this.loadTranslations();
 
@@ -43,6 +48,13 @@ export class FunfactsComponent implements OnInit {
           this.loadTranslations();
       });
     }
+
+    showContent() {
+      const elements = document.querySelectorAll('.funfact-item');
+      elements.forEach(element => {
+        (element as HTMLElement).style.display = 'block';
+      });
+  }
 
     ngAfterViewInit(): void {
       this.observeCategories();
