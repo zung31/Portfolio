@@ -1,13 +1,14 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
     selector: 'app-funfacts',
     templateUrl: './funfacts.component.html',
     styleUrls: ['./funfacts.component.scss']
 })
-export class FunfactsComponent implements OnInit {
+export class FunfactsComponent implements OnInit, AfterViewInit {
   funfactBox = [
     {
         icon: `flaticon-tick`,
@@ -31,12 +32,12 @@ export class FunfactsComponent implements OnInit {
     }
   ];
     constructor(
-        public router: Router, private translate: TranslateService
+        public router: Router, private translate: TranslateService,
+        @Inject(PLATFORM_ID) private platformId: Object
     ) {}
 
     ngOnInit(): void {
-      if (typeof document !== 'undefined') {
-        // only run in client-side
+      if (isPlatformBrowser(this.platformId)) {
         this.showContent();
       }
 
@@ -50,14 +51,18 @@ export class FunfactsComponent implements OnInit {
     }
 
     showContent() {
-      const elements = document.querySelectorAll('.funfact-item');
-      elements.forEach(element => {
-        (element as HTMLElement).style.display = 'block';
-      });
+      if (isPlatformBrowser(this.platformId)) {
+        const elements = document.querySelectorAll('.funfact-item');
+        elements.forEach(element => {
+          (element as HTMLElement).style.display = 'block';
+        });
+      }
   }
 
     ngAfterViewInit(): void {
-      this.observeCategories();
+      if (isPlatformBrowser(this.platformId)) {
+        this.observeCategories();
+      }
     }
 
     loadTranslations() {
@@ -72,21 +77,23 @@ export class FunfactsComponent implements OnInit {
     }
 
     observeCategories() {
-      const categories = document.querySelectorAll('.funfact-item');
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            console.log('in view');
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target); // Stop observing once the animation is triggered
-          }
+      if (isPlatformBrowser(this.platformId)) {
+        const categories = document.querySelectorAll('.funfact-item');
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              console.log('in view');
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target); // Stop observing once the animation is triggered
+            }
+          });
+        }, {
+          threshold: 0.1 // Trigger when 10% of the element is in view
         });
-      }, {
-        threshold: 0.1 // Trigger when 10% of the element is in view
-      });
-  
-      categories.forEach(category => {
-        observer.observe(category);
-      });
+    
+        categories.forEach(category => {
+          observer.observe(category);
+        });
+      }
     }
 }

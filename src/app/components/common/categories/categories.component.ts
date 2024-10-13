@@ -1,6 +1,7 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, Inject, PLATFORM_ID } from '@angular/core';
 import { Router } from '@angular/router';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { isPlatformBrowser } from '@angular/common';
 import { faAngular,
   faReact,
   faJava,
@@ -13,47 +14,53 @@ import { faAngular,
     templateUrl: './categories.component.html',
     styleUrls: ['./categories.component.scss']
 })
-export class CategoriesComponent implements OnInit {
+export class CategoriesComponent implements OnInit, AfterViewInit {
 
     constructor(
-        public router: Router
+        public router: Router,
+        @Inject(PLATFORM_ID) private platformId: Object
     ) { }
 
     ngOnInit(): void {
-      if (typeof document !== 'undefined') {
-        // only run in client-side
+      if (isPlatformBrowser(this.platformId)) {
         this.showContent();
       }
     }
 
     showContent() {
-      const elements = document.querySelectorAll('.category-box');
-      elements.forEach(element => {
-        (element as HTMLElement).style.display = 'block';
-      });
+      if (isPlatformBrowser(this.platformId)) {
+        const elements = document.querySelectorAll('.category-box');
+        elements.forEach(element => {
+          (element as HTMLElement).style.display = 'block';
+        });
+      }
     }
 
     ngAfterViewInit(): void {
-      this.observeCategories();
+      if (isPlatformBrowser(this.platformId)) {
+        this.observeCategories();
+     }
     }
 
     observeCategories() {
-      const categories = document.querySelectorAll('.category-box');
-      const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            console.log('in view');
-            entry.target.classList.add('show');
-            observer.unobserve(entry.target); // Stop observing once the animation is triggered
-          }
+      if (isPlatformBrowser(this.platformId)) {
+        const categories = document.querySelectorAll('.category-box');
+        const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              console.log('in view');
+              entry.target.classList.add('show');
+              observer.unobserve(entry.target); // Stop observing once the animation is triggered
+            }
+          });
+        }, {
+          threshold: 0.1 // Trigger when 10% of the element is in view
         });
-      }, {
-        threshold: 0.1 // Trigger when 10% of the element is in view
-      });
-  
-      categories.forEach(category => {
-        observer.observe(category);
-      });
+    
+        categories.forEach(category => {
+          observer.observe(category);
+        });
+      }
     }
 
     customOptions: any = {
