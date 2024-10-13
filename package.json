@@ -12,7 +12,8 @@
     "dev:ssr": "ng run zung:serve-ssr",
     "serve:ssr": "node dist/zung/server/main.js",
     "build:ssr": "ng build && ng run zung:server",
-    "prerender": "ng run zung:prerender"
+    "prerender": "ng run zung:prerender",
+    "vercel-build": "ng build --configuration=production && ng run zung:server:production"
   },
   "private": true,
   "dependencies": {
