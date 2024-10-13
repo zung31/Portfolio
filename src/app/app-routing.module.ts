@@ -5,9 +5,6 @@ import { HomeDemoThreeComponent } from './components/pages/home-demo-three/home-
 import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
 import { AboutPageComponent } from './components/pages/about-page/about-page.component';
 import { Licence2PageComponent } from './components/pages/licence-2-page/licence-2-page.component';
-import { EventsPageComponent } from './components/pages/events-page/events-page.component';
-import { EventDetailsPageComponent } from './components/pages/event-details-page/event-details-page.component';
-import { BlogGridPageComponent } from './components/pages/blog-grid-page/blog-grid-page.component';
 import { BlogDetailsPageComponent } from './components/pages/blog-details-page/blog-details-page.component';
 import { CompetencesPageComponent } from './components/pages/competences-page/competences-page.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -41,12 +38,9 @@ import { CProjet4Component } from './components/pages/c-projet4/c-projet4.compon
 const routes: Routes = [
     {path: '', component: HomeDemoThreeComponent},
     {path: 'info', component: AboutPageComponent},
-    //{path: 'events', component: EventsPageComponent},
-    //{path: 'event-details', component: EventDetailsPageComponent},
     {path: 'licence-1', component: Licence1PageComponent},
     {path: 'licence-2', component: Licence2PageComponent},
     {path: 'lycee', component: LyceePageComponent},
-    //{path: 'blog-grid', component: BlogGridPageComponent},
     {path: 'java-projet-1', component: BlogDetailsPageComponent},
     {path: 'contact', component: ContactPageComponent},
     {path: 'competences', component: CompetencesPageComponent},

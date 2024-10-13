@@ -61,31 +61,31 @@ export class PartnerComponent implements OnInit, AfterViewInit {
         {
             list: [
                 {
-                    img: `assets/images/partners/code-stable.png`
+                    img: `assets/images/partners/code-stable.webp`
 ,link:  `https://code.visualstudio.com/`
                 },
                 {
-                    img: `assets/images/partners/R.png`
+                    img: `assets/images/partners/R.webp`
 ,link:  `https://lp.jetbrains.com/intellij-idea-promo/`
                 },
                 {
-                    img: `assets/images/partners/eclipse.png`
+                    img: `assets/images/partners/eclipse.webp`
 ,link:  `https://eclipseide.org/`
                 },
                 {
-                    img: `assets/images/partners/sql.png`
+                    img: `assets/images/partners/sql.webp`
 ,link:  `https://www.mysql.com/products/workbench/`
                 },
                 {
-                    img: `assets/images/partners/postman.png`
+                    img: `assets/images/partners/postman.webp`
 ,link:  `https://www.postman.com/`
                 },
                 {
-                    img: `assets/images/partners/Doli.png`
+                    img: `assets/images/partners/Doli.webp`
 ,link:  `https://www.dolibarr.org/` 
                 },
                 {
-                    img: `assets/images/partners/php.png`
+                    img: `assets/images/partners/php.webp`
 ,link:  `https://www.jetbrains.com/phpstorm/`
                 }
             ]
@@ -96,31 +96,31 @@ export class PartnerComponent implements OnInit, AfterViewInit {
         {
             list: [
                 {
-                    img: `assets/images/partners/code-stable.png`
+                    img: `assets/images/partners/code-stable.webp`
 ,link:  `https://code.visualstudio.com/`
                 },
                 {
-                    img: `assets/images/partners/R.png`
+                    img: `assets/images/partners/R.webp`
 ,link:  `https://lp.jetbrains.com/intellij-idea-promo/`
                 },
                 {
-                    img: `assets/images/partners/eclipse.png`
+                    img: `assets/images/partners/eclipse.webp`
 ,link:  `https://eclipseide.org/`
                 },
                 {
-                    img: `assets/images/partners/sql.png`
+                    img: `assets/images/partners/sql.webp`
 ,link:  `https://www.mysql.com/products/workbench/`
                 },
                 {
-                    img: `assets/images/partners/postman.png`
+                    img: `assets/images/partners/postman.webp`
 ,link:  `https://www.postman.com/`
                 },
                 {
-                    img: `assets/images/partners/Doli.png`
+                    img: `assets/images/partners/Doli.webp`
 ,link:  `https://www.dolibarr.org/` 
                 },
                 {
-                    img: `assets/images/partners/php.png`
+                    img: `assets/images/partners/php.webp`
 ,link:  `https://www.jetbrains.com/phpstorm/`
                 }
             ]
@@ -131,31 +131,31 @@ export class PartnerComponent implements OnInit, AfterViewInit {
         {
             list: [
                 {
-                    img: `assets/images/partners/code-stable.png`
+                    img: `assets/images/partners/code-stable.webp`
 ,link:  `https://code.visualstudio.com/`
                 },
                 {
-                    img: `assets/images/partners/R.png`
+                    img: `assets/images/partners/R.webp`
 ,link:  `https://lp.jetbrains.com/intellij-idea-promo/`
                 },
                 {
-                    img: `assets/images/partners/eclipse.png`
+                    img: `assets/images/partners/eclipse.webp`
 ,link:  `https://eclipseide.org/`
                 },
                 {
-                    img: `assets/images/partners/sql.png`
+                    img: `assets/images/partners/sql.webp`
 ,link:  `https://www.mysql.com/products/workbench/`
                 },
                 {
-                    img: `assets/images/partners/postman.png`
+                    img: `assets/images/partners/postman.webp`
 ,link:  `https://www.postman.com/`
                 },
                 {
-                    img: `assets/images/partners/Doli.png`
+                    img: `assets/images/partners/Doli.webp`
 ,link:  `https://www.dolibarr.org/` 
                 },
                 {
-                    img: `assets/images/partners/php.png`
+                    img: `assets/images/partners/php.webp`
 ,link:  `https://www.jetbrains.com/phpstorm/`
                 }
             ]

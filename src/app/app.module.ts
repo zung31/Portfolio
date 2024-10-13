@@ -13,7 +13,6 @@ import { HomeDemoThreeComponent } from './components/pages/home-demo-three/home-
 import { NavbarComponent } from './components/common/navbar/navbar.component';
 import { FooterComponent } from './components/common/footer/footer.component';
 import { NotFoundComponent } from './components/common/not-found/not-found.component';
-import { BlogComponent } from './components/common/blog/blog.component';
 import { PartnerComponent } from './components/common/partner/partner.component';
 import { InstructorsComponent } from './components/common/instructors/instructors.component';
 import { AboutComponent } from './components/common/about/about.component';
@@ -28,9 +27,6 @@ import { AboutPageComponent } from './components/pages/about-page/about-page.com
 import { Licence2PageComponent } from './components/pages/licence-2-page/licence-2-page.component';
 import { InstructorsPageComponent } from './components/pages/instructors-page/instructors-page.component';
 import { InstructorProfilePageComponent } from './components/pages/instructor-profile-page/instructor-profile-page.component';
-import { EventsPageComponent } from './components/pages/events-page/events-page.component';
-import { EventDetailsPageComponent } from './components/pages/event-details-page/event-details-page.component';
-import { BlogGridPageComponent } from './components/pages/blog-grid-page/blog-grid-page.component';
 import { BlogDetailsPageComponent } from './components/pages/blog-details-page/blog-details-page.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { Router, RouterModule } from '@angular/router';
@@ -85,7 +81,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         NavbarComponent,
         FooterComponent,
         NotFoundComponent,
-        BlogComponent,
         PartnerComponent,
         InstructorsComponent,
         AboutComponent,
@@ -102,9 +97,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         LyceePageComponent,
         InstructorsPageComponent,
         InstructorProfilePageComponent,
-        EventsPageComponent,
-        EventDetailsPageComponent,
-        BlogGridPageComponent,
         BlogDetailsPageComponent,
         FeaturedBoxesComponent,
         FeaturedBoxes2Component,
