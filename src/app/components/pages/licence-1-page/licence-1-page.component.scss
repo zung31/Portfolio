@@ -73,8 +73,6 @@
     order: 1;
     justify-self: center;
     animation: profile_animate 8s ease-in-out infinite 1s;
-    // opacity: 0;
-    // transform: translateX(-100px);
 
     @keyframes profile_animate {
         0% {
@@ -88,20 +86,6 @@
         }
     }
 }
-// .img-fluid {
-//     opacity: 0;
-//     transform: translateX(400px);
-//     transition: opacity 2s ease-out, transform 2s ease-out;
-// }
-// .img-fluid.show {
-//     animation: profile_animate 8s ease-in-out infinite 1s, slideInRight 2s ease-out forwards;
-// }
-// @keyframes slideInRight {
-//     to {
-//         opacity: 1;
-//         transform: translateX(0);
-//     }
-// }
 
 @media (max-width: 767px) {
     .img-fluid {

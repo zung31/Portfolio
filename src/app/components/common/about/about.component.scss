@@ -7,7 +7,6 @@ h2 {
         weight: 700;
     };
 }
-
 .job{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 15px; 
@@ -17,13 +16,11 @@ h2 {
     text-align: justify;
     text-align: inter-word;
 }
-
 @media (max-width: 991px) {
     .job {
         max-height: 200px;
     }
 }
-
 @media (min-width: 992px) {
     #stage{
         text-align: left;
@@ -32,7 +29,6 @@ h2 {
         text-align: right;
     }
 }
-
 .about-image {
     .image {
         border-radius: 0 40px 0 65px;
@@ -80,28 +76,6 @@ h2 {
                 weight: 500;
                 size: 22px;
             };
-            .icon {
-                width: 60px;
-                height: 60px;
-                font-size: 45px;
-                text-align: center;
-                border-radius: 50%;
-                margin-right: 15px;
-                color: var(--primaryColor);
-                transition: var(--transition);
-                background-color: var(--whiteColor);
-
-                i {
-                    position: relative;
-                    top: 1px;
-                }
-            }
-            &:hover {
-                .icon {
-                    color: var(--whiteColor);
-                    background-color: var(--primaryColor);
-                }
-            }
         }
     }
 }
@@ -119,7 +93,6 @@ h2 {
         transform: translateY(0);
     }
 }
-
 .about-content {
     margin-bottom: 25px;
     
@@ -175,11 +148,8 @@ h2 {
         display: block !important;
     }
 }
-
-// About Style Two
 .about-img {
     padding-left: 80px;
-
     .image {
         margin-bottom: 25px;
         border-radius: 20px 0;
@@ -209,44 +179,7 @@ h2 {
             weight: 700;
         };
     }
-    .features-list {
-        margin: {
-            top: 20px;
-            left: -10px;
-            bottom: 15px;
-            right: -10px;
-        };
-        li {
-            flex: 0 0 auto;
-            width: 50%;
-            padding: {
-                left: 10px;
-                right: 10px;
-            };
-            span {
-                color: var(--bodyColor);
-                margin-bottom: 12px;
-                position: relative;
-                padding-left: 25px;
-                font-weight: 500;
-                display: block;
-
-                i {
-                    left: 0;
-                    top: 50%;
-                    line-height: 1;
-                    font-size: 18px;
-                    margin-top: -1px;
-                    position: absolute;
-                    transform: translateY(-50%);
-                    color: var(--secondaryColor);
-                }
-            }
-        }
-    }
 }
-
-// About Style Three
 .about-area {
     &.bg-color {
         background: linear-gradient(180deg, #FFFAFA 0%, #FBF7E9 100%);
@@ -261,64 +194,10 @@ h2 {
             weight: 700;
         };
     }
-    .features-list {
-        margin: {
-            top: 25px;
-            left: -10px;
-            bottom: 15px;
-            right: -10px;
-        };
-        li {
-            flex: 0 0 auto;
-            width: 50%;
-            padding: {
-                left: 10px;
-                right: 10px;
-            };
-            .box {
-                display: flex;
-                font-weight: 500;
-                border-radius: 5px;
-                align-items: center;
-                background-color: var(--whiteColor);
-                box-shadow: 0px 0px 30px rgba(254, 74, 85, 0.06);
-                padding: {
-                    left: 5px;
-                    right: 5px;
-                };
-                margin: {
-                    bottom: 20px;
-                    top: 5px;
-                };
-                .icon {
-                    top: -5px;
-                    width: 45px;
-                    height: 55px;
-                    font-size: 20px;
-                    border-radius: 5px;
-                    text-align: center;
-                    margin-right: 12px;
-                    position: relative;
-                    color: var(--whiteColor);
-                    background-color: var(--secondaryColor);
-
-                    i {
-                        left: 0;
-                        right: 0;
-                        top: 50%;
-                        margin-top: 1px;
-                        position: absolute;
-                        transform: translateY(-50%);
-                    }
-                }
-            }
-        }
-    }
 }
 .about-wrap-image {
     padding-left: 30px;
 }
-
 // Shape
 .shape1 {
     right: 5%;
@@ -343,75 +222,20 @@ h2 {
     right: 10%;
     bottom: 0;
 }
-
-// Video
-.video-popup {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 5;
-    display: flex;
-    position: fixed;
-    text-align: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-
-    .popup-inner {
-        width: 720px;
-        padding: 20px;
-        position: relative;
-        border-radius: 5px;
-        background-color: var(--whiteColor);
-        margin: {
-            left: auto;
-            right: auto;
-        };
-        iframe {
-            width: 100%;
-            height: 426px;
-            border-radius: 5px;
-        }
-        .close-btn {
-            top: -15px;
-            width: 35px;
-            right: -10px;
-            border: none;
-            height: 35px;
-            font-size: 20px;
-            line-height: 36px;
-            border-radius: 50%;
-            position: absolute;
-            transition: var(--transition);
-            background-color: var(--whiteColor);
-
-            &:hover {
-                background-color: red;
-                color: var(--whiteColor);
-            }
-        }
-    }
-}
-
 .cv-link {
     display: inline-block;
     text-align: center;
-
     @media (max-width: 767px) {
         display: block;
         margin: 0 auto;
     }
-
     @media (min-width: 768px) and (max-width: 1024px) {
         display: block;
         margin: 0 auto;
     }
 }
-
 /* Max width 767px */
 @media only screen and (max-width : 767px) {
-
-    // About Style One
     .about-image {
         .image {
             border-radius: 0 10px 0 25px;
@@ -429,22 +253,11 @@ h2 {
         }
         .video-image {
             border-radius: 0 10px 0 10px;
-    
             img {
                 border-radius: 0 10px 0 10px;
             }
             &::before {
                 border-radius: 0 10px 0 10px;
-            }
-            .video-btn {
-                font-size: 14px;
-
-                .icon {
-                    width: 35px;
-                    height: 35px;
-                    font-size: 25px;
-                    margin-right: 10px;
-                }
             }
         }
     }
@@ -476,39 +289,14 @@ h2 {
             }
         }
     }
-
     // Shape
     .shape1 {
         display: none;
     }
-
-    // Video
-    .video-popup {
-        .popup-inner {
-            width: 300px;
-            padding: 10px;
-            
-            iframe {
-                width: 100%;
-                height: 177px;
-            }
-            .close-btn {
-                width: 30px;
-                right: -5px;
-                height: 30px;
-                font-size: 18px;
-                line-height: 31px;
-            }
-        }
-    }
-
-    // About Style Two
     .about-img {
         padding-left: 0;
-    
         .image {
             border-radius: 10px 0;
-    
             img {
                 border-radius: 10px 0;
             }
@@ -516,7 +304,6 @@ h2 {
         .col-8 {
             .image {
                 border-radius: 0 10px 50px 10px;
-    
                 img {
                     border-radius: 0 10px 50px 10px;
                 }
@@ -528,106 +315,25 @@ h2 {
             margin-bottom: 8px;
             font-size: 22px;
         }
-        .features-list {
-            margin: {
-                top: 15px;
-                bottom: 8px;
-            };
-            li {
-                width: 100%;
-                
-                span {
-                    i {
-                        margin-top: -2px;
-                    }
-                }
-            }
-        }
     }
-
-    // About Style Three
     .about-wrap-content {
         h2 {
             margin-bottom: 8px;
             font-size: 22px;
-        }
-        .features-list {
-            margin: {
-                top: 15px;
-                bottom: 8px;
-            };
-            li {
-                width: 100%;
-                
-                .box {
-                    margin: {
-                        bottom: 15px;
-                        top: 5px;
-                    };
-                    .icon {
-                        width: 40px;
-                        height: 50px;
-                    }
-                }
-            }
         }
     }
     .about-wrap-image {
         margin-top: 25px;
         padding-left: 0;
     }
-
 }
-
-/* Min width 576px to Max width 767px */
-@media only screen and (min-width : 576px) and (max-width : 767px) {
-
-    // Video
-    .video-popup {
-        .popup-inner {
-            width: 400px;
-            
-            iframe {
-                width: 100%;
-                height: 238px;
-            }
-            .close-btn {
-                right: -10px;
-            }
-        }
-    }
-
-    // About Style Three
-    .about-wrap-content {
-        .features-list {
-            li {
-                width: 50%;
-            }
-        }
-    }
-
-}
-
 /* Min width 768px to Max width 991px */
 @media only screen and (min-width : 768px) and (max-width : 991px) {
-
-    // About Style One
     .about-image {
         .col-6 {
             &:nth-child(2) {
                 .image {
                     padding-right: 0;
-                }
-            }
-        }
-        .video-image {
-            .video-btn {
-                font-size: 20px;
-
-                .icon {
-                    width: 50px;
-                    height: 50px;
-                    font-size: 37px;
                 }
             }
         }
@@ -656,13 +362,9 @@ h2 {
             }
         }
     }
-
-    // Shape
     .shape1 {
         bottom: 5%;
     }
-
-    // About Style Two
     .about-img {
         padding-left: 0;
     }
@@ -671,42 +373,22 @@ h2 {
             margin-bottom: 7px;
             font-size: 26px;
         }
-        .features-list {
-            margin: {
-                top: 15px;
-                bottom: 10px;
-            };
-        }
     }
-
-    // About Style Three
     .about-wrap-content {
         h2 {
             margin-bottom: 7px;
             font-size: 26px;
-        }
-        .features-list {
-            margin: {
-                top: 20px;
-                bottom: 8px;
-            };
         }
     }
     .about-wrap-image {
         padding-left: 0;
         margin-top: 25px;
     }
-
 }
-
-/* Min width 992px to Max width 1199px */
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
-
-    // About Style One
     .about-image {
         .image {
             border-radius: 0 25px 0 45px;
-    
             img {
                 border-radius: 0 25px 0 45px;
             }
@@ -726,15 +408,6 @@ h2 {
             }
             &::before {
                 border-radius: 0 15px 0 15px;
-            }
-            .video-btn {
-                font-size: 18px;
-
-                .icon {
-                    width: 50px;
-                    height: 50px;
-                    font-size: 37px;
-                }
             }
         }
     }
@@ -762,13 +435,9 @@ h2 {
             }
         }
     }
-
-    // Shape
     .shape1 {
         bottom: 5%;
     }
-
-    // About Style Two
     .about-img {
         padding-left: 0;
     }
@@ -778,42 +447,17 @@ h2 {
             margin-bottom: 10px;
         }
     }
-
-    // About Style Three
     .about-wrap-content {
         h2 {
             font-size: 28px;
             margin-bottom: 10px;
         }
-        .features-list {
-            margin: {
-                bottom: 10px;
-                top: 20px;
-            };
-            li {
-                .box {
-                    font-size: 15px;
-
-                    .icon {
-                        width: 40px;
-                        height: 50px;
-                        font-size: 18px;
-                        margin-right: 10px;
-                    }
-                }
-            }
-        }
     }
     .about-wrap-image {
         padding-left: 0;
     }
-
 }
-
-/* Min width 1200px to Max width 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-
-    // About Style One
     .about-image {
         .col-6 {
             &:nth-child(2) {
@@ -823,20 +467,12 @@ h2 {
             }
         }
     }
-
-    // About Style Two
     .about-img {
         padding-left: 30px;
     }
-
 }
-
-/* Min width 1600px */
 @media only screen and (min-width: 1600px) {
-
-    // Shape
     .about-shape1 {
         left: 40%;
     }
-
 }

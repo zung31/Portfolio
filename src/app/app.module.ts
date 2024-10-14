@@ -18,15 +18,12 @@ import { InstructorsComponent } from './components/common/instructors/instructor
 import { AboutComponent } from './components/common/about/about.component';
 import { FeaturedComponent } from './components/common/featured/featured.component';
 import { CategoriesComponent } from './components/common/categories/categories.component';
-import { FeaturedCoursesComponent } from './components/common/featured-courses/featured-courses.component';
 import { FunfactsComponent } from './components/common/funfacts/funfacts.component';
 import { FeaturedBoxesComponent } from './components/common/featured-boxes/featured-boxes.component';
 import { HomethreeBannerComponent } from './components/pages/home-demo-three/homethree-banner/homethree-banner.component';
 import { ContactPageComponent } from './components/pages/contact-page/contact-page.component';
 import { AboutPageComponent } from './components/pages/about-page/about-page.component';
 import { Licence2PageComponent } from './components/pages/licence-2-page/licence-2-page.component';
-import { InstructorsPageComponent } from './components/pages/instructors-page/instructors-page.component';
-import { InstructorProfilePageComponent } from './components/pages/instructor-profile-page/instructor-profile-page.component';
 import { BlogDetailsPageComponent } from './components/pages/blog-details-page/blog-details-page.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { Router, RouterModule } from '@angular/router';
@@ -86,7 +83,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         AboutComponent,
         FeaturedComponent,
         CategoriesComponent,
-        FeaturedCoursesComponent,
         FunfactsComponent,
         FeaturedBoxesComponent,
         HomethreeBannerComponent,
@@ -95,8 +91,6 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         Licence1PageComponent,
         Licence2PageComponent,
         LyceePageComponent,
-        InstructorsPageComponent,
-        InstructorProfilePageComponent,
         BlogDetailsPageComponent,
         FeaturedBoxesComponent,
         FeaturedBoxes2Component,

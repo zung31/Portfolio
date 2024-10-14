@@ -1,8 +1,6 @@
-// Footer
 .footer-area {
     z-index: 1;
     background-color: #f6fafb;
-
     .col-md-6 {
         &:nth-child(1) {
             .footer-widget {
@@ -43,24 +41,6 @@
 }
 .footer-widget {
     margin-bottom: 25px;
-
-    .logo {
-        margin-bottom: 20px;
-        width: 210px;
-        height: 228px;
-    }
-
-    .btn{
-        background-color: #343b3d;
-        color: #fff;
-        border-radius: 5px;
-        width: 70px;
-        height: 30px;
-        &:hover{
-            background-color: var(--primaryColor);
-            color: #fff;
-        }
-    }
     h3 {
         font-size: 22px;
         margin-bottom: 25px;
@@ -68,7 +48,6 @@
     .footer-links {
         li {
             margin-bottom: 12px;
-
             a {
                 padding-left: 18px;
                 color: var(--bodyColor);
@@ -111,7 +90,6 @@
                 color: var(--secondaryColor);
                 transition: var(--transition);
                 background-color: var(--whiteColor);
-
                 i {
                     left: 0;
                     right: 0;
@@ -123,7 +101,6 @@
             }
             a {
                 color: var(--bodyColor);
-
                 &:hover {
                     color: var(--secondaryColor);
                 }
@@ -144,8 +121,6 @@
         }
     }
 }
-
-// Copyright
 .copyright-area {
     background-color: #f6fafb;
     border-top: 1px solid rgba(0, 0, 0, 0.03);
@@ -159,11 +134,7 @@
         }
     }
 }
-
-/* Max width 767px */
 @media only screen and (max-width : 767px) {
-
-    // Footer
     .footer-area {
         .col-md-6 {
             &:nth-child(1) {
@@ -195,26 +166,6 @@
         }
     }
     .footer-widget {
-        .logo {
-            margin-bottom: 15px;
-        }
-        // .social-links {
-        //     li {
-        //         margin-right: 8px;
-                
-        //         a {
-        //             width: 34px;
-        //             height: 34px;
-        //             font-size: 16px;
-        //         }
-        //     }
-        // }
-        .btn{
-            &:hover{
-                background-color: var(--primaryColor);
-                color: #fff;
-            }
-        }
         h3 {
             font-size: 18px;
             margin-bottom: 18px;
@@ -248,21 +199,14 @@
             }
         }
     }
-
-    // Copyright
     .copyright-area {
         padding: {
             top: 15px;
             bottom: 15px;
         };
     }
-
 }
-
-/* Min width 576px to Max width 767px */
 @media only screen and (min-width : 576px) and (max-width : 767px) {
-
-    // Footer
     .footer-widget {
         .footer-contact-info {
             li {
@@ -275,13 +219,8 @@
             }
         }
     }
-    
 }
-
-/* Min width 768px to Max width 991px */
 @media only screen and (min-width : 768px) and (max-width : 991px) {
-    
-    // Footer
     .footer-area {
         .col-md-6 {
             &:nth-child(1) {
@@ -314,38 +253,19 @@
         }
     }
     .footer-widget {
-        .logo {
-            margin-bottom: 15px;
-        }
-        .social-links {
-            li {
-                a {
-                    width: 35px;
-                    height: 35px;
-                    font-size: 16px;
-                }
-            }
-        }
         h3 {
             font-size: 20px;
             margin-bottom: 20px;
         }
     }
-
-    // Copyright
     .copyright-area {
         padding: {
             top: 18px;
             bottom: 18px;
         };
     }
-
 }
-
-/* Min width 992px to Max width 1199px */
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
-
-    // Footer
     .footer-area {
         .col-md-6 {
             &:nth-child(1) {
@@ -373,9 +293,6 @@
         }
     }
     .footer-widget {
-        .logo {
-            margin-bottom: 15px;
-        }
         h3 {
             margin-bottom: 20px;
         }
@@ -385,13 +302,8 @@
             }
         }
     }
-
 }
-
-/* Min width 1200px to Max width 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-
-    // Footer
     .footer-area {
         .col-md-6 {
             &:nth-child(1) {
@@ -417,18 +329,12 @@
             }
         }
     }
-
 }
-
-/* Min width 1600px */
 @media only screen and (min-width: 1600px) {
-
-    // Footer
     .footer-area {
         .footer-shape1 {
             left: 40px;
             width: 160px;
         }
     }
-
 }

@@ -1,7 +1,6 @@
 .skill{
     width: 160px;
     height: 160px;
-    /*background: cornflowerblue;*/
     position: relative;
 }
 .outer{
@@ -25,7 +24,6 @@
             1px 1px 1px rgba(255, 255, 255, 0.2), 
             0px 14px 12px -10px rgba(0, 0, 0, 0.1); 
 }
-
 circle{
     fill:none;
     stroke: url(#GradientColor);
@@ -62,13 +60,11 @@ svg{
         stroke-dashoffset: 0;
     }
 }
-
 #number{
     font-size: 1.5rem;
     font-weight: 600;
     color: #555;
 }
-
 h3 {
     padding-top: 30px;
 }
@@ -89,19 +85,13 @@ h4 {
     align-items: center;
     justify-content: center;
 }
-
 @media only screen and (max-width : 767px) {
-
-    // Style One
     .featured-box {
         padding: 20px 15px;
         margin-bottom: 20px;
     }
 }
-
 @media only screen and (min-width : 768px) and (max-width : 991px) {
-
-    // Style One
     .featured-box {
         padding: 25px 20px;
         margin-bottom: 20px;

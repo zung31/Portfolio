@@ -57,13 +57,7 @@
             font-size: 22px;
         }
     }
-
 }
-
-/* Min width 576px to Max width 767px */
-@media only screen and (min-width : 576px) and (max-width : 767px) {}
-
-/* Min width 768px to Max width 991px */
 @media only screen and (min-width : 768px) and (max-width : 991px) {
 
     .partner-content {
@@ -75,10 +69,7 @@
             font-size: 26px;
         }
     }
-
 }
-
-/* Min width 992px to Max width 1199px */
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 
     .partner-content {
@@ -88,12 +79,8 @@
             font-size: 23px;
         }
     }
-
 }
-
-/* Min width 1200px to Max width 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-
     .partner-content {
         padding-right: 0;
     
@@ -101,68 +88,48 @@
             font-size: 28px;
         }
     }
-
 }
-
-/* Min width 1600px */
-@media only screen and (min-width: 1600px) {}
-
-/* Masquer le ticker par défaut */
 .scroll {
     display: none;
-  }
-  
-  /* Afficher le ticker uniquement sur les écrans de téléphone */
-  @media (max-width: 767px) {
+}
+@media (max-width: 767px) {
     .scroll {
-      display: block;
+        display: block;
     }
-  }
-  
-  
-
-  .scroll {
+}
+.scroll {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
     width: 100%;
     position: relative;
-  }
-  
-  .m-scroll {
+} 
+.m-scroll {
     display: inline-block;
     padding-left: 100%;
     animation: scroll 30s linear infinite; /* Réduire la durée à 30s pour augmenter la vitesse */
-  }
-  
-  @keyframes scroll {
+}
+@keyframes scroll {
     0% {
       transform: translateX(0);
     }
     100% {
       transform: translateX(-100%);
     }
-  }
-  
-  .icon-badge {
+}
+.icon-badge {
     max-width: 85px; /* Taille agrandie pour les images sur mobile */
     height: auto;
     vertical-align: middle;
     cursor: pointer;
-  }
-  
-  @media (min-width: 992px) {
+}  
+@media (min-width: 992px) {
     .icon-badge {
       max-width: 100px; /* Taille normale pour les images sur desktop et tablette */
     }
-  }
-  
-  .partner-item img {
+}  
+.partner-item img {
     max-width: 100px; /* Taille par défaut pour les images sur desktop et tablette */
     height: auto;
     cursor: pointer;
-  }
-  
-  
-  
-  
+}
