@@ -37,15 +37,4 @@ export class NavbarComponent {
     toggleClass() {
         this.classApplied = !this.classApplied;
     }
-
-    searchClassApplied = false;
-    toggleSearchClass() {
-        this.searchClassApplied = !this.searchClassApplied;
-    }
-
-    sidebarClassApplied = false;
-    toggleSidebarClass() {
-        this.sidebarClassApplied = !this.sidebarClassApplied;
-    }
-
 }

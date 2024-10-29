@@ -15,6 +15,7 @@
 	"C": {
 		"PRO1": "Contact Management System",
 		"PRO2": "Pointeurs et Listes chainées",
+		"PRO3": "Parking Application",
 		"PRO4": "Pipe et Fork en C",
 		"PROJ1": {
 			"H1": "Conclusion",
@@ -274,6 +275,7 @@
 		"TITLE": "Projets Académiques et Personnels"
 	},
 	"PYTHON": {
+		"PRO1": "SpaceShip Battle Game",
 		"PRO2": "Turtle Race Illustration",
 		"PRO3": "Algorithms",
 		"PROJ1": {
