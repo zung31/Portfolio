@@ -44,6 +44,15 @@
 	"CATEGORIES": {
 		"H2": "Programmation"
 	},
+	"CHATBOT": {
+		"TITLE": "Votre Assistance",
+		"PLACEHOLDER": "Écrire un message...",
+		"TOOLTIP": "Besoin d'aide?",
+		"1ERMESS": "Je m'appelle Mini Hoang. Que voudriez-vous me demander ?",
+		"SUGGEST1": "Quels langages de programmation connaissez-vous?",
+		"SUGGEST2": "Présentez-vous",
+		"SUGGEST3": "Vous cherchez quoi maintenant?"
+	},
 	"COMPETENCES": {
 		"CAP1": "Capacité relationnelle",
 		"CAP2": "Capacité linguistique",

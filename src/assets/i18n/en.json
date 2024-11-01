@@ -43,6 +43,15 @@
 	"CATEGORIES": {
 		"H2": "Programming"
 	},
+	"CHATBOT": {
+		"TITLE": "Your Assistance",
+		"PLACEHOLDER": "Type a message...",
+		"1ERMESS": "My name is Mini Hoang. What would you like to ask me?",
+		"SUGGEST1": "What programming languages ​​do you know?",
+		"SUGGEST2": "Introduce yourself",
+		"SUGGEST3": "What are you looking for now?",
+		"TOOLTIP": "Need help?"
+	},
 	"COMPETENCES": {
 		"CAP1": "Interpersonal skills",
 		"CAP2": "Language ability",

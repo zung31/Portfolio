@@ -1,0 +1,37 @@
+<div class="chatbot-container" [class.open]="isOpen">
+    <div class="chatbot-header" (click)="toggleChatbot()">
+      <h3 style="color: #fff;">{{ 'CHATBOT.TITLE' | translate }}</h3>
+      <button class="close-btn" (click)="closeChatbot($event)">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+    <div class="chatbot-body">
+      <div class="messages" #chatContainer>
+        <div *ngIf="showSuggestions" class="suggestions">
+          <div *ngFor="let suggestion of suggestions" class="suggestion" (click)="selectSuggestion(suggestion)">
+            {{ suggestion }}
+          </div>
+        </div>
+        <div *ngFor="let message of messages" [ngClass]="{'user': message.sender === 'user', 'bot': message.sender === 'bot'}" class="message-box">
+          {{ message.text }}
+          <div *ngIf="message.sender === 'bot'" class="feedback-icons">
+            <div class="icon-wrapper">
+              <i class="fas fa-thumbs-up" (click)="likeMessage(message)" [class.liked]="message.liked"></i>
+            </div>
+            <div class="icon-wrapper">
+              <i class="fas fa-thumbs-down" (click)="dislikeMessage(message)" [class.disliked]="message.disliked"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="input-container">
+        <input type="text" [(ngModel)]="userInput" (keydown.enter)="sendMessage()" placeholder="{{ 'CHATBOT.PLACEHOLDER' | translate }}" />
+        <button (click)="sendMessage()" [disabled]="!userInput.trim()">
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+    </div>
+</div>
+<button class="chatbot-toggle-btn" (click)="toggleChatbot()">
+  <span class="tooltip-text">{{ 'CHATBOT.TOOLTIP' | translate }}</span>
+</button>

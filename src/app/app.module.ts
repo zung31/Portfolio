@@ -65,6 +65,7 @@ import { PreviewProjetsComponent } from './components/common/preview-projets/pre
 import { ToastrModule } from 'ngx-toastr';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { ChatbotComponent } from './chatbot/chatbot.component';
 
 // required for AOT compilation
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -123,7 +124,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
         MatlabProjet2Component,
         EtudesComponent,
         MetiersComponent,
-        PreviewProjetsComponent
+        PreviewProjetsComponent,
+        ChatbotComponent
     ],
     imports: [
         BrowserModule,
