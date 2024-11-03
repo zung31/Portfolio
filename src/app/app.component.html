@@ -1,5 +1,10 @@
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
+<div class="language-toggle">
+    <button (click)="toggleLanguage()">
+      <span [class.active]="currentLanguage === 'en'">EN</span> | <span [class.active]="currentLanguage === 'fr'">FR</span>
+    </button>
+</div>
 <app-chatbot [language]="currentLanguage"></app-chatbot>
 <ngx-scrolltop></ngx-scrolltop>

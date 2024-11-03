@@ -22,6 +22,11 @@ export class AppComponent {
         translate.use(this.currentLanguage);
     }
 
+    toggleLanguage() {
+      this.currentLanguage = this.currentLanguage === 'en' ? 'fr' : 'en';
+      this.translate.use(this.currentLanguage);
+    }
+
     ngOnInit() {
         inject();
     
